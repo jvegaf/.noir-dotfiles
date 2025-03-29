@@ -1,0 +1,11 @@
+font="Maple Mono 12"
+text-color=#eeeeffff
+
+background-color=#5c5f77ff
+margin=25
+
+border-color=#FFE6FFFF
+border-size=3
+border-radius=10
+
+default-timeout=5000
