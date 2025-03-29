@@ -27,7 +27,6 @@
         "kernel",
         "wm",
         "de",
-        "separator",
         "shell",
         {
             "type": "terminal",
