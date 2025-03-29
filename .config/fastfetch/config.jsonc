@@ -1,0 +1,61 @@
+{
+    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+    "logo": {
+        "source": "~/.config/fastfetch/logo.png",
+        "type": "auto",
+        "height": 12,
+        "padding": {
+            "top": 1,
+            "left": 4,
+            "right": 4,
+        },
+        "preserveAspectRatio": true
+    },
+    "display": {
+        // "separator": " ⛩  ",
+        "key": {
+            "width": 16,
+            "type": "both"
+        }
+    },
+    "modules": [
+        "break",
+        {
+            "type": "os",
+            "format": "{pretty-name} {version-id} {arch}"
+        },
+        "kernel",
+        "wm",
+        "de",
+        "separator",
+        "shell",
+        {
+            "type": "terminal",
+            "format": "{pretty-name} {#37}█{#97}█ {#36}█{#96}█ {#35}█{#95}█ {#34}█{#94}█ {#33}█{#93}█ {#32}█{#92}█ {#31}█{#91}█ {#30}█{#90}█"
+        },
+        {
+            "type": "cpu",
+            "key": "Temperature",
+            "temp": true,
+            "format": "{temperature}"
+        },
+        {
+            "type": "cpu",
+            "key": "CPU",
+            "format": "{cores-logical} x {name}"
+        },
+        {
+            "type": "gpu",
+            "format": "{name}"
+        },
+        {
+            "type": "memory",
+            "key": "RAM"
+        },
+        {
+            "type": "disk",
+            "key": "Disk",
+            "folders": "/"
+        }
+    ]
+}
