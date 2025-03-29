@@ -1,0 +1,12 @@
+#!/bin/sh
+
+intern=DP-2
+extern=HDMI-0
+
+if xrandr | grep "$extern disconnected"; then
+  xrandr --output "$extern" --off 
+  xrandr --output "$intern" --mode 1920x1080 --rate 144 --pos 0x0 --primary
+else
+  xrandr --output "$extern" --mode 2560x1440 --rate 60 --pos 1920x0 --primary
+  xrandr --output "$intern" --mode 1920x1080 --rate 144 --pos 0x180
+fi

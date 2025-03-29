@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source ~/AI_Tools/ComfyUI/.venv/bin/activate
+uv run ~/AI_Tools/ComfyUI/main.py

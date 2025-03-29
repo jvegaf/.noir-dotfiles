@@ -1,0 +1,13 @@
+#!/bin/bash
+
+for i in *.mp4; do
+  ffmpeg -i "$i" -ss 10 "`basename "$i" .mp4`.jpg"
+  ffmpeg -i "$i" -vn -acodec libmp3lame -ac 2 -ab 160k -ar 48000 "`basename "$i" .mp4`.mp3"
+done
+
+mkdir output
+
+for i in *.mp3; do
+  name_jpg="`basename "$i" .mp3`.jpg"
+  ffmpeg -i "$i" -i "$name_jpg" -c copy -map 0 -map 1 "output/$i"
+done

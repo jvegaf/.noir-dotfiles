@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for file in $(find . -name "*"); do
+  if [ -f $file ]; then
+    echo $file
+    nvim -c 'retab' -c 'wq' "$file"
+  fi
+done
