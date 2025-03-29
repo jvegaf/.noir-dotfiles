@@ -1,0 +1,11 @@
+allow_images=true
+width=750
+height=400
+hide_scroll=true
+no_actions=false
+term=ghostty
+print_command=true
+insensitive=true
+prompt=Search
+mode=drun
+--show
