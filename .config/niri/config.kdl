@@ -250,17 +250,23 @@ spawn-at-startup "sudo" "/etc/rc.d/rc.local"
 
 environment {
   DISPLAY ":0"
+
   XCURSOR_THEME "catppuccin-macchiato-lavender-cursors"
   XCURSOR_SIZE "48"
   HYPRCURSOR_THEME "catppuccin-macchiato-lavender-cursors"
   HYPRCURSOR_SIZE "48"
   QT_CURSOR_THEME "catppuccin-macchiato-lavender-cursors"
   QT_CURSOR_SIZE "48"
-  QT_QPA_PLATFORM "wayland"
-  QT_STYLE_OVERRIDE "kvantum"
-  QT_QPA_PLATFORMTHEME "qt5ct"
+
   XDG_SESSION_TYPE "wayland"
   GDK_BACKEND "wayland,x11,*"
+
+  XDG_CURRENT_DESKTOP "wlroots"
+  QT_QPA_PLATFORM "wayland"
+  QT_QPA_PLATFORMTHEME "qt5ct"
+  QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
+  QT_STYLE_OVERRIDE "kvantum"
+  QT_WAYLAND_DECORATION "kvantum"
 }
 
 cursor {
