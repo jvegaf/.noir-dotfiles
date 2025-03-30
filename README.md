@@ -55,9 +55,6 @@ Themes can be customized through nwg-look (GTK-3), Gradience (GTK-4) and kvantum
 
 # Communication
 
-<p>
 If you have any questions or suggestions regarding the project, feel free to join [Discussions](https://github.com/somanoir/.noir-dotfiles/discussions).
-</p>
-<p>
+
 Found a bug? Open an [Issue](https://github.com/somanoir/.noir-dotfiles/issues).
-</p>
