@@ -1,6 +1,6 @@
 allow_images=true
-width=750
-height=400
+width=800
+height=500
 hide_scroll=true
 no_actions=false
 term=ghostty
