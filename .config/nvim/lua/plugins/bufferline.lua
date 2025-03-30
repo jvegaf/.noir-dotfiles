@@ -1,0 +1,21 @@
+return {
+  -- "akinsho/bufferline.nvim",
+  -- dependencies = "nvim-tree/nvim-web-devicons",
+  -- config = function()
+  --   vim.opt.termguicolors = true
+  --   require("bufferline").setup({
+  --     options = {
+  --       mode = "buffers",
+  --       themable = true,
+  --       separator_style = "slope",
+  --       middle_mouse_command = "bdelete! %d",
+  --       color_icons = true,
+  --       hover = {
+  --         enabled = true,
+  --         delay = 200,
+  --         reveal = { "close" },
+  --       },
+  --     },
+  --   })
+  -- end,
+}
