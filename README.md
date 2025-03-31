@@ -14,7 +14,7 @@ This repo is a cozy home for scripts and configurations (aka .dotfiles) on my Li
 </div>
 
 <details>
-  <summary>More scrennshots</summary>
+  <summary>More screenshots</summary>
   <div align="center">
     <img alt="Showcase 5" width="45%" src="./assets/showcase_5.png" />
   </div>
