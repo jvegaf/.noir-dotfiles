@@ -106,6 +106,7 @@ alias root-snapshot='sudo btrfs subvolume snapshot / /.snapshots/@-$(date +"%Y-%
 alias v='nvim'
 alias sudov='sudo nvim'
 alias code='codium'
+alias cw="swww img"
 
 ## VirusTotal
 alias vts='vt scan file'
