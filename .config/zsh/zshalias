@@ -56,6 +56,8 @@ alias gl1='git log -1'
 alias gl2='git log -2'
 alias gl3='git log -3'
 
+alias lz='lazygit'
+
 # WebDev
 alias nom='npm'
 alias nim='npm'
