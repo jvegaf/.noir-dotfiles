@@ -203,7 +203,7 @@ layout {
     // inactive-color "#505050"
 
     active-gradient from="#8caaee" to="#f4b8e4" angle=135 relative-to="workspace-view"
-    inactive-gradient from="#85c1dc" to="#81c8be" angle=135 relative-to="workspace-view" in="oklch shorter hue"
+    inactive-gradient from="#8e7ab5" to="#756ab6" angle=135 relative-to="workspace-view" in="oklch shorter hue"
   }
 
   // Struts shrink the area occupied by windows, similarly to layer-shell panels.
