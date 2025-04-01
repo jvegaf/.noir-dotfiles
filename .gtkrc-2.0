@@ -1,10 +1,9 @@
 # DO NOT EDIT! This file will be overwritten by nwg-look.
 # Any customization should be done in ~/.gtkrc-2.0.mine instead.
 
-include "/home/hope/.gtkrc-2.0.mine"
 gtk-theme-name="catppuccin-macchiato-lavender-standard+default"
 gtk-icon-theme-name="Papirus"
-gtk-font-name="Adwaita Sans 11"
+gtk-font-name="Maple Mono 11"
 gtk-cursor-theme-name="catppuccin-macchiato-lavender-cursors"
 gtk-cursor-theme-size=48
 gtk-toolbar-style=GTK_TOOLBAR_ICONS
