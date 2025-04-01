@@ -1,21 +1,22 @@
 # About
 
-This repo is a cozy home for scripts and configurations (aka .dotfiles) on my Linux setup. All tools are open-source and freely available, allowing you to use, modify, and share them as you like.
+<div align="center">
+  This repo is a cozy home for scripts and configurations (aka .dotfiles) on my Linux setup. All tools are open-source and freely available, allowing you to use, modify, and share them as you like.
+</div>
 
 # Showcase
 
 <div align="center">
-  <img alt="Showcase 1" width="45%" src="./assets/showcase_1.png" />
-  <img alt="Showcase 2" width="45%" src="./assets/showcase_2.png" />
-</div>
-<div align="center">
-  <img alt="Showcase 3" width="45%" src="./assets/showcase_3.png" />
-  <img alt="Showcase 4" width="45%" src="./assets/showcase_4.png" />
+  <img alt="Showcase 0" src="./assets/showcase_0.png" />
 </div>
 
 <details>
   <summary>More screenshots</summary>
   <div align="center">
+    <img alt="Showcase 1" width="45%" src="./assets/showcase_1.png" />
+    <img alt="Showcase 2" width="45%" src="./assets/showcase_2.png" />
+    <img alt="Showcase 3" width="45%" src="./assets/showcase_3.png" />
+    <img alt="Showcase 4" width="45%" src="./assets/showcase_4.png" />
     <img alt="Showcase 5" width="45%" src="./assets/showcase_5.png" />
   </div>
 </details>
