@@ -13,11 +13,11 @@
 <details>
   <summary>More screenshots</summary>
   <div align="center">
-    <img alt="Showcase 1" width="45%" src="./assets/showcase_1.png" />
-    <img alt="Showcase 2" width="45%" src="./assets/showcase_2.png" />
-    <img alt="Showcase 3" width="45%" src="./assets/showcase_3.png" />
-    <img alt="Showcase 4" width="45%" src="./assets/showcase_4.png" />
-    <img alt="Showcase 5" width="45%" src="./assets/showcase_5.png" />
+    <img alt="Showcase 1" src="./assets/showcase_1.png" />
+    <img alt="Showcase 2" src="./assets/showcase_2.png" />
+    <img alt="Showcase 3" src="./assets/showcase_3.png" />
+    <img alt="Showcase 4" src="./assets/showcase_4.png" />
+    <img alt="Showcase 5" src="./assets/showcase_5.png" />
   </div>
 </details>
 
