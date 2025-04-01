@@ -380,7 +380,7 @@ binds {
   Mod+Return { spawn "ghostty"; }
   Mod+Shift+Return { spawn "thunar"; }
   Mod+B { spawn "brave" "--password-store=basic"; }
-  Mod+T { spawn "tauon"; }
+  Mod+T { spawn "ghostty" "-e" "rmpc"; }
   Mod+Shift+T { spawn "shortwave"; }
   Mod+Shift+P { spawn "librewolf"; }
   Mod+Shift+L { spawn "lutris"; }
@@ -389,6 +389,8 @@ binds {
   Mod+G { spawn "hyprpicker" "-ra"; }
   Mod+O { spawn "obsidian"; }
   Mod+V { spawn "vesktop"; }
+  Mod+N { spawn "pavucontrol"; }
+  Mod+Shift+N { spawn "blueman-manager"; }
   Mod+L { spawn "swaylock-fancy" "-eK" "-p" "-f" "Maple-Mono-Medium"; }
 
   // You can also use a shell. Do this if you need pipes, multiple commands, etc.
