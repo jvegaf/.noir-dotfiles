@@ -25,19 +25,24 @@
 
 - **WM:** [Niri](https://github.com/YaLTeR/niri)
 - **Bar:** [Waybar](https://github.com/Alexays/Waybar)
-- **File Manager**: [Yazi](https://github.com/sxyazi/yazi) / [Thunar](https://gitlab.xfce.org/xfce/thunar)
-- **Music Player:** [RMPC](https://github.com/mierak/rmpc) + [MPD](https://github.com/MusicPlayerDaemon/MPD)
+- **File Manager**: [Yazi](https://github.com/sxyazi/yazi) /
+  [Thunar](https://gitlab.xfce.org/xfce/thunar)
+- **Music Player:** [RMPC](https://github.com/mierak/rmpc) +
+  [MPD](https://github.com/MusicPlayerDaemon/MPD)
 - **Editor:** [Neovim](https://github.com/neovim/neovim)
 - **Terminal:** [Ghostty](https://github.com/ghostty-org/ghostty)
-- **Shell:** Zsh + [Zinit Plugin Manager](https://github.com/zdharma-continuum/zinit)
+- **Shell:** Zsh +
+  [Zinit Plugin Manager](https://github.com/zdharma-continuum/zinit)
 - **Lockscreen:** swaylock-fancy
 - **Wallpaper Manager:** [SWWW](https://github.com/LGFae/swww)
-- **Wallpapers:** [Link](https://github.com/somanoir/.noir-dotfiles/tree/master/.local/share/backgrounds)
+- **Wallpapers:**
+  [Link](https://github.com/somanoir/.noir-dotfiles/tree/master/.local/share/backgrounds)
 - **Font:** [Maple Mono](https://github.com/subframe7536/maple-font)
 - **GTK Theme:** [Catppuccin-Macchiato](https://github.com/catppuccin/gtk)
 - **Qt Theme:** [Catppuccin-Macchiato](https://github.com/catppuccin/qt5ct)
 - **Cursor:** [Catppuccin-Macchiato](https://github.com/catppuccin/cursors)
-- **Icon Theme:** [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+- **Icon Theme:**
+  [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 
 # Installation
 
@@ -46,7 +51,7 @@
 1. Functional part
 
 ```
-paru -Sy niri xwayland-satellite waybar ghostty neovim-nightly swww swaylock-fancy-git xdg-desktop-portal-gnome libqalculate mpd rmpc mpd rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman
+paru -Sy niri xwayland-satellite brightnessctl pavucontrol waybar ghostty neovim-nightly swww swaylock-fancy-git xdg-desktop-portal-gnome mpd rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman
 ```
 
 2. Theme dependencies and customization part
@@ -55,7 +60,8 @@ paru -Sy niri xwayland-satellite waybar ghostty neovim-nightly swww swaylock-fan
 paru -Syu catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted papirus-icon-theme stow nwg-look gradience qt5ct qt6ct-kde kvantum-git kvantum-qt5
 ```
 
-3. Personally, I use [stow](https://www.gnu.org/software/stow/) for managing my .dotfiles
+3. Personally, I use [stow](https://www.gnu.org/software/stow/) for managing my
+   .dotfiles
 
 ```
 cd ~
@@ -74,13 +80,15 @@ bat cache --build
 sudo flatpak override --filesystem=xdg-data/themes
 ```
 
-5. Set wallpaper with the following command (it will later be handled automatically on every boot as long as swww-daemon is running)
+5. Set wallpaper with the following command (it will later be handled
+   automatically on every boot as long as swww-daemon is running)
 
 ```
 swww img path/to/your/wallpaper.png
 ```
 
 6. Music Player Setup (RMPC + MPD)
+
 ```
 mkdir ~/.local/share/mpd
 touch ~/.local/share/mpd/database
@@ -91,10 +99,13 @@ touch ~/.local/share/mpd/sticker.sql
 systemctl --user enable --now mpd.service
 ```
 
-7. (Optional) Themes can be customized through nwg-look (GTK-3), Gradience (GTK-4) and kvantum, qt5ct, qt6ct (Qt)
+7. (Optional) Themes can be customized through nwg-look (GTK-3), Gradience
+   (GTK-4) and kvantum, qt5ct, qt6ct (Qt)
 
 # Communication
 
-If you have any questions or suggestions regarding the project, feel free to join [Discussions](https://github.com/somanoir/.noir-dotfiles/discussions).
+If you have any questions or suggestions regarding the project, feel free to
+join [Discussions](https://github.com/somanoir/.noir-dotfiles/discussions).
 
 Found a bug? Open an [Issue](https://github.com/somanoir/.noir-dotfiles/issues).
+
