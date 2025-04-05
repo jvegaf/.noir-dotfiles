@@ -262,7 +262,7 @@ environment {
   GDK_BACKEND "wayland,x11,*"
 
   XDG_CURRENT_DESKTOP "wlroots"
-  QT_QPA_PLATFORM "wayland"
+  QT_QPA_PLATFORM "wayland;xcb"
   QT_QPA_PLATFORMTHEME "qt5ct"
   QT_WAYLAND_DISABLE_WINDOWDECORATION "1"
   QT_STYLE_OVERRIDE "kvantum"
@@ -379,7 +379,7 @@ binds {
   Mod+R { spawn "wofi" "-i" "--show drun"; }
   Mod+Return { spawn "ghostty"; }
   Mod+Shift+Return { spawn "thunar"; }
-  Mod+B { spawn "brave" "--password-store=basic"; }
+  Mod+B { spawn "firefox"; }
   Mod+T { spawn "ghostty" "-e" "rmpc"; }
   Mod+Shift+T { spawn "shortwave"; }
   Mod+Shift+P { spawn "librewolf"; }
