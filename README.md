@@ -42,7 +42,7 @@
 - **Qt Theme:** [Catppuccin-Macchiato](https://github.com/catppuccin/qt5ct)
 - **Cursor:** [Catppuccin-Macchiato](https://github.com/catppuccin/cursors)
 - **Icon Theme:**
-  [Papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+  [Tela-circle](https://github.com/vinceliuice/Tela-circle-icon-theme)
 
 # Installation
 
@@ -57,7 +57,7 @@ paru -Sy niri xwayland-satellite brightnessctl pavucontrol waybar ghostty neovim
 2. Theme dependencies and customization part
 
 ```
-paru -Syu catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted papirus-icon-theme stow nwg-look gradience qt5ct qt6ct-kde kvantum-git kvantum-qt5
+paru -Syu catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted tela-circle-icon-theme-dracula stow nwg-look gradience qt5ct qt6ct-kde kvantum-git kvantum-qt5
 ```
 
 3. Personally, I use [stow](https://www.gnu.org/software/stow/) for managing my
@@ -108,4 +108,3 @@ If you have any questions or suggestions regarding the project, feel free to
 join [Discussions](https://github.com/somanoir/.noir-dotfiles/discussions).
 
 Found a bug? Open an [Issue](https://github.com/somanoir/.noir-dotfiles/issues).
-
