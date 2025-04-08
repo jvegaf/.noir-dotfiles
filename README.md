@@ -57,7 +57,7 @@ paru -Sy --needed niri xwayland-satellite brightnessctl pavucontrol waybar ghost
 1.2. Install i3
 
 ```
-paru -Sy --needed i3-wm i3lock-color autotiling maim xdotool rofi polybar feh playerctl pavucontrol brightnessctl
+paru -Sy --needed i3-wm i3lock autotiling dunst maim imagemagick xdotool rofi polybar feh playerctl pavucontrol brightnessctl
 ```
 
 2. Install themes and customization tools

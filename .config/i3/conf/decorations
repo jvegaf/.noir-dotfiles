@@ -1,0 +1,24 @@
+# Gaps
+for_window [class=".*"] border pixel 3
+gaps outer 10
+gaps inner 10
+# gaps top   -5
+# smart_borders on
+
+# Color Scheme
+set $background       #990000
+set $background_alt   #c6a0f6
+set $primary_alt      #F0C674
+set $alert            #A54242
+set $border_inactive  #222D31
+set $primary          #b7bdf8
+set $secondary        #c6a0f6
+set $foreground       #292929
+
+# Colors for window borders, background, text, and indicators.
+#                       border              background          text                 indicator
+client.focused          $primary            $primary            $foreground          $primary
+client.focused_inactive $secondary          $secondary          $foreground          $secondary
+client.unfocused        $background_alt     $background_alt     $foreground          $background_alt
+client.urgent           $alert              $alert              $foreground          $alert
+

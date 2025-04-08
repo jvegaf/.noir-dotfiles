@@ -1,0 +1,33 @@
+# exec --no-startup-id picom --config ~/.config/picom/picom.conf
+exec --no-startup-id xrdb -merge ~/.Xresources
+# exec_always --no-startup-id setxkbmap -option :nocaps
+exec_always --no-startup-id setxkbmap -option
+exec_always --no-startup-id autotiling
+# exec_always --no-startup-id xborders
+
+# Touchpad
+exec --no-startup-id xinput set-prop "ELAN0711:00 04F3:30EB Touchpad" "libinput Tapping Enabled" 1 # Enable touchpad tap to clicks
+exec --no-startup-id xinput set-prop "ELAN0711:00 04F3:30EB Touchpad" "libinput Disable While Typing Enabled" 0
+
+# Start XDG autostart .desktop files using dex. See also
+# https://wiki.archlinux.org/index.php/XDG_Autostart
+exec --no-startup-id dex --autostart --environment i3
+
+# Clipboard
+exec --no-startup-id xclip
+
+# Applets
+exec --no-startup-id nm-applet
+exec --no-startup-id blueman-applet
+
+# Notifications
+exec dunst -config ~/.config/dunst/dunstrc
+
+# Kill any hanging polybar processes
+# exec_always killall polybar
+exec_always --no-startup-id ~/.config/polybar/polybar.sh
+
+# Wallpapers
+# exec --no-startup-id variety # Change wallpapers on a regular interval
+exec_always feh --bg-fill /home/$USER/.local/share/backgrounds/wallpaper_1.png --output HDMI-0 -z
+exec_always feh --bg-fill /home/$USER/.local/share/backgrounds/wallpaper_1.png --output DP-2 -z
