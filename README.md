@@ -48,16 +48,22 @@
 
 ### Arch(-based) distros
 
-1. Functional part
+1.1. Install Niri
 
 ```
-paru -Sy niri xwayland-satellite brightnessctl pavucontrol waybar ghostty neovim-nightly swww swaylock-fancy-git xdg-desktop-portal-gnome mpd rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman
+paru -Sy --needed niri xwayland-satellite brightnessctl pavucontrol waybar ghostty neovim-nightly swww swaylock-fancy-git xdg-desktop-portal-gnome mpd rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman
 ```
 
-2. Theme dependencies and customization part
+1.2. Install i3
 
 ```
-paru -Syu catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted tela-circle-icon-theme-dracula stow nwg-look gradience qt5ct qt6ct-kde kvantum-git kvantum-qt5
+paru -Sy --needed i3-wm i3lock-color autotiling maim xdotool rofi polybar feh playerctl pavucontrol brightnessctl
+```
+
+2. Install themes and customization tools
+
+```
+paru -Sy --needed catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted tela-circle-icon-theme-dracula stow nwg-look gradience qt5ct qt6ct-kde kvantum-git kvantum-qt5
 ```
 
 3. Personally, I use [stow](https://www.gnu.org/software/stow/) for managing my
@@ -80,11 +86,19 @@ bat cache --build
 sudo flatpak override --filesystem=xdg-data/themes
 ```
 
-5. Set wallpaper with the following command (it will later be handled
-   automatically on every boot as long as swww-daemon is running)
+5.1. Set wallpaper on Wayland with the following command (it will later be
+handled automatically on every boot as long as swww-daemon is running)
 
 ```
 swww img path/to/your/wallpaper.png
+```
+
+5.2. Set wallpaper on X11 with the following command (put it into autostart of
+your WM; check names of your monitors with `xrandr` and replace HDMI-0 with
+them)
+
+```
+exec_always feh --bg-fill path/to/your/wallpaper.png --output HDMI-0 -z
 ```
 
 6. Music Player Setup (RMPC + MPD)
