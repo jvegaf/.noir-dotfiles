@@ -336,6 +336,12 @@ window-rule {
   open-floating true
 }
 
+// Open Thunar file transfer windows as floating by default.
+window-rule {
+  match title="File Operation Progress"
+  open-floating true
+}
+
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
 window-rule {
