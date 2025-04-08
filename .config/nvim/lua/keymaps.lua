@@ -47,6 +47,7 @@ map("n", "<Tab>", "<cmd>bnext<CR>", { desc = "move to next buffer" })
 map("n", "<S-Tab>", "<cmd>bprev<CR>", { desc = "move to prev buffer" })
 map({ "i", "n" }, "<C-s>", "<cmd>w<cr>", { desc = "Save buffer" })
 map({ "i", "n" }, "<C-q>", "<cmd>q<cr>", { desc = "Quit buffer" })
+map({ "i", "n" }, "<C-z>", "u", { desc = "Undo" })
 
 -- quickfix
 map("n", "<leader>fo", "<cmd>copen<CR>", { desc = "Open Quickfix window" })

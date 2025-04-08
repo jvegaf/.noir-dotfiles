@@ -8,7 +8,6 @@ vim.opt.mouse = "a"
 vim.opt.showmode = true
 
 vim.opt.wrap = false
-vim.opt.scrolloff = 999
 vim.opt.virtualedit = "block"
 
 -- Sync clipboard between OS and Neovim.
@@ -42,7 +41,7 @@ vim.opt.cursorline = false
 vim.opt.fillchars = { eob = " " }
 
 -- Minimal number of screen lines to keep above and below the cursor.
-vim.opt.scrolloff = 10
+-- vim.opt.scrolloff = 999
 
 -- Replace tabs with spaces
 vim.opt.expandtab = true
