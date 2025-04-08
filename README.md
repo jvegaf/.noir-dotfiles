@@ -51,7 +51,7 @@
 1.1. Install Niri
 
 ```
-paru -Sy --needed niri xwayland-satellite brightnessctl pavucontrol waybar ghostty wofi mako neovim swww swaylock-fancy-git xdg-desktop-portal-gnome mpd rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman
+paru -Sy --needed niri xwayland-satellite brightnessctl pavucontrol waybar ghostty wofi mako wl-clipboard copyq neovim swww swaylock-fancy-git xdg-desktop-portal-gnome mpd rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman
 ```
 
 1.2. Install i3
