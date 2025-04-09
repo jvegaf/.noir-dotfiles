@@ -23,7 +23,9 @@
 
 # Dependencies
 
-- **WM:** [Niri](https://github.com/YaLTeR/niri)
+- **WM:** [Niri](https://github.com/YaLTeR/niri) /
+  [Hyprland](https://github.com/hyprwm/Hyprland) /
+  [i3](https://github.com/i3/i3)
 - **Bar:** [Waybar](https://github.com/Alexays/Waybar)
 - **File Manager**: [Yazi](https://github.com/sxyazi/yazi) /
   [Thunar](https://gitlab.xfce.org/xfce/thunar)
@@ -33,8 +35,9 @@
 - **Terminal:** [Ghostty](https://github.com/ghostty-org/ghostty)
 - **Shell:** Zsh +
   [Zinit Plugin Manager](https://github.com/zdharma-continuum/zinit)
-- **Lockscreen:** swaylock-fancy
-- **Wallpaper Manager:** [SWWW](https://github.com/LGFae/swww)
+- **Lockscreen:** swaylock-fancy / hyprlock
+- **Wallpaper Manager:** [SWWW](https://github.com/LGFae/swww) /
+  [Feh](https://github.com/derf/feh)
 - **Wallpapers:**
   [Link](https://github.com/somanoir/.noir-dotfiles/tree/master/.local/share/backgrounds)
 - **Font:** [Maple Mono](https://github.com/subframe7536/maple-font)
@@ -104,13 +107,17 @@ bat cache --build
 sudo flatpak override --filesystem=xdg-data/themes
 ```
 
-### Set wallpaper on Wayland with the following command (it will later be handled automatically on every boot as long as swww-daemon is running)
+### Set wallpaper
+
+On Wayland: with the following command (it will later be handled automatically
+on every boot as long as swww-daemon is running)
 
 ```
 swww img path/to/your/wallpaper.png
 ```
 
-### Set wallpaper on X11 with the following command (put it into autostart of your WM; check names of your monitors with `xrandr` and replace HDMI-0 with them)
+On X11: with the following command (put it into autostart of your WM; check
+names of your monitors with `xrandr` and replace HDMI-0 with them)
 
 ```
 feh --bg-fill path/to/your/wallpaper.png --output HDMI-0 -z
