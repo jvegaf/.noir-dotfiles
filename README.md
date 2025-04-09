@@ -34,7 +34,8 @@
 - **Editor:** [Neovim](https://github.com/neovim/neovim)
 - **Terminal:** [Ghostty](https://github.com/ghostty-org/ghostty)
 - **Shell:** Zsh +
-  [Zinit Plugin Manager](https://github.com/zdharma-continuum/zinit)
+  [Zinit Plugin Manager](https://github.com/zdharma-continuum/zinit) +
+  [Starship Prompt](https://starship.rs/)
 - **Lockscreen:** swaylock-fancy / hyprlock
 - **Wallpaper Manager:** [SWWW](https://github.com/LGFae/swww) /
   [Feh](https://github.com/derf/feh)

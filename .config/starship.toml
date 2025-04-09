@@ -1,99 +1,49 @@
-# ~/.config/starship.toml
-
 add_newline = false
-command_timeout = 1000
-format = """$os$kubernetes$directory$git_branch$git_status"""
 
-# Drop ugly default prompt characters
-[character]
-success_symbol = ''
-error_symbol = ''
+format = """\
+$time\
+[](fg:#363a4f bg:#b7bdf8)\
+$directory\
+[](fg:#b7bdf8 bg:#c6a0f6)\
+$git_branch\
+$git_status\
+[](fg:#c6a0f6)\
+$character\
+"""
 
-# ---
-
-[os]
-format = '[$symbol](bold white) '
-disabled = false
-
-[os.symbols]
-Windows = ' '
-Arch = '󰣇'
-Ubuntu = ''
-Macos = '󰀵'
-
-# ---y
-
-# Shows the username
-[username]
-style_user = 'white bold'
-style_root = 'black bold'
-format = '[$user]($style) '
-disabled = false
-show_always = true
-
-# Shows the hostname
-[hostname]
-ssh_only = false
-format = 'on [$hostname](bold yellow) '
-disabled = false
-
-# Shows current directory
 [directory]
-truncation_length = 1
-truncation_symbol = '…/'
-home_symbol = '󰋜 ~'
-read_only_style = '197'
-read_only = '  '
-format = '[$path]($style)[$read_only]($read_only_style) '
+format = "[ $path ]($style)"
+style = "fg:#24273a bg:#b7bdf8"
 
-# Shows current git branch
 [git_branch]
-symbol = ' '
-format = '[$symbol$branch]($style)'
-# truncation_length = 4
-truncation_symbol = '…/'
-style = 'bold green'
+format = '[ $symbol$branch(:$remote_branch) ]($style)'
+symbol = "  "
+style = "fg:#24273a bg:#c6a0f6"
 
-# Shows current git status
 [git_status]
-format = '([ \($all_status$ahead_behind\)]($style)) '
-style = 'bold green'
-conflicted = '[ confliced=${count}](red) '
-up_to_date = '[󰘽 up-to-date](green)'
-untracked = '[󰋗 untracked=${count}](red) '
-ahead = ' ahead=${count}'
-diverged = ' ahead=${ahead_count}  behind=${behind_count}'
-behind = ' behind=${count}'
-stashed = '[ stashed=${count}](green) '
-modified = '[󰛿 modified=${count}](yellow) '
-staged = '[󰐗 staged=${count}](green) '
-renamed = '[󱍸 renamed=${count}](yellow) '
-deleted = '[󰍶 deleted=${count}](red) '
+format = '[$all_status]($style)'
+style = "fg:#24273a bg:#c6a0f6"
 
-# Shows kubernetes context and namespace
-[kubernetes]
-format = 'via [󱃾 $context\($namespace\)](bold purple) '
+[git_metrics]
+format = "([+$added]($added_style))[]($added_style)"
+added_style = "fg:#24273a bg:#c6a0f6"
+deleted_style = "fg:bright-red bg:235"
 disabled = false
 
-# ---
+[hg_branch]
+format = "[ $symbol$branch ]($style)"
+symbol = " "
 
-[vagrant]
-disabled = true
+[cmd_duration]
+format = "[ 󱑍 $duration ]($style)"
+style = "fg:bright-white bg:18"
 
-[docker_context]
-disabled = true
+[character]
+success_symbol = '[](bold green)'
+error_symbol = '[ ✗](#ed8796)'
 
-[helm]
-disabled = true
-
-[python]
-disabled = true
-
-[nodejs]
-disabled = true
-
-[ruby]
-disabled = true
-
-[terraform]
-disabled = true
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+format = '[ 󱑍 $time ]($style)'
+style = "fg:#b7bdf8 bg:#363a4f"
