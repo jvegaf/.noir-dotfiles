@@ -46,68 +46,77 @@
 
 # Installation
 
-### Arch(-based) distros
+## Arch(-based) distros
 
-1.1. Install Niri
-
-```
-paru -Sy --needed niri xwayland-satellite brightnessctl pavucontrol waybar ghostty wofi mako wl-clipboard copyq neovim swww swaylock-fancy-git xdg-desktop-portal-gnome mpd mpc rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman
-```
-
-1.2. Install i3
+### Install common utilities (X11 and Wayland)
 
 ```
-paru -Sy --needed i3-wm i3lock autotiling dunst maim imagemagick xdotool rofi polybar feh playerctl pavucontrol brightnessctl
+paru -Sy --needed brightnessctl playerctl pavucontrol waybar ghostty wofi mako wl-clipboard copyq neovim swww swaylock-fancy-git mpd mpc rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler dunst maim imagemagick xdotool rofi polybar feh
 ```
 
-2.1. Install themes and customization tools
+### Install Niri
+
+```
+paru -Sy --needed niri xwayland-satellite xdg-desktop-portal-gnome
+```
+
+### Install Hyprland
+
+```
+paru -Sy --needed hyprland hyprpicker pyprland hyprpolkitagent hyprshot xdg-desktop-portal-hyprland hyprlock
+```
+
+### Install i3
+
+```
+paru -Sy --needed i3-wm i3lock autotiling
+```
+
+### Install themes and customization tools
 
 ```
 paru -Sy --needed catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato tela-circle-icon-theme-dracula stow nwg-look
 ```
 
-2.2. Install recommended fonts
+### Install recommended fonts
 
 ```
 paru -Sy --needed maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted gnu-free-fonts noto-fonts ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-droid ttf-ibm-plex ttf-liberation wqy-zenhei ttf-mona-sans apple-fonts ttf-ms-fonts nerd-fonts
 ```
 
-3. Personally, I use [stow](https://www.gnu.org/software/stow/) for managing my
-   .dotfiles
+### Personally, I use [stow](https://www.gnu.org/software/stow/) for managing my .dotfiles
 
 ```
 cd ~
 git clone --depth 1 https://github.com/somanoir/.noir-dotfiles.git
 cd .noir-dotfiles
 stow .
+
 # Possibly an overkill on setting up cursor theme
 gsettings set org.gnome.desktop.interface cursor-theme 'catppuccin-macchiato-lavender-cursors'
 # For bat to use specified theme
 bat cache --build
 ```
 
-4. Gtk-4 customization
+### Gtk-4 customization
 
 ```
 sudo flatpak override --filesystem=xdg-data/themes
 ```
 
-5.1. Set wallpaper on Wayland with the following command (it will later be
-handled automatically on every boot as long as swww-daemon is running)
+### Set wallpaper on Wayland with the following command (it will later be handled automatically on every boot as long as swww-daemon is running)
 
 ```
 swww img path/to/your/wallpaper.png
 ```
 
-5.2. Set wallpaper on X11 with the following command (put it into autostart of
-your WM; check names of your monitors with `xrandr` and replace HDMI-0 with
-them)
+### Set wallpaper on X11 with the following command (put it into autostart of your WM; check names of your monitors with `xrandr` and replace HDMI-0 with them)
 
 ```
-exec_always feh --bg-fill path/to/your/wallpaper.png --output HDMI-0 -z
+feh --bg-fill path/to/your/wallpaper.png --output HDMI-0 -z
 ```
 
-6. Music Player Setup (RMPC + MPD)
+### Music Player Setup (RMPC + MPD)
 
 ```
 mkdir ~/.local/share/mpd
@@ -121,8 +130,7 @@ systemctl --user enable --now mpd.service
 mpc update # To manually update music library
 ```
 
-7. (Optional) Themes can be customized through nwg-look (GTK-3), Gradience
-   (GTK-4) and kvantum, qt5ct, qt6ct (Qt)
+### (Optional) Themes can be customized through nwg-look (GTK-3), Gradience (GTK-4) and kvantum, qt5ct, qt6ct (Qt)
 
 # Known Issues
 

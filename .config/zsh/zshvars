@@ -208,3 +208,7 @@ fi
 if [ -d "$HOME/.cargo/bin" ] ;
   then PATH="$HOME/.cargo/bin:$PATH"
 fi
+
+if [ -d "/var/lib/flatpak/exports/share/applications" ] ;
+  then PATH="/var/lib/flatpak/exports/share/applications:$PATH"
+fi
