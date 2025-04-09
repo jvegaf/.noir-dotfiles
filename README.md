@@ -60,10 +60,16 @@ paru -Sy --needed niri xwayland-satellite brightnessctl pavucontrol waybar ghost
 paru -Sy --needed i3-wm i3lock autotiling dunst maim imagemagick xdotool rofi polybar feh playerctl pavucontrol brightnessctl
 ```
 
-2. Install themes and customization tools
+2.1. Install themes and customization tools
 
 ```
-paru -Sy --needed catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted tela-circle-icon-theme-dracula stow nwg-look gradience qt5ct qt6ct-kde kvantum-git kvantum-qt5
+paru -Sy --needed catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato tela-circle-icon-theme-dracula stow nwg-look
+```
+
+2.2. Install recommended fonts
+
+```
+paru -Sy --needed maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted gnu-free-fonts noto-fonts ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-droid ttf-ibm-plex ttf-liberation wqy-zenhei ttf-mona-sans apple-fonts ttf-ms-fonts nerd-fonts
 ```
 
 3. Personally, I use [stow](https://www.gnu.org/software/stow/) for managing my
@@ -117,6 +123,12 @@ mpc update # To manually update music library
 
 7. (Optional) Themes can be customized through nwg-look (GTK-3), Gradience
    (GTK-4) and kvantum, qt5ct, qt6ct (Qt)
+
+# Known Issues
+
+> Qt themes seem to behave unpredictably outside KDE Plasma (inconsistent
+> background color, broken buttons and menus, etc). Might be worth leaving them
+> with default styles.
 
 # Communication
 
