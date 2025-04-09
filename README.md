@@ -112,7 +112,7 @@ exec_always feh --bg-fill path/to/your/wallpaper.png --output HDMI-0 -z
 ```
 mkdir ~/.local/share/mpd
 touch ~/.local/share/mpd/database
-touch ~/.local/share/mpd/playlists
+mkdir ~/.local/share/mpd/playlists
 touch ~/.local/share/mpd/state
 touch ~/.local/share/mpd/sticker.sql
 
