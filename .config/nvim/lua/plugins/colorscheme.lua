@@ -10,10 +10,11 @@ return {
         transparent_background = true,
         custom_highlights = function(colors)
           return {
-            Comment = { fg = colors.flamingo },
-            TabLineSel = { bg = colors.pink },
+            Comment = { fg = colors.teal },
+            TabLineSel = { fg = colors.base, bg = colors.pink },
             CmpBorder = { fg = colors.surface2 },
             Pmenu = { bg = colors.none },
+            LineNr = { fg = colors.lavender },
           }
         end,
         integrations = {
