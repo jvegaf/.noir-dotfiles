@@ -55,7 +55,7 @@
 ### Install common utilities (X11 and Wayland)
 
 ```
-paru -Sy --needed brightnessctl playerctl pavucontrol waybar ghostty wofi mako wl-clipboard copyq neovim swww swaylock-fancy-git mpd mpc rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler dunst maim imagemagick xdotool rofi polybar feh
+paru -Sy --needed brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako wl-clipboard copyq neovim swww swaylock-fancy-git mpd mpc rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler dunst maim imagemagick xdotool rofi polybar feh
 ```
 
 ### Install Niri

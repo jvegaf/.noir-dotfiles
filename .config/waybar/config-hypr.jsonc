@@ -65,8 +65,8 @@
       "phone": " ",
       "portable": " ",
       "car": " ",
-      "default": " "
-      //"default": [" ", " ", " "]
+      "default": "🔊"
+      // "default": [" ", " ", " "]
     },
     "justify": "center"
   },
