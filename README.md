@@ -50,12 +50,15 @@
 
 # Installation
 
-## Arch(-based) distros
+<details>
+  <summary>
+    <span style="font-size: 1.5em; font-weight: bold;">Arch Linux<span>
+  </summary>
 
 ### Install common utilities (X11 and Wayland)
 
 ```
-paru -Sy --needed brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako wl-clipboard copyq neovim swww swaylock-fancy-git mpd mpc rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler dunst maim imagemagick xdotool rofi polybar feh
+paru -Sy --needed brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako wl-clipboard copyq neovim swww swaylock-fancy-git mpd mpc rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler dunst maim imagemagick xdotool rofi polybar feh zsh fzf uv zoxide lsd btop
 ```
 
 ### Install Niri
@@ -87,6 +90,45 @@ paru -Sy --needed catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato te
 ```
 paru -Sy --needed maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted gnu-free-fonts noto-fonts ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-droid ttf-ibm-plex ttf-liberation wqy-zenhei ttf-mona-sans apple-fonts ttf-ms-fonts nerd-fonts
 ```
+
+</details>
+
+<details>
+  <summary>
+    <span style="font-size: 1.5em; font-weight: bold;">Fedora<span>
+  </summary>
+
+### Enable COPR repos
+
+```
+sudo dnf copr enable lihaohong/yazi
+sudo dnf copr enable yalter/niri
+dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+```
+
+### Install common utilities (X11 and Wayland)
+
+```
+sudo dnf install zsh fzf uv zoxide lsd bat brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako copyq neovim swww mpd mpc thunar yazi dunst maim xdotool rofi polybar feh ImageMagick meson btop
+```
+
+### Install Niri
+
+```
+sudo dnf install niri xwayland-satellite xdg-desktop-portal-gnome
+```
+
+### These will need to be built from source if you want to use them (follow corresponding instructions)
+
+[RMPC (music player)](https://mierak.github.io/rmpc/next/installation/#installation-methods)
+
+### Install recommended fonts
+
+```
+sudo dnf install maple-fonts
+```
+
+</details>
 
 ### Personally, I use [stow](https://www.gnu.org/software/stow/) for managing my .dotfiles
 
