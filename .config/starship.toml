@@ -2,6 +2,7 @@ add_newline = false
 
 format = """\
 $time\
+$username\
 [](fg:#363a4f bg:#b7bdf8)\
 $directory\
 [](fg:#b7bdf8 bg:#c6a0f6)\
@@ -21,11 +22,11 @@ symbol = "  "
 style = "fg:#24273a bg:#c6a0f6"
 
 [git_status]
-format = '[$all_status]($style)'
+format = '[$all_status ]($style)'
 style = "fg:#24273a bg:#c6a0f6"
 
 [git_metrics]
-format = "([+$added]($added_style))[]($added_style)"
+format = "([+$added ]($added_style))[]($added_style)"
 added_style = "fg:#24273a bg:#c6a0f6"
 deleted_style = "fg:bright-red bg:235"
 disabled = false
@@ -47,3 +48,7 @@ disabled = false
 time_format = "%R" # Hour:Minute Format
 format = '[ 󱑍 $time ]($style)'
 style = "fg:#b7bdf8 bg:#363a4f"
+
+[username]
+format = '[$user ]($style)'
+style_root = "fg:#b7bdf8 bg:#363a4f"
