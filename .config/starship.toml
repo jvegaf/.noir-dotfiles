@@ -8,7 +8,9 @@ $directory\
 [](fg:#b7bdf8 bg:#c6a0f6)\
 $git_branch\
 $git_status\
-[](fg:#c6a0f6)\
+[](fg:#c6a0f6 bg:#8aadf4)\
+$python\
+[](fg:#8aadf4)\
 $character\
 """
 
@@ -52,3 +54,9 @@ style = "fg:#b7bdf8 bg:#363a4f"
 [username]
 format = '[$user ]($style)'
 style_root = "fg:#b7bdf8 bg:#363a4f"
+
+[python]
+# Show python version and virtual environment name
+python_binary = ["python3", "python"]
+format = "[ (${virtualenv}) ]($style)"
+style = "fg:#24273a bg:#8aadf4"
