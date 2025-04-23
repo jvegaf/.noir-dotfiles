@@ -136,6 +136,13 @@ hp-keyboard-green() {
   sudo bash -c 'echo 00FF00 > /sys/devices/platform/hp-wmi/rgb_zones/zone03'
 }
 
+hp-keyboard-red() {
+  sudo bash -c 'echo FF0000 > /sys/devices/platform/hp-wmi/rgb_zones/zone00'
+  sudo bash -c 'echo FF0000 > /sys/devices/platform/hp-wmi/rgb_zones/zone01'
+  sudo bash -c 'echo FF0000 > /sys/devices/platform/hp-wmi/rgb_zones/zone02'
+  sudo bash -c 'echo FF0000 > /sys/devices/platform/hp-wmi/rgb_zones/zone03'
+}
+
 # Universal unzip
 ex ()
 {
