@@ -1,6 +1,7 @@
 *.log
 *.bak
 .gitconfig
+.ssh
 
 .config/zsh/zhistory
 .config/zsh/zcompdump
