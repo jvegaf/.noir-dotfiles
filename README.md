@@ -103,13 +103,14 @@ paru -Sy --needed maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted g
 ```
 sudo dnf copr enable lihaohong/yazi
 sudo dnf copr enable yalter/niri
-dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
+sudo dnf copr enable solopasha/hyprland
+sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
 
 ### Install common utilities (X11 and Wayland)
 
 ```
-sudo dnf install zsh fzf uv zoxide lsd bat brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako copyq neovim swww mpd mpc thunar yazi dunst maim xdotool rofi polybar feh ImageMagick meson btop
+sudo dnf install zsh fzf uv zoxide lsd bat brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako copyq neovim vim vim-enhanced swww mpd mpc Thunar yazi dunst maim xdotool rofi polybar feh ImageMagick meson btop mpv network-manager-applet fastfetch  wlogout python3-pip python3-gobject gtk4
 ```
 
 ### Install Niri
@@ -118,14 +119,26 @@ sudo dnf install zsh fzf uv zoxide lsd bat brightnessctl playerctl pavucontrol a
 sudo dnf install niri xwayland-satellite xdg-desktop-portal-gnome
 ```
 
+### Install Hyprland
+
+```
+sudo dnf install hyprland hyprpicker pyprland hyprpolkitagent hyprshot xdg-desktop-portal-hyprland hyprlock qt5-qtwayland qt6-qtwayland cmake meson cpio pkgconf-pkg-config
+```
+
 ### These will need to be built from source if you want to use them (follow corresponding instructions)
 
 [RMPC (music player)](https://mierak.github.io/rmpc/next/installation/#installation-methods)
 
+### Install themes and customization tools
+
+```
+sudo dnf install nwg-look stow
+```
+
 ### Install recommended fonts
 
 ```
-sudo dnf install maple-fonts
+sudo dnf install maple-fonts nerd-fonts mozilla-fira-sans-fonts fontawesome-6-free-fonts
 ```
 
 </details>
