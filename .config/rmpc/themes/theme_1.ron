@@ -24,7 +24,7 @@
     symbols: ["-", ">", " "],
     track_style: (fg: "#1e2030"),
     elapsed_style: (fg: "blue"),
-    thumb_style: (fg: "blue", bg: "#1e2030"),
+    thumb_style: (fg: "blue"),
   ),
   scrollbar: (
     symbols: ["│", "█", "▲", "▼"],

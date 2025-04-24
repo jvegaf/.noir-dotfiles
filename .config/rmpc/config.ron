@@ -87,7 +87,7 @@
     queue: {
       "D":     DeleteAll,
       "<CR>":  Play,
-      "<C-s>":   Save,
+      "<C-s>": Save,
       "a":     AddToPlaylist,
       "d":     Delete,
       "i":     ShowInfo,
@@ -98,7 +98,7 @@
     case_sensitive: false,
     mode: Contains,
     tags: [
-      (value: "any",     label: "Any Tag"),
+      (value: "any",       label: "Any Tag"),
       (value: "artist",    label: "Artist"),
       (value: "album",     label: "Album"),
       (value: "title",     label: "Title"),
