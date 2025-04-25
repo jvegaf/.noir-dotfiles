@@ -1,7 +1,8 @@
 # The syntax is "key = value". The whitespace around the
 # equals doesn't matter.
 theme = catppuccin-macchiato.conf
-background-opacity = 0.60
+background-opacity = 0.70
+background-blur = true
 cursor-opacity = 0.95
 
 # Comments start with a `#` and are only valid on their own line.
