@@ -68,8 +68,16 @@
             direction: Horizontal,
             panes: [
               (
-                size: "21",
+                size: "1",
+                pane: Pane(Property(content: [(kind: Text(""))])),
+              ),
+              (
+                size: "20",
                 pane: Pane(AlbumArt),
+              ),
+              (
+                size: "2",
+                pane: Pane(Property(content: [(kind: Text(""))])),
               ),
               (
                 size: "100%",
@@ -93,6 +101,10 @@
               ),
             ]
           ),
+        ),
+        (
+          size: "2",
+          pane: Pane(Property(content: [(kind: Text(""))])),
         ),
         (
           size: "100%",
