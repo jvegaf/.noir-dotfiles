@@ -1,0 +1,37 @@
+{
+  "geometry-of-main_window_geometry": {
+    "frame_geometry": {},
+    "full_screened": false,
+    "geometry": {},
+    "maximized": true,
+    "normal_geometry": {},
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAeAAAAAAAAADGoAAAVgAAAHgAAAAAAAAAxqAAAFYAAAAAACAAAACgAAAAeAAAAAAAAADGoAAAVg"
+    },
+    "screen": {}
+  },
+  "main_window_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAH9AAAAAgAAAAAAAAAAAAAAAPwCAAAAAvsAAAAQAHQAbwBjAC0AZABvAGMAawAAAAAA/////wAAAJEA////+wAAABYAcwBlAGEAcgBjAGgALQBkAG8AYwBrAAAAAAD/////AAAApQD///8AAAABAAAAAAAAAAD8AgAAAAT7AAAAFgBsAG8AbwBrAHUAcAAtAGQAbwBjAGsAAAAAAP////8AAACSAP////sAAAAcAGIAbwBvAGsAbQBhAHIAawBzAC0AZABvAGMAawAAAAAA/////wAAAQkA////+wAAABwAaQBuAHMAcABlAGMAdABvAHIALQBkAG8AYwBrAAAAAAD/////AAAAFwD////7AAAAHgBoAGkAZwBoAGwAaQBnAGgAdABzAC0AZABvAGMAawAAAAAA/////wAAAOYA////AAAE6wAABWEAAAAEAAAABAAAAAgAAAAI/AAAAAEAAAAAAAAAAQAAAB4AYQBjAHQAaQBvAG4AcwBfAHQAbwBvAGwAYgBhAHICAAAAAP////8AAAAAAAAAAA=="
+  },
+  "old_prefs_migrated": true,
+  "session_data": {
+    "base_font_size": 22,
+    "controls_help_shown_count": 2,
+    "read_mode": "flow",
+    "standalone_font_settings": {
+      "mono_family": "Maple Mono",
+      "sans_family": "Maple Mono",
+      "serif_family": "Maple Mono"
+    },
+    "standalone_misc_settings": {
+      "remember_last_read": true,
+      "remember_window_geometry": false,
+      "save_annotations_in_ebook": true,
+      "singleinstance": false
+    },
+    "standalone_recently_opened": [],
+    "user_stylesheet": "body.calibre-viewer-scrolling::before, body.calibre-viewer-scrolling::after\n\n{ display: block; height: 100%; content: \"\"; }"
+  }
+}

@@ -1,0 +1,468 @@
+{
+  "ask_to_manage_device": [
+    "69FBB083C84FF16D4EE79A5101C06090"
+  ],
+  "book_list_pin_splitter_state": {
+    "__class__": "bytearray",
+    "__value__": "AAAA/wAAAAEAAAACAAABAAAAAEYA/////wEAAAABAA=="
+  },
+  "color_palette": "dark",
+  "cover_corner_radius": 10,
+  "cover_grid_color": [
+    80,
+    80,
+    80
+  ],
+  "cover_grid_texture": null,
+  "custom_colors_for_color_dialog": [
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ],
+    [
+      255,
+      255,
+      255,
+      255
+    ]
+  ],
+  "dark_palette_name": "__current__",
+  "dark_palettes": {
+    "__current__": {
+      "AlternateBase": "#24273a",
+      "Base": "#1e2030",
+      "BrightText": "#cad3f5",
+      "BrightText-disabled": "#cad3f5",
+      "Button": "#24273a",
+      "ButtonText": "#cad3f5",
+      "ButtonText-disabled": "#5b6078",
+      "Highlight": "#b7bdf8",
+      "HighlightedText": "#24273a",
+      "HighlightedText-disabled": "#1e2030",
+      "Link": "#f4dbd6",
+      "LinkVisited": "#8aadf4",
+      "PlaceholderText": "#cad3f5",
+      "PlaceholderText-disabled": "#cad3f5",
+      "Text": "#cad3f5",
+      "Text-disabled": "#5b6078",
+      "ToolTipBase": "#181926",
+      "ToolTipText": "#cad3f5",
+      "ToolTipText-disabled": "#cad3f5",
+      "Window": "#181926",
+      "WindowText": "#cad3f5",
+      "WindowText-disabled": "#5b6078"
+    }
+  },
+  "font": [
+    "Maple Mono",
+    12,
+    400,
+    false
+  ],
+  "font_stretch": 0,
+  "geometry-of-calibre_main_window_geometry": {
+    "frame_geometry": {
+      "height": 1377,
+      "width": 2534,
+      "x": 1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1377,
+      "width": 2534,
+      "x": 1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 1377,
+      "width": 2534,
+      "x": 1920,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAeAAAAAAAAAEWUAAAVgAAAHgAAAAAAAABFlAAAFYAAAAAACAAAACgAAAAeAAAAAAAAAEWUAAAVg"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560,
+        "x": 1920,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "ViewSonic Corporation",
+      "model": "VA2719-2K",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-choose-icon-theme-dialog-geometry": {
+    "frame_geometry": {
+      "height": 1005,
+      "width": 900,
+      "x": 0,
+      "y": 180
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 1005,
+      "width": 900,
+      "x": 0,
+      "y": 180
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 1005,
+      "width": 900,
+      "x": 0,
+      "y": 180
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAtAAAA4MAAASgAAAAAAAAALQAAAODAAAEoAAAAAAAAAAAB4AAAAAAAAAAtAAAA4MAAASg"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 180
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "AU Optronics",
+      "model": "0x82ED",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 180
+      }
+    }
+  },
+  "geometry-of-customize-palette-geometry": {
+    "frame_geometry": {
+      "height": 640,
+      "width": 826,
+      "x": 0,
+      "y": 180
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 640,
+      "width": 826,
+      "x": 0,
+      "y": 180
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 640,
+      "width": 826,
+      "x": 0,
+      "y": 180
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAtAAAAzkAAAMzAAAAAAAAALQAAAM5AAADMwAAAAAAAAAAB4AAAAAAAAAAtAAAAzkAAAMz"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 180
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "AU Optronics",
+      "model": "0x82ED",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 180
+      }
+    }
+  },
+  "geometry-of-duplicates-question-dialog-geometry": {
+    "frame_geometry": {
+      "height": 384,
+      "width": 686,
+      "x": 1920,
+      "y": 0
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 384,
+      "width": 686,
+      "x": 1920,
+      "y": 0
+    },
+    "maximized": true,
+    "normal_geometry": {
+      "height": 384,
+      "width": 686,
+      "x": 1920,
+      "y": 0
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAeAAAAAAAAACi0AAAF/AAAHgAAAAAAAAAotAAABfwAAAAACAAAACgAAAAeAAAAAAAAACi0AAAF/"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560,
+        "x": 1920,
+        "y": 0
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "ViewSonic Corporation",
+      "model": "VA2719-2K",
+      "name": "HDMI-A-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1440,
+        "width": 2560
+      },
+      "virtual_geometry": {
+        "height": 1440,
+        "width": 4480,
+        "x": 0,
+        "y": 0
+      }
+    }
+  },
+  "geometry-of-preferences dialog geometry": {
+    "frame_geometry": {
+      "height": 720,
+      "width": 1387,
+      "x": 0,
+      "y": 180
+    },
+    "full_screened": false,
+    "geometry": {
+      "height": 720,
+      "width": 1387,
+      "x": 0,
+      "y": 180
+    },
+    "maximized": false,
+    "normal_geometry": {
+      "height": 720,
+      "width": 1387,
+      "x": 0,
+      "y": 180
+    },
+    "qt": {
+      "__class__": "bytearray",
+      "__value__": "AdnQywADAAAAAAAAAAAAtAAABWoAAAODAAAAAAAAALQAAAVqAAADgwAAAAAAAAAAB4AAAAAAAAAAtAAABWoAAAOD"
+    },
+    "screen": {
+      "depth": 32,
+      "device_pixel_ratio": 1.0,
+      "geometry_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 180
+      },
+      "index_in_screens_list": 0,
+      "manufacturer": "AU Optronics",
+      "model": "0x82ED",
+      "name": "eDP-1",
+      "serial": "",
+      "size_in_logical_pixels": {
+        "height": 1080,
+        "width": 1920
+      },
+      "virtual_geometry": {
+        "height": 1080,
+        "width": 1920,
+        "x": 0,
+        "y": 180
+      }
+    }
+  },
+  "grid view visible": false,
+  "library_usage_stats": {
+  },
+  "light_palette_name": "__current__",
+  "light_palettes": {
+    "__current__": {
+      "AlternateBase": "#eff1f5",
+      "Base": "#e6e9ef",
+      "BrightText": "#4c4f69",
+      "BrightText-disabled": "#4c4f69",
+      "Button": "#eff1f5",
+      "ButtonText": "#4c4f69",
+      "ButtonText-disabled": "#acb0be",
+      "Highlight": "#b2bcf0",
+      "HighlightedText": "#4c4f69",
+      "HighlightedText-disabled": "#e6e9ef",
+      "Link": "#dc8a78",
+      "LinkVisited": "#1e66f5",
+      "PlaceholderText": "#4c4f69",
+      "PlaceholderText-disabled": "#4c4f69",
+      "Text": "#4c4f69",
+      "Text-disabled": "#acb0be",
+      "ToolTipBase": "#dce0e8",
+      "ToolTipText": "#4c4f69",
+      "ToolTipText-disabled": "#4c4f69",
+      "Window": "#dce0e8",
+      "WindowText": "#4c4f69",
+      "WindowText-disabled": "#acb0be"
+    }
+  },
+  "main_window_central_widget_state": {
+    "layout": "narrow",
+    "narrow_desires": {
+      "book_details_height": 0.23059866962305986,
+      "cover_browser_width": 0.3494704992435703,
+      "quick_view_height": 0.25609756097560976,
+      "tag_browser_width": 0.24962178517397882
+    },
+    "narrow_visibility": {
+      "book_details": true,
+      "book_list": true,
+      "cover_browser": false,
+      "quick_view": false,
+      "tag_browser": true
+    },
+    "wide_desires": {
+      "book_details_width": 0.29954614220877457,
+      "cover_browser_height": 0.28600823045267487,
+      "quick_view_height": 0.23765432098765432,
+      "tag_browser_width": 0.29954614220877457
+    },
+    "wide_visibility": {
+      "book_details": true,
+      "book_list": true,
+      "cover_browser": false,
+      "quick_view": false,
+      "tag_browser": true
+    }
+  },
+  "quick_start_guide_added": true,
+  "qv_open_at_shutdown": false,
+  "search bar visible": true,
+  "show_emblems": false,
+  "tag browser search box visible": false
+}
