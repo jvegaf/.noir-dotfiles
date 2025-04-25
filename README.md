@@ -58,7 +58,7 @@
 ### Install common utilities (X11 and Wayland)
 
 ```
-paru -Sy --needed brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako wl-clipboard copyq neovim swww swaylock-fancy-git mpd mpc rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler dunst maim imagemagick xdotool rofi polybar feh zsh fzf uv zoxide lsd btop
+paru -Sy --needed brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako wl-clipboard copyq xclip neovim swww swaylock-fancy-git mpd mpc rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler dunst maim imagemagick xdotool rofi polybar feh zsh fzf uv zoxide lsd btop
 ```
 
 ### Install Niri
@@ -110,7 +110,7 @@ sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/t
 ### Install common utilities (X11 and Wayland)
 
 ```
-sudo dnf install zsh fzf uv zoxide lsd bat brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako copyq neovim vim vim-enhanced swww mpd mpc Thunar yazi dunst maim xdotool rofi polybar feh ImageMagick meson btop mpv network-manager-applet fastfetch  wlogout python3-pip python3-gobject gtk4
+sudo dnf install zsh fzf uv zoxide lsd bat brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako copyq xclip neovim vim vim-enhanced swww mpd mpc Thunar yazi dunst maim xdotool rofi polybar feh ImageMagick meson btop mpv network-manager-applet fastfetch  wlogout python3-pip python3-gobject gtk4 codium codium-marketplace xinput
 ```
 
 ### Install Niri
@@ -123,6 +123,12 @@ sudo dnf install niri xwayland-satellite xdg-desktop-portal-gnome
 
 ```
 sudo dnf install hyprland hyprpicker pyprland hyprpolkitagent hyprshot xdg-desktop-portal-hyprland hyprlock qt5-qtwayland qt6-qtwayland cmake meson cpio pkgconf-pkg-config
+```
+
+### Install AwesomeWM
+
+```
+sudo dnf install gnome-session-xsession xorg-x11-xinit-session awesome
 ```
 
 ### These will need to be built from source if you want to use them (follow corresponding instructions)
@@ -200,6 +206,8 @@ mpc update # To manually update music library
 > Qt themes seem to behave unpredictably outside KDE Plasma (inconsistent
 > background color, broken buttons and menus, etc). Might be worth leaving them
 > with default styles.
+>
+> On Niri, Discord screen sharing doesn't seem to work.
 
 # Communication
 
