@@ -50,6 +50,17 @@
 
 # Installation
 
+# Automated
+
+I've made automated scripts to install all necessary packages and pull the dotfiles on your machine. Make sure to read the instructions in their corresponding repositories:
+
+## [Fedora](https://github.com/somanoir/noir-fedorainstall)
+## Arch Linux (🚧 under construction 🚧)
+
+# Manual
+
+Alternatively, you may follow the following instructions to set everything up manually:
+
 <details>
   <summary>
     <span style="font-size: 1.5em; font-weight: bold;">Arch Linux<span>
@@ -203,15 +214,20 @@ mpc update # To manually update music library
 
 # Known Issues
 
-> Qt themes seem to behave unpredictably outside KDE Plasma (inconsistent
+> - Qt themes seem to behave unpredictably outside KDE Plasma (inconsistent
 > background color, broken buttons and menus, etc). Might be worth leaving them
 > with default styles.
->
-> On Niri, Discord screen sharing doesn't seem to work.
+> - On Niri, Discord screen sharing doesn't seem to work.
 
 # Communication
 
-If you have any questions or suggestions regarding the project, feel free to
+- If you have any questions or suggestions regarding the project, feel free to
 join [Discussions](https://github.com/somanoir/.noir-dotfiles/discussions).
+- Found a bug? Open an [Issue](https://github.com/somanoir/.noir-dotfiles/issues).
 
-Found a bug? Open an [Issue](https://github.com/somanoir/.noir-dotfiles/issues).
+# Special thanks
+
+I would like to express special thanks to the following people for their tremendous work as well as direct and indirect contributions to this project:
+
+- [mierak](https://github.com/mierak) for making a great TUI music player [rmpc](https://github.com/mierak/rmpc) and a multitude of helpful suggestions in setting up my config files for the player.
+- [Eisa01](https://github.com/Eisa01) for their [mpv-scripts](https://github.com/Eisa01/mpv-scripts) that add vast functionality to the mpv player.
