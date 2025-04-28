@@ -114,7 +114,8 @@ alias v='nvim'
 alias sudov='sudo nvim'
 alias code='codium'
 alias cw="swww img"
-alias yt-mp3="yt-dlp --extract-audio --audio-format mp3" # Pass YT link in double quotes aka "https://..."
+alias yt-mp3="yt-dlp --extract-audio --audio-format mp3 --embed-thumbnail" # Pass YT link in double quotes aka "https://..."
+alias yt-mp3-square="yt-dlp --extract-audio --audio-format mp3 --embed-thumbnail --ppa 'EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'\"'\"'if(gt(ih,iw),iw,ih)'\"':'\"'if(gt(iw,ih),ih,iw)'\"'\"'\"'" # Pass YT link in double quotes aka "https://..."
 
 ## VirusTotal
 alias vts='vt scan file'
