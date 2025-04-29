@@ -9,3 +9,8 @@
 .config/gtk-3.0/bookmarks
 .config/cava/themes
 .config/cava/shaders
+.config/calibre/dynamic.pickle.json
+.config/calibre/global.py.json
+.config/calibre/gui.json
+.config/calibre/viewer-webengine.json
+.config/calibre/viewer
