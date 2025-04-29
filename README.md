@@ -218,6 +218,7 @@ mpc update # To manually update music library
 > background color, broken buttons and menus, etc). Might be worth leaving them
 > with default styles.
 > - On Niri, Discord screen sharing doesn't seem to work.
+> - On Fedora, packaged cava doesn't respect orientation = horizontal property. Building cava from source fixes the issue. (https://github.com/karlstav/cava?tab=readme-ov-file#from-source)
 
 # Communication
 
