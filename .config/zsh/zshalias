@@ -43,6 +43,7 @@ alias gk='gitk --all&'
 alias gst='git stash'
 alias gstp='git stash pop'
 alias gcl='git clone'
+alias gcld1='git clone --depth 1'
 alias gra='git remote add origin'
 alias glfsverifyfalse='git config --global http.sslVerify false'
 alias gsuir='git submodule update --init --recursive'
@@ -116,6 +117,7 @@ alias code='codium'
 alias cw="swww img"
 alias yt-mp3="yt-dlp --extract-audio --audio-format mp3 --embed-thumbnail" # Pass YT link in double quotes aka "https://..."
 alias yt-mp3-square="yt-dlp --extract-audio --audio-format mp3 --embed-thumbnail --ppa 'EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'\"'\"'if(gt(ih,iw),iw,ih)'\"':'\"'if(gt(iw,ih),ih,iw)'\"'\"'\"'" # Pass YT link in double quotes aka "https://..."
+alias yt-thumbnail="yt-dlp --skip-download --write-thumbnail"
 
 ## VirusTotal
 alias vts='vt scan file'
