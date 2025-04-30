@@ -21,82 +21,78 @@
   </div>
 </details>
 
-# Dependencies
+# Featured Software
 
-- **WM:** [Niri](https://github.com/YaLTeR/niri) /
-  [Hyprland](https://github.com/hyprwm/Hyprland) /
-  [i3](https://github.com/i3/i3)
-- **Bar:** [Waybar](https://github.com/Alexays/Waybar)
-- **File Manager**: [Yazi](https://github.com/sxyazi/yazi) /
-  [Thunar](https://gitlab.xfce.org/xfce/thunar)
-- **Music Player:** [RMPC](https://github.com/mierak/rmpc) +
-  [MPD](https://github.com/MusicPlayerDaemon/MPD)
-- **Editor:** [Neovim](https://github.com/neovim/neovim)
-- **Terminal:** [Ghostty](https://github.com/ghostty-org/ghostty)
-- **Shell:** Zsh +
-  [Zinit Plugin Manager](https://github.com/zdharma-continuum/zinit) +
-  [Starship Prompt](https://starship.rs/)
-- **Lockscreen:** swaylock-fancy / hyprlock
-- **Wallpaper Manager:** [SWWW](https://github.com/LGFae/swww) /
-  [Feh](https://github.com/derf/feh)
-- **Wallpapers:**
-  [Link](https://github.com/somanoir/.noir-dotfiles/tree/master/.local/share/backgrounds)
-- **Font:** [Maple Mono](https://github.com/subframe7536/maple-font)
-- **GTK Theme:** [Catppuccin-Macchiato](https://github.com/catppuccin/gtk)
-- **Qt Theme:** [Catppuccin-Macchiato](https://github.com/catppuccin/qt5ct)
-- **Cursor:** [Catppuccin-Macchiato](https://github.com/catppuccin/cursors)
-- **Icon Theme:**
-  [Tela-circle](https://github.com/vinceliuice/Tela-circle-icon-theme)
+|                   |                                                                                                                              |                                               |                                |
+| ----------------- | ---------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------- | ------------------------------ |
+| WM                | [Hyprland](https://github.com/hyprwm/Hyprland)                                                                               | [Niri](https://github.com/YaLTeR/niri)        | [i3](https://github.com/i3/i3) |
+| Bar               | [Waybar](https://github.com/Alexays/Waybar)                                                                                  |                                               |                                |
+| File Manager      | [Yazi](https://github.com/sxyazi/yazi)                                                                                       | [Thunar](https://gitlab.xfce.org/xfce/thunar) |                                |
+| Music Player      | [RMPC](https://github.com/mierak/rmpc) + [MPD](https://github.com/MusicPlayerDaemon/MPD)                                     |                                               |                                |
+| Editor            | [Neovim](https://github.com/neovim/neovim)                                                                                   |                                               |                                |
+| Terminal          | [Ghostty](https://github.com/ghostty-org/ghostty)                                                                            |                                               |                                |
+| Shell             | Zsh + <br> [Zinit Plugin Manager](https://github.com/zdharma-continuum/zinit) + <br> [Starship Prompt](https://starship.rs/) |                                               |                                |
+| Lockscreen        | hyprlock                                                                                                                     | swaylock-fancy                                |                                |
+| Wallpaper Manager | [SWWW](https://github.com/LGFae/swww)                                                                                        | [Feh](https://github.com/derf/feh)            |                                |
+| Wallpapers        | [Link](https://github.com/somanoir/.noir-dotfiles/tree/master/.local/share/backgrounds)                                      |                                               |                                |
+| Font              | [Maple Mono](https://github.com/subframe7536/maple-font)                                                                     |                                               |                                |
+| GTK Theme         | [Catppuccin-Macchiato](https://github.com/catppuccin/gtk)                                                                    |                                               |                                |
+| Qt Theme          | [Catppuccin-Macchiato](https://github.com/catppuccin/qt5ct)                                                                  |                                               |                                |
+| Cursor            | [Catppuccin-Macchiato](https://github.com/catppuccin/cursors)                                                                |                                               |                                |
+| Icon Theme        | [Tela-circle](https://github.com/vinceliuice/Tela-circle-icon-theme)                                                         |                                               |                                |
 
 # Installation
 
-# Automated
+## Automated
 
-I've made automated scripts to install all necessary packages and pull the dotfiles on your machine. Make sure to read the instructions in their corresponding repositories:
+I've made automated scripts to install all necessary packages and pull the
+dotfiles on your machine. Make sure to read the instructions in their
+corresponding repositories.
 
-## [Fedora](https://github.com/somanoir/noir-fedorainstall)
-## Arch Linux (🚧 under construction 🚧)
+- [Fedora](https://github.com/somanoir/noir-fedorainstall)
+- Arch Linux (🚧 under construction 🚧)
 
-# Manual
+## Manual
 
-Alternatively, you may follow the following instructions to set everything up manually:
+Alternatively, you may follow the following instructions to set everything up
+manually.
 
 <details>
   <summary>
-    <span style="font-size: 1.5em; font-weight: bold;">Arch Linux<span>
+    <span style="font-size: 1.2em; font-weight: bold;">Arch Linux<span>
   </summary>
 
-### Install common utilities (X11 and Wayland)
+##### Install common utilities (X11 and Wayland)
 
 ```
 paru -Sy --needed brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako wl-clipboard copyq xclip neovim swww swaylock-fancy-git mpd mpc rmpc yazi thunar thunar-archive-plugin thunar-media-tags-plugin thunar-shares-plugin thunar-vcs-plugin thunar-volman tumbler dunst maim imagemagick xdotool rofi polybar feh zsh fzf uv zoxide lsd btop
 ```
 
-### Install Niri
+##### Install Niri
 
 ```
 paru -Sy --needed niri xwayland-satellite xdg-desktop-portal-gnome
 ```
 
-### Install Hyprland
+##### Install Hyprland
 
 ```
 paru -Sy --needed hyprland hyprpicker pyprland hyprpolkitagent hyprshot xdg-desktop-portal-hyprland hyprlock
 ```
 
-### Install i3
+##### Install i3
 
 ```
 paru -Sy --needed i3-wm i3lock autotiling
 ```
 
-### Install themes and customization tools
+##### Install themes and customization tools
 
 ```
 paru -Sy --needed catppuccin-gtk-theme-macchiato catppuccin-cursors-macchiato tela-circle-icon-theme-dracula stow nwg-look
 ```
 
-### Install recommended fonts
+##### Install recommended fonts
 
 ```
 paru -Sy --needed maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted gnu-free-fonts noto-fonts ttf-bitstream-vera ttf-croscore ttf-dejavu ttf-droid ttf-ibm-plex ttf-liberation wqy-zenhei ttf-mona-sans apple-fonts ttf-ms-fonts nerd-fonts
@@ -106,10 +102,10 @@ paru -Sy --needed maplemono-ttf maplemono-nf-unhinted maplemono-nf-cn-unhinted g
 
 <details>
   <summary>
-    <span style="font-size: 1.5em; font-weight: bold;">Fedora<span>
+    <span style="font-size: 1.2em; font-weight: bold;">Fedora<span>
   </summary>
 
-### Enable COPR repos
+##### Enable COPR repos
 
 ```
 sudo dnf copr enable lihaohong/yazi
@@ -118,41 +114,41 @@ sudo dnf copr enable solopasha/hyprland
 sudo dnf install --nogpgcheck --repofrompath 'terra,https://repos.fyralabs.com/terra$releasever' terra-release
 ```
 
-### Install common utilities (X11 and Wayland)
+##### Install common utilities (X11 and Wayland)
 
 ```
 sudo dnf install zsh fzf uv zoxide lsd bat brightnessctl playerctl pavucontrol alsa-utils waybar ghostty wofi mako copyq xclip neovim vim vim-enhanced swww mpd mpc Thunar yazi dunst maim xdotool rofi polybar feh ImageMagick meson btop mpv network-manager-applet fastfetch  wlogout python3-pip python3-gobject gtk4 codium codium-marketplace xinput
 ```
 
-### Install Niri
+##### Install Niri
 
 ```
 sudo dnf install niri xwayland-satellite xdg-desktop-portal-gnome
 ```
 
-### Install Hyprland
+##### Install Hyprland
 
 ```
 sudo dnf install hyprland hyprpicker pyprland hyprpolkitagent hyprshot xdg-desktop-portal-hyprland hyprlock qt5-qtwayland qt6-qtwayland cmake meson cpio pkgconf-pkg-config
 ```
 
-### Install AwesomeWM
+##### Install AwesomeWM
 
 ```
 sudo dnf install gnome-session-xsession xorg-x11-xinit-session awesome
 ```
 
-### These will need to be built from source if you want to use them (follow corresponding instructions)
+##### These will need to be built from source if you want to use them (follow corresponding instructions)
 
 [RMPC (music player)](https://mierak.github.io/rmpc/next/installation/#installation-methods)
 
-### Install themes and customization tools
+##### Install themes and customization tools
 
 ```
 sudo dnf install nwg-look stow
 ```
 
-### Install recommended fonts
+##### Install recommended fonts
 
 ```
 sudo dnf install maple-fonts nerd-fonts mozilla-fira-sans-fonts fontawesome-6-free-fonts
@@ -160,7 +156,7 @@ sudo dnf install maple-fonts nerd-fonts mozilla-fira-sans-fonts fontawesome-6-fr
 
 </details>
 
-### Personally, I use [stow](https://www.gnu.org/software/stow/) for managing my .dotfiles
+##### Personally, I use [stow](https://www.gnu.org/software/stow/) for managing my .dotfiles
 
 ```
 cd ~
@@ -174,13 +170,13 @@ gsettings set org.gnome.desktop.interface cursor-theme 'catppuccin-macchiato-lav
 bat cache --build
 ```
 
-### Gtk-4 customization
+##### Gtk-4 customization
 
 ```
 sudo flatpak override --filesystem=xdg-data/themes
 ```
 
-### Set wallpaper
+##### Set wallpaper
 
 On Wayland: with the following command (it will later be handled automatically
 on every boot as long as swww-daemon is running)
@@ -196,7 +192,7 @@ names of your monitors with `xrandr` and replace HDMI-0 with them)
 feh --bg-fill path/to/your/wallpaper.png --output HDMI-0 -z
 ```
 
-### Music Player Setup (RMPC + MPD)
+##### Music Player Setup (RMPC + MPD)
 
 ```
 mkdir ~/.local/share/mpd
@@ -206,29 +202,36 @@ touch ~/.local/share/mpd/state
 touch ~/.local/share/mpd/sticker.sql
 
 systemctl --user enable --now mpd.service
-
 mpc update # To manually update music library
 ```
 
-### (Optional) Themes can be customized through nwg-look (GTK-3), Gradience (GTK-4) and kvantum, qt5ct, qt6ct (Qt)
+##### (Optional) Themes can be customized through nwg-look (GTK-3), Gradience (GTK-4) and kvantum, qt5ct, qt6ct (Qt)
 
 # Known Issues
 
 > - Qt themes seem to behave unpredictably outside KDE Plasma (inconsistent
-> background color, broken buttons and menus, etc). Might be worth leaving them
-> with default styles.
+>   background color, broken buttons and menus, etc). Might be worth leaving
+>   them with default styles.
 > - On Niri, Discord screen sharing doesn't seem to work.
-> - On Fedora, packaged cava doesn't respect orientation = horizontal property. Building cava from source fixes the issue. (https://github.com/karlstav/cava?tab=readme-ov-file#from-source)
+> - On Fedora, packaged cava doesn't respect orientation = horizontal property.
+>   Building cava from source fixes the issue.
+>   (https://github.com/karlstav/cava?tab=readme-ov-file#from-source)
 
-# Communication
+# Feedback
 
 - If you have any questions or suggestions regarding the project, feel free to
-join [Discussions](https://github.com/somanoir/.noir-dotfiles/discussions).
-- Found a bug? Open an [Issue](https://github.com/somanoir/.noir-dotfiles/issues).
+  join [Discussions](https://github.com/somanoir/.noir-dotfiles/discussions).
+- Found a bug? Open an
+  [Issue](https://github.com/somanoir/.noir-dotfiles/issues).
 
 # Special thanks
 
-I would like to express special thanks to the following people for their tremendous work as well as direct and indirect contributions to this project:
+I would like to express special thanks to the following people for their
+tremendous work as well as direct and indirect contributions to this project:
 
-- [mierak](https://github.com/mierak) for making a great TUI music player [rmpc](https://github.com/mierak/rmpc) and a multitude of helpful suggestions in setting up my config files for the player.
-- [Eisa01](https://github.com/Eisa01) for their [mpv-scripts](https://github.com/Eisa01/mpv-scripts) that add vast functionality to the mpv player.
+- [mierak](https://github.com/mierak) for making a great TUI music player
+  [rmpc](https://github.com/mierak/rmpc) and a multitude of helpful suggestions
+  in setting up my config files for the player.
+- [Eisa01](https://github.com/Eisa01) for their
+  [mpv-scripts](https://github.com/Eisa01/mpv-scripts) that add vast
+  functionality to the mpv player.
