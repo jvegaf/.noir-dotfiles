@@ -23,4 +23,4 @@ source ~/Code/ai/ComfyUI/.venv/bin/activate
 #     fi
 # done
 
-uv run ~/Code/ai/ComfyUI/main.py
+uv run ~/Code/ai/ComfyUI/main.py --lowvram --disable-smart-memory
