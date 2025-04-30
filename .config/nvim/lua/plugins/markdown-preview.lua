@@ -7,6 +7,6 @@ return {
     if vim.fn.executable("npx") then
       vim.g.mkdp_filetypes = { "markdown" }
     end
-    vim.g.mkdp_markdown_css = "/home/$USER/.config/nvim/lua/plugins/md_preview.css"
+    vim.g.mkdp_markdown_css = "/home/$USER/.config/nvim/lua/plugins/markdown-preview.css"
   end,
 }

@@ -81,4 +81,4 @@ copy_keymap("n", "gcc", "<C-/>")
 copy_keymap("v", "gc", "<C-/>")
 
 -- markdown
-map("n", "<Leader>mrt", "<cmd>RenderMarkdown toggle<CR>", { desc = "Toggle state of render-markdown plugin" })
+map("n", "<Leader>md", "<cmd>MarkdownPreview<CR>", { desc = "Start Markdown Preview in a browser" })
