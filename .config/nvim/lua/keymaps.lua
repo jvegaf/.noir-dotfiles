@@ -82,3 +82,6 @@ copy_keymap("v", "gc", "<C-/>")
 
 -- markdown
 map("n", "<Leader>md", "<cmd>MarkdownPreview<CR>", { desc = "Start Markdown Preview in a browser" })
+
+-- greeter
+map("n", "<Leader>na", "<cmd>Alpha<CR>", { desc = "Open Nvim Greeter" })
