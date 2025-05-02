@@ -3,34 +3,40 @@ add_newline = false
 format = """\
 $time\
 $username\
-[](fg:#363a4f bg:#b7bdf8)\
+[](fg:#816D5F bg:#D9B154)\
 $directory\
-[](fg:#b7bdf8 bg:#c6a0f6)\
+[](fg:#D9B154 bg:#FCC440)\
 $git_branch\
 $git_status\
-[](fg:#c6a0f6 bg:#8aadf4)\
+[](fg:#FCC440 bg:#88786D)\
 $python\
-[](fg:#8aadf4)\
+[](fg:#88786D)\
 $character\
 """
 
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+format = '[ 󱑍 $time ]($style)'
+style = "fg:#322D29 bg:#816D5F"
+
 [directory]
 format = "[ $path ]($style)"
-style = "fg:#24273a bg:#b7bdf8"
+style = "fg:#322D29 bg:#D9B154"
 
 [git_branch]
 format = '[ $symbol$branch(:$remote_branch) ]($style)'
 symbol = "  "
-style = "fg:#24273a bg:#c6a0f6"
+style = "fg:#322D29 bg:#FCC440"
 
 [git_status]
 format = '[$all_status ]($style)'
-style = "fg:#24273a bg:#c6a0f6"
+style = "fg:#322D29 bg:#FCC440"
 
 [git_metrics]
 format = "([+$added ]($added_style))[]($added_style)"
-added_style = "fg:#24273a bg:#c6a0f6"
-deleted_style = "fg:bright-red bg:235"
+added_style = "fg:#322D29 bg:#FCC440"
+deleted_style = "fg:#322D29 bg:#FCC440"
 disabled = false
 
 [hg_branch]
@@ -43,20 +49,14 @@ style = "fg:bright-white bg:18"
 
 [character]
 success_symbol = '[](bold green)'
-error_symbol = '[ ✗](#ed8796)'
-
-[time]
-disabled = false
-time_format = "%R" # Hour:Minute Format
-format = '[ 󱑍 $time ]($style)'
-style = "fg:#b7bdf8 bg:#363a4f"
+error_symbol = '[ ✗]()'
 
 [username]
 format = '[$user ]($style)'
-style_root = "fg:#b7bdf8 bg:#363a4f"
+style_root = "fg:#FFF3EB bg:#816D5F"
 
 [python]
 # Show python version and virtual environment name
 python_binary = ["python3", "python"]
 format = "[ (${virtualenv}) ]($style)"
-style = "fg:#24273a bg:#8aadf4"
+style = "fg:#322D29 bg:#88786D"
