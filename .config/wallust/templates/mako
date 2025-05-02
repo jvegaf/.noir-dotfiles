@@ -1,10 +1,10 @@
 font="Maple Mono 12"
-text-color=#B5A9A1
+text-color={{foreground}}
 
-background-color=#322D29
+background-color={{background}}
 margin=25
 
-border-color=#D9B154
+border-color={{color2}}
 border-size=3
 border-radius=10
 
