@@ -1,3 +1,5 @@
+@import url("themes/colors.css");
+
 * {
   font-family: "Maple Mono";
   font-size: 10pt;
@@ -44,11 +46,11 @@
 #custom-power-menu {
   margin: 0;
   padding: 0 10px;
-  color: #ffe6ff;
-  background-color: #0a0a1a;
+  color: @foreground;
+  background-color: @background;
   border: 2px;
   border-style: solid;
-  border-color: #8caaee;
+  border-color: @color2;
   border-radius: 7px;
 }
 
@@ -62,7 +64,7 @@
 
 #tray > .needs-attention {
   -gtk-icon-effect: highlight;
-  background-color: #dd7878;
+  background-color: @color5;
   border-radius: 100px;
 }
 
@@ -84,7 +86,7 @@
 
 #workspaces button.active,
 #workspaces button.focused {
-  color: #ffe6ff;
+  color: @foreground;
   background-color: transparent;
 }
 
@@ -101,7 +103,7 @@
 }
 
 #battery {
-  color: #c0caf5;
+  color: @foreground;
 }
 
 #battery.charging,
@@ -132,6 +134,6 @@ label:focus {
 @keyframes blink {
   to {
     background-color: rgba(30, 34, 42, 0.5);
-    color: #abb2bf;
+    color: @color15;
   }
 }
