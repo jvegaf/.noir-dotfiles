@@ -1,0 +1,62 @@
+add_newline = false
+
+format = """\
+$time\
+$username\
+[](fg:{{color1}} bg:{{color2}})\
+$directory\
+[](fg:{{color2}} bg:{{color3}})\
+$git_branch\
+$git_status\
+[](fg:{{color3}} bg:{{color4}})\
+$python\
+[](fg:{{color4}})\
+$character\
+"""
+
+[time]
+disabled = false
+time_format = "%R" # Hour:Minute Format
+format = '[ 󱑍 $time ]($style)'
+style = "fg:{{background}} bg:{{color1}}"
+
+[directory]
+format = "[ $path ]($style)"
+style = "fg:{{background}} bg:{{color2}}"
+
+[git_branch]
+format = '[ $symbol$branch(:$remote_branch) ]($style)'
+symbol = "  "
+style = "fg:{{background}} bg:{{color3}}"
+
+[git_status]
+format = '[$all_status ]($style)'
+style = "fg:{{background}} bg:{{color3}}"
+
+[git_metrics]
+format = "([+$added ]($added_style))[]($added_style)"
+added_style = "fg:{{background}} bg:{{color3}}"
+deleted_style = "fg:{{background}} bg:{{color3}}"
+disabled = false
+
+[hg_branch]
+format = "[ $symbol$branch ]($style)"
+symbol = " "
+
+[cmd_duration]
+format = "[ 󱑍 $duration ]($style)"
+style = "fg:bright-white bg:18"
+
+[character]
+success_symbol = '[](bold green)'
+error_symbol = '[ ✗]({{bold_red}})'
+
+[username]
+format = '[$user ]($style)'
+style_root = "fg:{{color15}} bg:{{color1}}"
+
+[python]
+# Show python version and virtual environment name
+python_binary = ["python3", "python"]
+format = "[ (${virtualenv}) ]($style)"
+style = "fg:{{background}} bg:{{color4}}"
