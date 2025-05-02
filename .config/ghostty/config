@@ -1,7 +1,7 @@
 # The syntax is "key = value". The whitespace around the
 # equals doesn't matter.
-theme = catppuccin-macchiato.conf
-background-opacity = 0.70
+theme = colors.conf
+background-opacity = 0.7
 background-blur = true
 cursor-opacity = 0.95
 
