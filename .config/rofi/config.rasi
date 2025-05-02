@@ -15,7 +15,7 @@ configuration {
 
 * {
   background-color: transparent;
-  text-color:       @fg0;
+  text-color:       @foreground;
 
   margin:  0px;
   padding: 0px;
@@ -24,13 +24,13 @@ configuration {
 
 window {
   location:      center;
-  width:         480;
+  width:         800;
   y-offset:      -20;
   border-radius: 8px;
 
-  border:           1px;
-  border-color:     @bg3;
-  background-color: @bg0;
+  border:           2px;
+  border-color:     @color2;
+  background-color: @background;
 }
 
 mainbox {
@@ -38,8 +38,8 @@ mainbox {
 }
 
 inputbar {
-  background-color: @bg1;
-  border-color:     @bg3;
+  background-color: @color10;
+  border-color:     @color2;
   border-radius: 8px;
   border:        2px;
 
@@ -49,24 +49,24 @@ inputbar {
 }
 
 prompt {
-  text-color: @blue;
+  text-color: @color4;
 }
 
 entry {
   placeholder:       "Search";
-  placeholder-color: @fg0;
+  placeholder-color: @foreground;
 }
 
 message {
   margin:           12px 0 0;
   border-radius:    8px;
-  border-color:     @bg2;
-  background-color: @bg2;
+  border-color:     @color2;
+  background-color: @color10;
 }
 
 textbox {
   padding:          8px 24px;
-  background-color: @bg2;
+  background-color: @color10;
 }
 
 listview {
@@ -84,15 +84,16 @@ element {
 }
 
 element normal urgent {
-text-color: @urgent;
+  text-color: @color9;
 }
 
 element normal active {
-  text-color: @accent;
+  text-color: @color7;
 }
 
 element selected normal, element selected active {
-  background-color: @bg2;
+  background-color: @color2;
+  text-color: @color10;
 }
 
 element-icon {
