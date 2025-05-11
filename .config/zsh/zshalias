@@ -105,7 +105,8 @@ alias own='sudo chown -R $USER:$GROUP'
 alias pk='pkill -f'
 alias pksysset='pkill -f systemsettings' # kill KDE settings app in case it gets stuck
 alias nvidia-watch='watch -n 0.5 nvidia-smi'
-alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg"
+# alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg" # Arch
+alias grub-update="sudo grub2-mkconfig -o /boot/grub2/grub.cfg" # Fedora
 alias mirrors-rank="sudo reflector --verbose --latest 5 --country 'Sweden' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
 alias gpu-driver-check="lspci -nnk | egrep -i --color 'vga|3d|2d' -A3"
 alias touchpad-fix='xinput set-prop "ELAN0711:00 04F3:30EB Touchpad" "libinput Tapping Enabled" 1'
@@ -117,11 +118,11 @@ alias code='codium'
 alias yt-mp3="yt-dlp --extract-audio --audio-format mp3 --embed-thumbnail" # Pass YT link in double quotes aka "https://..."
 alias yt-mp3-square="yt-dlp --extract-audio --audio-format mp3 --embed-thumbnail --ppa 'EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'\"'\"'if(gt(ih,iw),iw,ih)'\"':'\"'if(gt(iw,ih),ih,iw)'\"'\"'\"'" # Pass YT link in double quotes aka "https://..."
 alias yt-thumbnail="yt-dlp --skip-download --write-thumbnail"
-alias cw="swww img"
+alias cw="swww img --transition-type random"
 
 # Change wallpaper and apply color scheme system-wide
 cwlust() {
-  swww img "$1" && wallust run "$1"
+  swww img --transition-type random "$1" && wallust run "$1"
 }
 
 ## VirusTotal
