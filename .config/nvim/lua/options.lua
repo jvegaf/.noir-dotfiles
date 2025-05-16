@@ -80,6 +80,9 @@ vim.g.markdown_fenced_languages = {
 }
 
 -- views can only be fully collapsed with the global statusline
--- vim.opt.laststatus = 3
+vim.opt.laststatus = 0
 
 vim.tbl_islist = vim.islist
+
+-- Transparent background
+vim.api.nvim_set_hl(0, "Normal", { bg = "none", ctermbg = "none" })
