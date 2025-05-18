@@ -21,7 +21,7 @@
     "memory",
     "custom/gpu",
     "custom/storage",
-    "temperature",
+    // "temperature",
     "backlight",
     "custom/power"
     // "battery"
