@@ -20,6 +20,7 @@
     "base_font_size": 22,
     "controls_help_shown_count": 2,
     "read_mode": "flow",
+    "show_selection_bar": false,
     "standalone_font_settings": {
       "mono_family": "Maple Mono",
       "sans_family": "Maple Mono",
