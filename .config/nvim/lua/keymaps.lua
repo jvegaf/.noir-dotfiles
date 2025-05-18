@@ -49,6 +49,14 @@ map({ "i", "n" }, "<C-s>", "<cmd>w<cr>", { desc = "Save buffer" })
 map({ "i", "n" }, "<C-q>", "<cmd>q<cr>", { desc = "Quit buffer" })
 map({ "i", "n" }, "<C-z>", "u", { desc = "Undo" })
 
+-- indents
+map("n", "<lt>", "<lt><lt>", { silent = true, desc = "Outdent" })
+map("n", ">", ">>", { silent = true, desc = "Indent" })
+map("v", "<lt>", "<lt>gv", { silent = true, desc = "Outdent" })
+map("v", ">", ">gv", { silent = true, desc = "Indent" })
+map("v", "<S-Tab>", "<lt>gv", { silent = true, desc = "Outdent" })
+map("v", "<Tab>", ">gv", { silent = true, desc = "Indent" })
+
 -- quickfix
 map("n", "<leader>fo", "<cmd>copen<CR>", { desc = "Open Quickfix window" })
 map("n", "<leader>fc", "<cmd>cclose<CR>", { desc = "Close Quickfix window" })
