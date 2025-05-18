@@ -53,7 +53,7 @@ error_symbol = '[ ✗]({{bold_red}})'
 
 [username]
 format = '[$user ]($style)'
-style_root = "fg:{{color15}} bg:{{color1}}"
+style_root = "fg:{{background}} bg:{{color1}}"
 
 [python]
 # Show python version and virtual environment name
