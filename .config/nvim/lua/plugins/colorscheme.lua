@@ -28,7 +28,7 @@ return {
             enabled = true,
             indentscope_color = "lavender",
           },
-          mason = true,
+          -- mason = true,
           fidget = true,
           markdown = true,
         },
@@ -71,6 +71,7 @@ return {
           noice = false,
           notify = true,
           nvim_cmp = true,
+          mason = true,
           mini = {
             hipatterns = true,
             indentscope = {
@@ -78,6 +79,10 @@ return {
             },
             pick = true,
             starter = true,
+          },
+          telescope = {
+            enabled = true,
+            -- style = "nvchad"
           },
         },
         fileformats = {
