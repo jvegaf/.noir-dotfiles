@@ -209,13 +209,18 @@ mpc update # To manually update music library
 
 # Known Issues
 
-> - Qt themes seem to behave unpredictably outside KDE Plasma (inconsistent
->   background color, broken buttons and menus, etc). Might be worth leaving
->   them with default styles.
-> - On Niri, Discord screen sharing doesn't seem to work.
-> - On Fedora, packaged cava doesn't respect orientation = horizontal property.
->   Building cava from source fixes the issue.
->   (https://github.com/karlstav/cava?tab=readme-ov-file#from-source)
+> Qt themes seem to behave unpredictably outside KDE Plasma (inconsistent
+> background color, broken buttons and menus, etc). Might be worth leaving them
+> with default styles.
+
+> On Niri, Discord screen sharing doesn't seem to work.
+
+> On Fedora, packaged cava doesn't respect orientation = horizontal property.
+> Building cava from source fixes the issue.
+> (https://github.com/karlstav/cava?tab=readme-ov-file#from-source)
+
+> On Fedora, initial launch of Steam requires the following env variable (launch
+> from terminal): __GL_CONSTANT_FRAME_RATE_HINT=3 steam
 
 # Feedback
 
