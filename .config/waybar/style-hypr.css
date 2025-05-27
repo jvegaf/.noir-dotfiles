@@ -86,7 +86,7 @@
 
 #workspaces button.active,
 #workspaces button.focused {
-  color: @foreground;
+  color: @color3;
   background-color: transparent;
 }
 
