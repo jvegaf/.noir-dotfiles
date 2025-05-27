@@ -84,6 +84,7 @@ alias apti='sudo dnf install -y' # install packages
 alias apts='dnf search' # search for a package
 alias aptr='sudo dnf remove -y' # remove a package
 alias aptc='sudo dnf check-update' # check for updates in all enabled repos
+alias aptq='dnf repoquery --userinstalled | rg' # search among installed packages
 
 # Bash/Zsh
 alias bashconfig='nvim ~/.bashrc'
