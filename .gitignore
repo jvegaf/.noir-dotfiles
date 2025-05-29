@@ -7,7 +7,6 @@
 .config/zsh/zcompdump
 .config/zsh/.zcompdump
 .config/gtk-3.0/bookmarks
-.config/cava/themes
 .config/cava/shaders
 .config/calibre/dynamic.pickle.json
 .config/calibre/global.py.json

@@ -214,6 +214,7 @@ show_idle_bar_heads = 1
 # show waveform instead of frequency spectrum, 1 = on, 0 = off
 ; waveform = 0
 
+
 [color]
 
 # Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
@@ -240,6 +241,8 @@ gradient_color_5 = '#c6a0f6'
 gradient_color_6 = '#f5bde6'
 gradient_color_7 = '#ee99a0'
 gradient_color_8 = '#ed8796'
+
+theme = 'colors'
 
 
 [smoothing]
