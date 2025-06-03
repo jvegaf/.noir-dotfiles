@@ -67,24 +67,24 @@ alias ns='npm start'
 alias ys='yarn start'
 
 # Pacman
-# alias aptu='paru -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
-# alias apti='paru -Sy --needed --disable-download-timeout' # install packages
-# alias apts='paru --bottomup --disable-download-timeout' # search for a package (intersection of all words if multiple suplied). Promts to install a package as well
-# alias aptsg='paru -Sg' # lookup all packages belonging to a group
-# alias aptr='paru -Rnusc --noconfirm' # remove packages with all dependencies and packages that depend on the current one
-# alias aptq='paru -Q | rg' # search among installed packages
-# alias aptqq='paru -Qq | rg' # search among installed packages without package versions
-# alias aptrq='paru -R $(paru -Qdtq)' # remove all packages that don't depend on any other
-# alias aptsc='paru -Scc' # Clean cache and databases
-# alias aptfix='sudo rm /var/lib/pacman/db.lck' # Removes pacman lock
+alias aptu='paru -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
+alias apti='paru -Sy --needed --disable-download-timeout' # install packages
+alias apts='paru --bottomup --disable-download-timeout' # search for a package (intersection of all words if multiple suplied). Promts to install a package as well
+alias aptsg='paru -Sg' # lookup all packages belonging to a group
+alias aptr='paru -Rnusc --noconfirm' # remove packages with all dependencies and packages that depend on the current one
+alias aptq='paru -Q | rg' # search among installed packages
+alias aptqq='paru -Qq | rg' # search among installed packages without package versions
+alias aptrq='paru -R $(paru -Qdtq)' # remove all packages that don't depend on any other
+alias aptsc='paru -Scc' # Clean cache and databases
+alias aptfix='sudo rm /var/lib/pacman/db.lck' # Removes pacman lock
 
 # DNF 5
-alias aptu='sudo dnf upgrade' # upgrade all packages on the system to the latest version (if particular package name supplie, only thta package will be upgraded)
-alias apti='sudo dnf install -y' # install packages
-alias apts='dnf search' # search for a package
-alias aptr='sudo dnf remove -y' # remove a package
-alias aptc='sudo dnf check-update' # check for updates in all enabled repos
-alias aptq='dnf repoquery --userinstalled | rg' # search among installed packages
+# alias aptu='sudo dnf upgrade' # upgrade all packages on the system to the latest version (if particular package name supplie, only thta package will be upgraded)
+# alias apti='sudo dnf install -y' # install packages
+# alias apts='dnf search' # search for a package
+# alias aptr='sudo dnf remove -y' # remove a package
+# alias aptc='sudo dnf check-update' # check for updates in all enabled repos
+# alias aptq='dnf repoquery --userinstalled | rg' # search among installed packages
 
 # Bash/Zsh
 alias bashconfig='nvim ~/.bashrc'
@@ -106,8 +106,8 @@ alias own='sudo chown -R $USER:$GROUP'
 alias pk='pkill -f'
 alias pksysset='pkill -f systemsettings' # kill KDE settings app in case it gets stuck
 alias nvidia-watch='watch -n 0.5 nvidia-smi'
-# alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg" # Arch
-alias grub-update="sudo grub2-mkconfig -o /boot/grub2/grub.cfg" # Fedora
+alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg" # Arch
+# alias grub-update="sudo grub2-mkconfig -o /boot/grub2/grub.cfg" # Fedora
 alias mirrors-rank="sudo reflector --verbose --latest 5 --country 'Sweden' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
 alias gpu-driver-check="lspci -nnk | egrep -i --color 'vga|3d|2d' -A3"
 alias touchpad-fix='xinput set-prop "ELAN0711:00 04F3:30EB Touchpad" "libinput Tapping Enabled" 1'
