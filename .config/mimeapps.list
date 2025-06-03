@@ -2,6 +2,7 @@
 application/x-spss-sav=codium.desktop;
 audio/mpeg=mpv.desktop;
 inode/directory=mpv.desktop;
+text/plain=vscodium.desktop;
 video/mp4=mpv.desktop;
 video/vnd.avi=mpv.desktop;
 video/x-matroska=mpv.desktop;
@@ -10,6 +11,7 @@ video/x-matroska=mpv.desktop;
 application/x-spss-sav=codium.desktop
 audio/mpeg=mpv.desktop;
 inode/directory=org.kde.dolphin.desktop
+text/plain=vscodium.desktop;
 video/mp4=mpv.desktop;
 video/vnd.avi=mpv.desktop;
 video/x-matroska=mpv.desktop;
