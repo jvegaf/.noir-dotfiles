@@ -1,17 +1,37 @@
 [Added Associations]
+application/x-extension-htm=firefox.desktop;
+application/x-extension-html=firefox.desktop;
+application/x-extension-shtml=firefox.desktop;
+application/x-extension-xht=firefox.desktop;
+application/x-extension-xhtml=firefox.desktop;
 application/x-spss-sav=codium.desktop;
+application/xhtml+xml=firefox.desktop;
 audio/mpeg=mpv.desktop;
 inode/directory=mpv.desktop;
-text/plain=vscodium.desktop;
+text/html=firefox.desktop;
+text/plain=vscodium-2.desktop;vscodium.desktop;
 video/mp4=mpv.desktop;
 video/vnd.avi=mpv.desktop;
 video/x-matroska=mpv.desktop;
+x-scheme-handler/chrome=firefox.desktop;
+x-scheme-handler/http=firefox.desktop;
+x-scheme-handler/https=firefox.desktop;
 
 [Default Applications]
+application/x-extension-htm=firefox.desktop
+application/x-extension-html=firefox.desktop
+application/x-extension-shtml=firefox.desktop
+application/x-extension-xht=firefox.desktop
+application/x-extension-xhtml=firefox.desktop
 application/x-spss-sav=codium.desktop
+application/xhtml+xml=firefox.desktop
 audio/mpeg=mpv.desktop;
 inode/directory=org.kde.dolphin.desktop
-text/plain=vscodium.desktop;
+text/html=firefox.desktop
+text/plain=vscodium-2.desktop;
 video/mp4=mpv.desktop;
 video/vnd.avi=mpv.desktop;
 video/x-matroska=mpv.desktop;
+x-scheme-handler/chrome=firefox.desktop
+x-scheme-handler/http=firefox.desktop
+x-scheme-handler/https=firefox.desktop
