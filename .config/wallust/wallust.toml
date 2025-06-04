@@ -53,5 +53,6 @@ waybar = { template = 'waybar.css', target = '~/.config/waybar/themes/colors.css
 rofi = { template = 'rofi.rasi', target = '~/.config/rofi/themes/colors.rasi' }
 neopywal = { template = 'colors_neopywal.vim', target = '~/.cache/wal/colors-wal.vim' }
 mako = { template = 'mako', target = '~/.config/mako/config' }
-vscode = { template = 'vscode', target = '~/.cache/wal/colors' }
 cava = { template = 'cava', target = '~/.config/cava/themes/colors' }
+vscode = { template = 'vscode.json', target = '~/.cache/wallust/colors.json' }
+vscode2 = { template = 'vscode', target = '~/.cache/wallust/colors' }
