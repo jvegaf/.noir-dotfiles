@@ -7,6 +7,9 @@ Theme=Tela-circle-dracula
 [KDE]
 widgetStyle=qt6ct-style
 
+[KShortcutsDialog Settings]
+Dialog Size=600,480
+
 [PreviewSettings]
 EnableRemoteFolderThumbnail=true
 MaximumRemoteSize=0
