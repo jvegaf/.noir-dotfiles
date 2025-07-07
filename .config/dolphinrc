@@ -2,7 +2,8 @@
 PreviewSize=16
 
 [DetailsMode]
-PreviewSize=32
+PreviewSize=16
+RightPadding=0
 
 [General]
 CloseActiveSplitView=false
