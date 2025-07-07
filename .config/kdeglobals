@@ -13,3 +13,6 @@ Dialog Size=600,480
 [PreviewSettings]
 EnableRemoteFolderThumbnail=true
 MaximumRemoteSize=0
+
+[UiSettings]
+ColorScheme=qt6ct
