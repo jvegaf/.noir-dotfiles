@@ -123,10 +123,11 @@ alias yt-ordered-playlist="yt-dlp -o \"%(playlist_index)s %(title)s.%(ext)s\""
 alias cw="swww img --transition-type random"
 
 # Change wallpaper and apply color scheme system-wide
-cwlust() {
+cwtheme() {
   swww img --transition-type random "$1"
   wallust run "$1"
   matugen image "$1"
+  ~/.config/waybar/waybar-hypr.sh
 }
 
 ## VirusTotal
