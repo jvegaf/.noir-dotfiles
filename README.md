@@ -37,9 +37,7 @@
 | Wallpapers        | [Link](https://github.com/somanoir/noir-wallpapers)                                                                          |                                           |                                               |
 | Font              | [Maple Mono](https://github.com/subframe7536/maple-font)                                                                     |                                           |                                               |
 | App Theme         | [Wallust](https://codeberg.org/explosion-mental/wallust)                                                                     |                                           |                                               |
-| GTK Theme         | [Catppuccin-Macchiato](https://github.com/catppuccin/gtk)                                                                    |                                           |                                               |
-| Qt Theme          | [Catppuccin-Macchiato](https://github.com/catppuccin/qt5ct)                                                                  |                                           |                                               |
-| Cursor            | [Catppuccin-Macchiato](https://github.com/catppuccin/cursors)                                                                |                                           |                                               |
+| Cursor            | [Bibata](https://github.com/ful1e5/Bibata_Cursor)                                                                            |                                           |                                               |
 | Icon Theme        | [Tela-circle](https://github.com/vinceliuice/Tela-circle-icon-theme)                                                         |                                           |                                               |
 
 # Installation
