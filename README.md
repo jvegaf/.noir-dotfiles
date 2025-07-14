@@ -77,6 +77,3 @@ tremendous work as well as direct and indirect contributions to this project:
 - [mierak](https://github.com/mierak) for making a great TUI music player
   [rmpc](https://github.com/mierak/rmpc) and a multitude of helpful suggestions
   in setting up my config files for the player.
-- [Eisa01](https://github.com/Eisa01) for their
-  [mpv-scripts](https://github.com/Eisa01/mpv-scripts) that add vast
-  functionality to the mpv player.
