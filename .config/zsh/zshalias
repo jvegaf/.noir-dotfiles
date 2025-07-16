@@ -140,7 +140,7 @@ vtaf() {
 
 # Password Generator of len X
 passgen() {
-  cat /dev/urandom | tr -dc A-Za-z0-9 | head -c $1 ; echo
+  cat /dev/urandom | tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' | head -c $1 ; echo
 }
 
 # Set HP keyboard to green
