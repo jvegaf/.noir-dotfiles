@@ -1,0 +1,71 @@
+(defwidget time []
+  (box :orientation "v"
+    :class "time"
+    :valign "start"
+    (label :class "time-hour" :text hour)
+    (label :class "time-min" :text min)
+  )
+)
+(defpoll hour :interval "1s" "date '+%H'")
+(defpoll min :interval "1s" "date '+%M'")
+
+(defwidget top []
+  (box :class "clock"
+    :orientation "v"
+    :space-evenly false
+    :valign "start"
+    (time)
+  )
+)
+
+(defwidget workspaces []
+  (box :class "workspaces"
+    :orientation "v"
+    :space-evenly true
+    :valign "center"
+    :spacing 1
+    (button :onclick "hyprctl dispatch workspace 1" 1)
+    (button :onclick "hyprctl dispatch workspace 2" 2)
+    (button :onclick "hyprctl dispatch workspace 3" 3)
+    (button :onclick "hyprctl dispatch workspace 4" 4)
+    (button :onclick "hyprctl dispatch workspace 5" 5)
+    (button :onclick "hyprctl dispatch workspace 6" 6)
+    (button :onclick "hyprctl dispatch workspace 7" 7)
+    (button :onclick "hyprctl dispatch workspace 8" 8)
+    (button :onclick "hyprctl dispatch workspace 9" 9)
+    (button :onclick "hyprctl dispatch workspace 10" 10)
+  )
+)
+
+(defwidget bottom []
+  (box :class "clock"
+    :orientation "v"
+    :space-evenly false
+    :valign "end"
+    (systray :pack-direction "ttb" :orientation "v")
+  )
+)
+
+(defwidget bar []
+  (box :orientation "v"
+    :space-evenly true
+    (top)
+    (workspaces)
+    (bottom)
+  )
+)
+
+(defwindow bar
+  :monitor 0
+  :geometry (geometry :x "7px"
+    :width "20px"
+    :height "99%"
+    :anchor "center left"
+  )
+  :stacking "fg"
+  :windowtype "dock"
+  :wm-ignore false
+  :reserve (struts :side "right" :distance "3%")
+  :exclusive true
+  (bar)
+)
