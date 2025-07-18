@@ -1,0 +1,11 @@
+font="Maple Mono 12"
+text-color={{colors.primary.default.hex}}
+
+background-color={{colors.background.default.hex}}
+margin=25
+
+border-color={{colors.primary.default.hex}}
+border-size=2
+border-radius=8
+
+default-timeout=5000
