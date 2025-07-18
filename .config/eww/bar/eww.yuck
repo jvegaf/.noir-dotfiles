@@ -10,7 +10,7 @@
 (defpoll min :interval "1s" "date '+%M'")
 
 (defwidget top []
-  (box :class "clock"
+  (box :class "top"
     :orientation "v"
     :space-evenly false
     :valign "start"
@@ -18,36 +18,78 @@
   )
 )
 
+(defvar wp1 "●")
+(defvar wp2 "○")
+(defvar wp3 "○")
+(defvar wp4 "○")
+(defvar wp5 "○")
+
 (defwidget workspaces []
   (box :class "workspaces"
     :orientation "v"
     :space-evenly true
     :valign "center"
     :spacing 1
-    (button :onclick "hyprctl dispatch workspace 1" 1)
-    (button :onclick "hyprctl dispatch workspace 2" 2)
-    (button :onclick "hyprctl dispatch workspace 3" 3)
-    (button :onclick "hyprctl dispatch workspace 4" 4)
-    (button :onclick "hyprctl dispatch workspace 5" 5)
-    (button :onclick "hyprctl dispatch workspace 6" 6)
-    (button :onclick "hyprctl dispatch workspace 7" 7)
-    (button :onclick "hyprctl dispatch workspace 8" 8)
-    (button :onclick "hyprctl dispatch workspace 9" 9)
-    (button :onclick "hyprctl dispatch workspace 10" 10)
+    (eventbox
+      :cursor "pointer"
+      (button :onclick "hyprctl dispatch workspace 1"
+        (label
+          :markup wp1
+          :class "workspace_buttons"
+        )
+      )
+    )
+    (eventbox
+      :cursor "pointer"
+      (button :onclick "hyprctl dispatch workspace 2"
+        (label
+          :markup wp2
+          :class "workspace_buttons"
+        )
+      )
+    )
+    (eventbox
+      :cursor "pointer"
+      (button :onclick "hyprctl dispatch workspace 3"
+        (label
+          :markup wp3
+          :class "workspace_buttons"
+        )
+      )
+    )
+    (eventbox
+      :cursor "pointer"
+      (button :onclick "hyprctl dispatch workspace 4"
+        (label
+          :markup wp4
+          :class "workspace_buttons"
+        )
+      )
+    )
+    (eventbox
+      :cursor "pointer"
+      (button :onclick "hyprctl dispatch workspace 5"
+        (label
+          :markup wp5
+          :class "workspace_buttons"
+        )
+      )
+    )
   )
 )
 
 (defwidget bottom []
-  (box :class "clock"
+  (box :class "bottom"
     :orientation "v"
     :space-evenly false
     :valign "end"
-    (systray :pack-direction "ttb" :orientation "v")
+    (systray :pack-direction "ttb" :orientation "v" :prepend-new true)
   )
 )
 
 (defwidget bar []
-  (box :orientation "v"
+  (box :class ""
+    :orientation "v"
     :space-evenly true
     (top)
     (workspaces)
