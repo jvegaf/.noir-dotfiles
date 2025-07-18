@@ -201,7 +201,7 @@ alias ppf='uv pip freeze'
 alias ppfr='uv pip freeze > requirements.txt'
 alias pvc='uv venv' # Create local environment (pass '--python 3.12' for specific python version)
 alias pva='source ./.venv/bin/activate'
-alias pvd='exit' # Deactivate python environment
+alias pvd='deactivate' # Deactivate python environment
 
 ## PIP
 # alias ppi='python -m pip install'
