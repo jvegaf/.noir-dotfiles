@@ -1,7 +1,7 @@
 add_newline = false
 
 format = """\
-$time$username\
+$time$cmd_duration$username\
 [](fg:color2 bg:color4)\
 $directory\
 [](fg:color4 bg:color6)\
@@ -29,6 +29,10 @@ color8 = '{{colors.on_tertiary.default.hex}}'
 disabled = false
 time_format = "%R" # Hour:Minute Format
 format = '[ 󱑍 $time ](fg:color1 bg:color2)'
+
+[cmd_duration]
+min_time = 3000
+format = "[󱑎 $duration ](fg:color1 bg:color2)"
 
 [username]
 format = '[$user ](fg:color1 bg:color2)'
@@ -61,7 +65,3 @@ format = "[ (${virtualenv}) ](fg:color7 bg:color8)"
 [character]
 success_symbol = '[](color1 bold)'
 error_symbol = '[ ✗]({{colors.error.default.hex}} bold)'
-
-[cmd_duration]
-min_time = 5000
-format = "[ 󱑍 $duration ](fg:color1 bg:color2)"
