@@ -14,5 +14,11 @@ return {
     end
 
     neopywal_lualine.setup()
+
+    lualine.setup({
+      options = {
+        theme = "neopywal",
+      },
+    })
   end,
 }
