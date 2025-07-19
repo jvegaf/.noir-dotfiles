@@ -1,14 +1,14 @@
 [color]
-foreground = '#d5bbfc'
+foreground = '#d5baff'
 
 gradient = 1
-gradient_color_1 = '#d5bbfc'
-gradient_color_2 = '#cec2db'
-gradient_color_3 = '#f1b7c3'
+gradient_color_1 = '#d5baff'
+gradient_color_2 = '#d4bbfa'
+gradient_color_3 = '#ffaedc'
 
 horizontal_gradient = 1
-horizontal_gradient_color_1 = '#3a255b'
-horizontal_gradient_color_2 = '#352d40'
-horizontal_gradient_color_3 = '#4b252e'
+horizontal_gradient_color_1 = '#42008a'
+horizontal_gradient_color_2 = '#3a2659'
+horizontal_gradient_color_3 = '#600049'
 
 blend_direction = 'up'

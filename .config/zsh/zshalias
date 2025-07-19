@@ -125,7 +125,8 @@ alias cw="swww img --transition-type random"
 # Change wallpaper and apply color scheme system-wide
 cwtheme() {
   swww img --transition-type random "$1"
-  matugen image "$1"
+  matugen image "$1" -t scheme-content
+  wallust run "$1"
 }
 
 ## VirusTotal

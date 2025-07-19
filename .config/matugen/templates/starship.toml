@@ -59,7 +59,7 @@ python_binary = ["python3", "python"]
 format = "[ (${virtualenv}) ](fg:color7 bg:color8)"
 
 [character]
-success_symbol = '[ ](color1 bold)'
+success_symbol = '[](color1 bold)'
 error_symbol = '[ ✗]({{colors.error.default.hex}} bold)'
 
 [cmd_duration]
