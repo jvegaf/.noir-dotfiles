@@ -22,8 +22,12 @@ output_path = '~/.cache/wal/colors.json'
 post_hook = 'pywalfox update'
 
 [templates.eww]
-input_path = '~/.config/matugen/templates/eww-color.scss'
+input_path = '~/.config/matugen/templates/colors.scss'
 output_path = '~/.config/eww/bar/matugen-colors.scss'
+
+[templates.waybar]
+input_path = '~/.config/matugen/templates/colors.scss'
+output_path = '~/.config/waybar/themes/matugen-colors.scss'
 
 [templates.starship]
 input_path = '~/.config/matugen/templates/starship.toml'
