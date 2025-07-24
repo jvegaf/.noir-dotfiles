@@ -1,0 +1,85 @@
+{
+  "layer": "bottom",
+  "position": "left",
+  "width": 40,
+  "spacing": 0,
+
+  "modules-left": [
+    "clock"
+  ],
+  "modules-center": [
+    "hyprland/workspaces"
+  ],
+  "modules-right": [
+    "tray",
+    "pulseaudio",
+    "backlight",
+    "custom/power"
+  ],
+
+  "clock": {
+    "format": "{:%H\n%M}",
+    "interval": 60
+  },
+
+  "hyprland/workspaces": {
+    "format": "",
+    "format-icons": {
+        "active": "",
+        "default": ""
+    },
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1",
+    "on-click": "activate"
+  },
+
+  "tray": {
+    "icon-size": 15,
+    "spacing": 15
+  },
+  "pulseaudio": {
+    // "scroll-step": 1, // %, can be a float
+    "format": "{icon} {volume}%", // {format_source}
+    "format-bluetooth": "{icon} {volume}%", // {format_source}
+    "format-bluetooth-muted": "", // {format_source}
+    "format-muted": "", // {format_source}
+    "format-source": "{volume}% ",
+    "format-source-muted": "",
+    "format-icons": {
+      "headphone": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": " ",
+      "default": [
+        "",
+        "",
+        ""
+      ]
+    },
+    "on-click": "pavucontrol"
+  },
+  "backlight": {
+    "format": "{icon}\n{percent}%",
+    "format-icons": [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ],
+    "on-scroll-down": "brightnessctl s 5%-",
+    "on-scroll-up": "brightnessctl s +5%",
+    "interval": 2
+  },
+  "custom/power": {
+    "format": "{}",
+    "exec": "echo '{\"text\":\"⏻\",\"tooltip\":\"Power\"}'",
+    "return-type": "json",
+    "on-click": "wlogout -b 5 -T 350 -B 350"
+  },
+}
