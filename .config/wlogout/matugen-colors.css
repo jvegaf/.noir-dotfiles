@@ -4,102 +4,52 @@
 /*-----All Colors--------*/
 
 @define-color background #15121a;
-
 @define-color error #ffb4ab;
-
 @define-color error_container #93000a;
-
 @define-color inverse_on_surface #332f38;
-
 @define-color inverse_primary #743ec6;
-
 @define-color inverse_surface #e8e0ec;
-
 @define-color on_background #e8e0ec;
-
 @define-color on_error #690005;
-
 @define-color on_error_container #ffdad6;
-
 @define-color on_primary #42008a;
-
 @define-color on_primary_container #ffffff;
-
 @define-color on_primary_fixed #270057;
-
 @define-color on_primary_fixed_variant #5c1fac;
-
 @define-color on_secondary #3a2659;
-
 @define-color on_secondary_container #eddeff;
-
 @define-color on_secondary_fixed #240f43;
-
 @define-color on_secondary_fixed_variant #513d72;
-
 @define-color on_surface #e8e0ec;
-
 @define-color on_surface_variant #cdc3d5;
-
 @define-color on_tertiary #600049;
-
 @define-color on_tertiary_container #ffffff;
-
 @define-color on_tertiary_fixed #3b002c;
-
 @define-color on_tertiary_fixed_variant #850c67;
-
 @define-color outline #968d9f;
-
 @define-color outline_variant #4b4453;
-
 @define-color primary #d5baff;
-
 @define-color primary_container #834ed5;
-
 @define-color primary_fixed #ecdcff;
-
 @define-color primary_fixed_dim #d5baff;
-
 @define-color scrim #000000;
-
 @define-color secondary #d4bbfa;
-
 @define-color secondary_container #533f74;
-
 @define-color secondary_fixed #ecdcff;
-
 @define-color secondary_fixed_dim #d4bbfa;
-
 @define-color shadow #000000;
-
 @define-color source_color #834ed5;
-
 @define-color surface #15121a;
-
 @define-color surface_bright #3c3741;
-
 @define-color surface_container #221e26;
-
 @define-color surface_container_high #2c2831;
-
 @define-color surface_container_highest #37333c;
-
 @define-color surface_container_low #1e1a22;
-
 @define-color surface_container_lowest #100d15;
-
 @define-color surface_dim #15121a;
-
 @define-color surface_tint #d5baff;
-
 @define-color surface_variant #4b4453;
-
 @define-color tertiary #ffaedc;
-
 @define-color tertiary_container #b53c8f;
-
 @define-color tertiary_fixed #ffd8eb;
-
 @define-color tertiary_fixed_dim #ffaedc;
-

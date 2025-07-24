@@ -1,8 +1,3 @@
-/*
-* GTK Colors
-* Generated with Matugen
-*/
-
 @define-color accent_color #d5baff;
 @define-color accent_fg_color #270057;
 @define-color accent_bg_color #d5baff;
@@ -20,4 +15,3 @@
 @define-color sidebar_fg_color @window_fg_color;
 @define-color sidebar_border_color @window_bg_color;
 @define-color sidebar_backdrop_color @window_bg_color;
-
