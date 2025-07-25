@@ -16,14 +16,14 @@ $character\
 palette = 'colors'
 
 [palettes.colors]
-color1 = '#cdc3d5'
-color2 = '#221e26'
-color3 = '#d5baff'
-color4 = '#42008a'
-color5 = '#d4bbfa'
-color6 = '#3a2659'
-color7 = '#ffaedc'
-color8 = '#600049'
+color1 = '#42008a'
+color2 = '#d5baff'
+color3 = '#ffffff'
+color4 = '#834ed5'
+color5 = '#3a2659'
+color6 = '#d4bbfa'
+color7 = '#eddeff'
+color8 = '#533f74'
 
 [time]
 disabled = false

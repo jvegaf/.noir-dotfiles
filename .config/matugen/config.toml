@@ -36,7 +36,6 @@ output_path = '~/.config/starship.toml'
 [templates.hyprland]
 input_path = '~/.config/matugen/templates/hyprland.conf'
 output_path = '~/.config/hypr/conf/matugen-colors.conf'
-post_hook = 'hyprctl reload'
 
 [templates.mako]
 input_path = '~/.config/matugen/templates/mako'
