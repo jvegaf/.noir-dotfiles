@@ -23,6 +23,7 @@
   },
 
   "hyprland/workspaces": {
+    "all-outputs": true,
     "format": "",
     "format-icons": {
         "active": "",
