@@ -72,6 +72,7 @@ bindsym $mod+Shift+Right move right
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+k layout tabbed
+bindsym $mod+Shift+k layout stacking
 bindsym $mod+i layout toggle split
 
 # focus the parent container
@@ -170,4 +171,7 @@ mode "resize" {
 }
 
 bindsym $mod+Shift+d mode "resize"
+
+# Toggle Polybar
+bindsym $mod+Shift+b exec --no-startup-id polybar-msg cmd toggle
 
