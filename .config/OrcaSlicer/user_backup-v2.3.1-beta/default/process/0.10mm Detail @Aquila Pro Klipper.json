@@ -1,0 +1,10 @@
+{
+    "from": "User",
+    "inherits": "0.10mm Detail @Josito Pipper Bear 0.4 nozzle",
+    "is_custom_defined": "0",
+    "name": "0.10mm Detail @Aquila Pro Klipper",
+    "print_settings_id": "0.10mm Detail @Aquila Pro Klipper",
+    "sparse_infill_density": "40%",
+    "version": "2.3.0.3",
+    "wall_loops": "4"
+}

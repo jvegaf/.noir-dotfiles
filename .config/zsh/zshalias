@@ -1,63 +1,84 @@
-# Paths
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias cdd='cd ~/Downloads'
-alias cdc='cd ~/Code'
-alias cda='cd ~/Code/ai'
-alias cdcomfy='cd ~/Code/ai/ComfyUI'
-alias cds='cd ~/Code/sideprojects'
-alias cdp='cd ~/Code/pydev'
-alias cdr='cd ~/Code/rustdev'
-alias cdmy='cd ~/My'
-alias cddot='cd ~/My/Dotfiles'
-alias cdman='cd ~/My/Manuals'
-alias cdnotes='cd ~/My/Notes'
-alias cdh='cd ~/My/LinuxDocs/HackTheBox'
-alias cdt='cd ~/My/LinuxDocs/TryHackMe'
-alias cdo='cd /opt/$USER'
+# Enable aliases to be sudo’ed
+alias sudo='sudo '
+
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias ls="eza -lh --group-directories-first --icons=auto"
+alias l="ls"
+alias ll="ls -a"
+alias lt='eza --tree --level=2 --long --icons --git'
+alias llt='lt -a'
+alias ff='fzf --preview '\''bat --style=numbers --color=always {}'\'''
+alias ~="cd ~"
+alias cdc="cd ~/Code"
+alias doc="cd ~/Documents"
+alias dw="cd ~/Downloads"
+alias dt="cd ~/Desktop"
+alias du="du -hd 1"
+alias dots="cd $MY_DOTS"
+alias logout="gnome-session-quit --logout"
+alias nvcfg="cd ~/.config/nvim"
+alias vimcfg="vim ~/.vimrc"
+alias r="yazi"
+alias paru="paru --bottomup"
+alias edalias="nvim $HOME/.aliases"
+alias dfscripts="cd $HOME/.config/scripts"
+# alias ubscripts="cd $DOTFILES_PATH/os/linux/packages/xBuntu"
+# alias alscripts="cd $DOTFILES_PATH/os/linux/packages/arch"
+alias run="./run"
+alias sail='[ -f sail ] && sh sail || sh vendor/bin/sail'
+alias open='xdg-open'
+alias zj='zellij'
+alias fks='flatpak search'
+alias fki='flatpak install'
+alias sns='snap search'
+alias sni='snap install'
+
+# Security
+alias checkrootkits="sudo rkhunter --update; sudo rkhunter --propupd; sudo rkhunter --check"
+alias checkvirus="clamscan --recursive=yes --infected /home"
+alias updateantivirus="sudo freshclam"
 
 # Git
-alias got='git'
-alias gut='git'
+alias g="lazygit"
+alias gaa="git add -A"
+alias gb="git branch"
+alias gba="git branch --all"
+# alias gc='$DOTLY_PATH/bin/dot git commit'
+alias gcl="git clone"
+alias gca="git add --all && git commit --amend --no-edit"
+alias gcm="git commit -m"
+alias gco="git checkout"
+# alias gd='$DOTLY_PATH/bin/dot git pretty-diff'
+alias gs="git status -sb"
+alias gf="git fetch --all -p"
+alias gps="git push"
+alias gpsf="git push --force"
+alias gpl="git pull --rebase --autostash"
+# alias gl='$DOTLY_PATH/bin/dot git pretty-log'
+alias gsw="git switch"
 
-alias gs='git status'
-alias ga='git add'
-alias gb='git branch'
-alias gf='git fetch'
-alias gfc='git fetch && git checkout origin/master'
-alias gc='git commit'
-alias gca='git commit --amend'
-alias gcane='git commit --amend --no-edit'
-alias gd='git diff'
-alias gco='git checkout'
-alias gpsh='git push'
-alias gpshom='git push -u origin master'
-alias gp='git pull'
-alias gr='git rebase'
-alias grc='git rebase --continue'
-alias gra='git rebase --abort'
-alias gm='git merge'
-alias gmc='git merge --continue'
-alias gma='git merge --abort'
-alias gk='gitk --all&'
-alias gst='git stash'
-alias gstp='git stash pop'
-alias gclfull='git clone'
-alias gcl='git clone --depth 1'
-alias gra='git remote add origin'
-alias glfsverifyfalse='git config --global http.sslVerify false'
-alias gsuir='git submodule update --init --recursive'
-alias gtree='git log -30 --oneline --graph'
-alias gtreefull='git log --all --oneline --graph'
-# alias gtreefull='git log --all --oneline --graph --pretty="%C(bold blue)%h" --decorate'
-alias glistfiles='git diff-tree --no-commit-id --name-only -r'
-alias gres='git reset --hard'
+alias grc="gh repo clone"
 
-alias gl1='git log -1'
-alias gl2='git log -2'
-alias gl3='git log -3'
+# Copilot
+alias cops="gh copilot suggest"
+alias cope="gh copilot explain"
+alias copt="gh extensions install github/gh-copilot"
 
-alias lz='lazygit'
+# flatpak
+alias fps="flatpak search"
+alias fpi="flatpak install"
+
+# Arch
+alias yau="yay -Syyu"
+alias pau="sudo pacman -Syyu"
+alias mirrors-rank="sudo reflector --verbose --latest 5 --country 'Sweden' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
+
+# Ubuntu
+alias sai="sudo apt install"
+alias aps="apt search"
+alias apu="sudo apt update && sudo apt upgrade -y"
 
 # WebDev
 alias nom='npm'
@@ -66,131 +87,44 @@ alias nim='npm'
 alias ns='npm start'
 alias ys='yarn start'
 
-# Pacman
-alias aptu='paru -Syu --disable-download-timeout --nocombinedupgrade' # update package lists and upgrade all packages
-alias apti='paru -Sy --needed --disable-download-timeout' # install packages
-alias apts='paru --bottomup --disable-download-timeout' # search for a package (intersection of all words if multiple suplied). Promts to install a package as well
-alias aptsg='paru -Sg' # lookup all packages belonging to a group
-alias aptr='paru -Rnusc --noconfirm' # remove packages with all dependencies and packages that depend on the current one
-alias aptq='paru -Q | rg' # search among installed packages
-alias aptqq='paru -Qq | rg' # search among installed packages without package versions
-alias aptrq='paru -R $(paru -Qdtq)' # remove all packages that don't depend on any other
-alias aptsc='paru -Scc' # Clean cache and databases
-alias aptfix='sudo rm /var/lib/pacman/db.lck' # Removes pacman lock
-
-# DNF 5
-# alias aptu='sudo dnf upgrade' # upgrade all packages on the system to the latest version (if particular package name supplie, only thta package will be upgraded)
-# alias apti='sudo dnf install -y' # install packages
-# alias apts='dnf search' # search for a package
-# alias aptr='sudo dnf remove -y' # remove a package
-# alias aptc='sudo dnf check-update' # check for updates in all enabled repos
-# alias aptq='dnf repoquery --userinstalled | rg' # search among installed packages
-
-# Bash/Zsh
-alias bashconfig='nvim ~/.bashrc'
-alias bashupd='. ~/.bashrc'
-
-alias zshconfig='nvim ~/.config/zsh'
-alias zshupd='. ~/.zshrc'
-
-# Miscellaneous
-alias ls='lsd -a --group-directories-first'
-alias ll='lsd -la --group-directories-first'
-
-alias mac0='sudo ifconfig wlan0 down && sudo macchanger -r wlan0 && sudo ifconfig wlan0 up'
-alias mac1='sudo ifconfig wlan1 down && sudo macchanger -r wlan1 && sudo ifconfig wlan1 up'
-alias maceth0='sudo ifconfig eth0 down && sudo macchanger -r eth0 && sudo ifconfig eth0 up'
-
-alias ovp='sudo openvpn'
-alias own='sudo chown -R $USER:$GROUP'
-alias pk='pkill -f'
-alias pksysset='pkill -f systemsettings' # kill KDE settings app in case it gets stuck
-alias nvidia-watch='watch -n 0.5 nvidia-smi'
+# Utils
 alias grub-update="sudo grub-mkconfig -o /boot/grub/grub.cfg" # Arch
-# alias grub-update="sudo grub2-mkconfig -o /boot/grub2/grub.cfg" # Fedora
-alias mirrors-rank="sudo reflector --verbose --latest 5 --country 'Sweden' --age 6 --sort rate --save /etc/pacman.d/mirrorlist"
-alias gpu-driver-check="lspci -nnk | egrep -i --color 'vga|3d|2d' -A3"
-alias touchpad-fix='xinput set-prop "ELAN0711:00 04F3:30EB Touchpad" "libinput Tapping Enabled" 1'
-# alias root-snapshot='sudo btrfs subvolume snapshot / /.snapshots/@-$(date +"%Y-%m-%d--%H:%M:%S") && sudo grub-mkconfig -o /boot/grub/grub.cfg'
-alias root-snapshot='sudo btrfs subvolume snapshot / /.snapshots/@-$(date +"%Y-%m-%d--%H:%M:%S")' # if not using grub
+alias rmd='rm -rf'
+alias sb="/bin/subl"
 alias v='nvim'
-alias sudov='sudo nvim'
-alias code='codium'
-alias yt-mp3="yt-dlp --extract-audio --audio-format mp3 --add-metadata --embed-thumbnail -o \"%(title)s.%(ext)s\"" # Pass YT link in double quotes aka "https://..."
-alias yt-mp3-square="yt-dlp --extract-audio --audio-format mp3 --add-metadata --embed-thumbnail --ppa 'EmbedThumbnail+ffmpeg_o:-c:v mjpeg -vf crop=\"'\"'\"'if(gt(ih,iw),iw,ih)'\"':'\"'if(gt(iw,ih),ih,iw)'\"'\"'\"' -o \"%(title)s.%(ext)s\"" # Pass YT link in double quotes aka "https://..."
-alias yt-thumbnail="yt-dlp --skip-download --write-thumbnail --convert-thumbnails png -o \"%(title)s.%(ext)s\""
-alias yt-ordered-playlist="yt-dlp -o \"%(playlist_index)s %(title)s.%(ext)s\""
-alias cw="swww img --transition-type random"
-
-# Change wallpaper and apply color scheme system-wide
-cwtheme() {
-  swww img --transition-type random "$1"
-  matugen -t scheme-content image "$1"
-  wallust run "$1"
-}
-
-## VirusTotal
-alias vts='vt scan file'
-alias vta='vt analysis'
-# VT scan file and get analysis
-vtaf() {
-  vt analysis $(vt scan file "$1" | cut -d ' ' -f 2)
-}
-
-# Password Generator of len X
-passgen() {
-  cat /dev/urandom | tr -dc 'A-Za-z0-9!"#$%&'\''()*+,-./:;<=>?@[\]^_`{|}~' | head -c $1 ; echo
-}
-
-# Set HP keyboard to green
-hp-keyboard-green() {
-  sudo bash -c 'echo 00FF00 > /sys/devices/platform/hp-wmi/rgb_zones/zone00'
-  sudo bash -c 'echo 00FF00 > /sys/devices/platform/hp-wmi/rgb_zones/zone01'
-  sudo bash -c 'echo 00FF00 > /sys/devices/platform/hp-wmi/rgb_zones/zone02'
-  sudo bash -c 'echo 00FF00 > /sys/devices/platform/hp-wmi/rgb_zones/zone03'
-}
-
-hp-keyboard-red() {
-  sudo bash -c 'echo FF0000 > /sys/devices/platform/hp-wmi/rgb_zones/zone00'
-  sudo bash -c 'echo FF0000 > /sys/devices/platform/hp-wmi/rgb_zones/zone01'
-  sudo bash -c 'echo FF0000 > /sys/devices/platform/hp-wmi/rgb_zones/zone02'
-  sudo bash -c 'echo FF0000 > /sys/devices/platform/hp-wmi/rgb_zones/zone03'
-}
-
-# Universal unzip
-ex ()
-{
-  if [ -f "$1" ] ; then
-    case $1 in
-      *.tar.bz2)   tar xjf $1   ;;
-      *.tar.gz)    tar xzf $1   ;;
-      *.bz2)       bunzip2 $1   ;;
-      *.rar)       unrar x $1   ;;
-      *.gz)        gunzip $1    ;;
-      *.tar)       tar xf $1    ;;
-      *.tbz2)      tar xjf $1   ;;
-      *.tgz)       tar xzf $1   ;;
-      *.zip)       unzip $1     ;;
-      *.Z)         uncompress $1;;
-      *.7z)        7z x $1      ;;
-      *.deb)       ar x $1      ;;
-      *.tar.xz)    tar xf $1    ;;
-      *.tar.zst)   unzstd $1    ;;
-      *)           echo "'$1' cannot be extracted via ex()" ;;
-    esac
-  else
-    echo "'$1' is not a valid file"
-  fi
-}
-
-# Internet
-alias speedtest="curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python3 -"
-alias extip="curl icanhazip.com"
-alias ip="curl ipinfo.io"
-
-# Python
+alias b='bat'
+alias k='kill -9'
+alias grep='grep --color=auto'
+# alias idea='intellij-idea-ultimate-edition'
+alias idea='intellij-idea-ultimate'
+alias i.='(idea $PWD &>/dev/null &)'
+alias c.='(code $PWD &>/dev/null &)'
+alias cin='(code-insiders $PWD &>/dev/null &)'
+alias v.='(nvim $PWD &>/dev/null &)'
+alias o.='(nemo $PWD &>/dev/null &)'
 alias py='python'
-alias flake8='python3 -m flake8'
+alias py3='python3'
+alias ffet='fastfetch'
+alias i3cfg='nvim $HOME/.config/i3/config'
+alias swcfg='nvim $HOME/.config/sway/config.d/application_defaults'
+alias hycfg='nvim $HOME/.config/hypr/bindings.conf'
+
+alias perfmode='dot system cpumode performance'
+alias savemode='dot system cpumode powersave'
+alias schedmode='dot system cpumode schedutil'
+alias currmode='dot system cpumode current'
+
+alias winreb='sudo grub-reboot 4 && sudo reboot'
+
+# WSL
+alias expl='/mnt/c/Windows/explorer.exe'
+alias winyank='/mnt/c/Users/josev/scoop/shims/win32yank.exe'
+
+#VPN
+alias vpnup='sudo systemctl start wg-quick@wg0'
+alias vpndown='sudo systemctl stop wg-quick@wg0'
+alias vpnstatus='sudo systemctl status wg-quick@wg0'
+# status vpn tunnel sudo wg
 
 ## UV
 alias pyinst='uv python install' # list python versions to install (e.g. uv python install 3.11 3.12)
@@ -204,24 +138,4 @@ alias pvc='uv venv' # Create local environment (pass '--python 3.12' for specifi
 alias pva='source ./.venv/bin/activate'
 alias pvd='deactivate' # Deactivate python environment
 
-## PIP
-# alias ppi='python -m pip install'
-# alias ppir='cat requirements.txt | xargs -n 1 python -m pip install'
-# alias ppu='python -m pip uninstall -y'
-# alias ppur='python -m pip uninstall -r requirements.txt -y'
-# alias ppf='python -m pip freeze'
-# alias ppfr='python -m pip freeze > requirements.txt'
-# alias ppup='python -m pip install --upgrade pip'
-
-## Virtual Environments
-# alias pvc='python -m venv venv'
-# alias pva='. ./venv/bin/activate'
-# alias pvd='deactivate'
-# alias pvc='mkdir .venv && pipenv --python' # Create local environment (pass python version at the end)
-# alias pva='pipenv shell' # Activate environment in the current directory
-# alias pvd='exit' # Deactivate python environment
-
-# alias conc='conda create -n'
-# alias cona='conda activate'
-# alias cond='conda deactivate'
-# alias coni='conda info --envs' # list all conda environments
+# vim: ft=sh

@@ -1,0 +1,17 @@
+{
+    "from": "User",
+    "gcode_flavor": "marlin2",
+    "inherits": "Prusa MK3S 0.4 nozzle",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+1, max_print_height)} F720 ; Move print head up{endif}\nG1 X0 Y200 F3600 ; park\n{if max_layer_z < max_print_height}G1 Z{z_offset+min(max_layer_z+49, max_print_height)} F720 ; Move print head further up{endif}\nG4 ; wait\nM221 S100 ; reset flow\n{if print_settings_id=~/.*(DETAIL @MK3S|QUALITY @MK3S|@0.25 nozzle MK3).*/}M907 E538 ; reset extruder motor current{endif}\nM104 S0 ; turn off temperature\nM140 S0 ; turn off heatbed\nM107 ; turn off fan\nM84 ; disable motors\n; max_layer_z = [max_layer_z]",
+    "machine_start_gcode": "M115 U3.13.0 ; tell printer latest fw version\nG90 ; use absolute coordinates\nM83 ; extruder relative mode\nM104 S[first_layer_temperature] ; set extruder temp\nM140 S[first_layer_bed_temperature] ; set bed temp\nM190 S[first_layer_bed_temperature] ; wait for bed temp\nM109 S[first_layer_temperature] ; wait for extruder temp\nG28; home all without mesh bed level\nG1 Z0.3 F720\nG1 Y-3 F1000 ; go outside print area\nG92 E0\nG1 X60 E9 F1000 ; intro line\nG1 X100 E9 F1000 ; intro line\nG1 Z0.2 F720\nG1 Y-3 F1000 ; go outside print area\nG92 E0\nG1 X60 E9 F1000 ; intro line\nG1 X100 E12.5 F1000 ; intro line\nG92 E0\nM221 S{if layer_height<0.075}100{else}95{endif}",
+    "name": "Prusa MK3S pipper",
+    "printable_area": [
+        "0x0",
+        "210x0",
+        "210x210",
+        "0x210"
+    ],
+    "printer_settings_id": "Prusa MK3S pipper",
+    "version": "2.3.0.3"
+}

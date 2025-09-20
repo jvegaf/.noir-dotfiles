@@ -1,0 +1,162 @@
+{
+    "2c396a3a-cafa-48aa-ac31-2069c27d18f7": {
+        "id": "2c396a3a-cafa-48aa-ac31-2069c27d18f7",
+        "name": "Google Search",
+        "keyword": "gg",
+        "cmd": "https://google.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/google-search-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1732487015.0363517
+    },
+    "20c60911-3c58-4cfd-8b90-1815b6d85a71": {
+        "id": "20c60911-3c58-4cfd-8b90-1815b6d85a71",
+        "name": "Stack Overflow",
+        "keyword": "so",
+        "cmd": "https://stackoverflow.com/search?q=%s",
+        "icon": "/usr/share/ulauncher/media/stackoverflow-icon.svg",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1732487015.0364087
+    },
+    "09a1877c-7437-41ca-80d8-da05a47243af": {
+        "id": "09a1877c-7437-41ca-80d8-da05a47243af",
+        "name": "Wikipedia",
+        "keyword": "wiki",
+        "cmd": "https://en.wikipedia.org/wiki/%s",
+        "icon": "/usr/share/ulauncher/media/wikipedia-icon.png",
+        "is_default_search": true,
+        "run_without_argument": false,
+        "added": 1732487015.0364447
+    },
+    "f4f32b8a-0dbe-4b68-a69b-9d306a749993": {
+        "id": "f4f32b8a-0dbe-4b68-a69b-9d306a749993",
+        "name": "Github",
+        "keyword": "gh",
+        "cmd": "https://github.com/search?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489385.9415338
+    },
+    "9b092067-9daf-4c57-8181-e39a35ec1c3d": {
+        "id": "9b092067-9daf-4c57-8181-e39a35ec1c3d",
+        "name": "AlternativeTo",
+        "keyword": "alt",
+        "cmd": "https://alternativeto.net/browse/search?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489425.1146913
+    },
+    "c7160e73-76cd-43e2-84bd-14185c7c76b5": {
+        "id": "c7160e73-76cd-43e2-84bd-14185c7c76b5",
+        "name": "Youtube",
+        "keyword": "yt",
+        "cmd": "https://www.youtube.com/results?search_query=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489457.2293205
+    },
+    "94430d31-7f06-4e7d-84fa-ba6101221745": {
+        "id": "94430d31-7f06-4e7d-84fa-ba6101221745",
+        "name": "Wallapop",
+        "keyword": "wp",
+        "cmd": "https://es.wallapop.com/app/search?filters_source=suggester&amp;keywords=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489499.5406036
+    },
+    "db002774-89e6-434b-9974-6c965669b8eb": {
+        "id": "db002774-89e6-434b-9974-6c965669b8eb",
+        "name": "Aliexpress",
+        "keyword": "aex",
+        "cmd": "http://www.aliexpress.com/wholesale?SearchText=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489526.5877676
+    },
+    "71e0ea0e-6486-429b-9385-f29c98e7981b": {
+        "id": "71e0ea0e-6486-429b-9385-f29c98e7981b",
+        "name": "Soundcloud",
+        "keyword": "sdc",
+        "cmd": "https://soundcloud.com/search?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489556.0895326
+    },
+    "8bcd0130-5c7b-4e58-b393-0df356a4e006": {
+        "id": "8bcd0130-5c7b-4e58-b393-0df356a4e006",
+        "name": "Yeggi",
+        "keyword": "yg",
+        "cmd": "https://www.yeggi.com/q/%s/",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489586.2346532
+    },
+    "895f559f-ce22-4bf2-bfca-71231830a820": {
+        "id": "895f559f-ce22-4bf2-bfca-71231830a820",
+        "name": "Grabcad",
+        "keyword": "gcad",
+        "cmd": "https://grabcad.com/library?page=1&amp;time=all_time&amp;sort=recent&amp;query=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489619.4254224
+    },
+    "05458871-82d8-40d3-a224-730c34995d31": {
+        "id": "05458871-82d8-40d3-a224-730c34995d31",
+        "name": "Thingiverse",
+        "keyword": "tg",
+        "cmd": "https://www.thingiverse.com/search?q=%s&amp;page=1",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489640.3352797
+    },
+    "8cd486a9-bbcc-48e6-8546-7c5b5a296e6d": {
+        "id": "8cd486a9-bbcc-48e6-8546-7c5b5a296e6d",
+        "name": "Audiobot",
+        "keyword": "ab",
+        "cmd": "https://audiobot.me/?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489687.1032736
+    },
+    "dcd7c1f0-f579-4333-ae68-b8480c784d7a": {
+        "id": "dcd7c1f0-f579-4333-ae68-b8480c784d7a",
+        "name": "Dotfyle",
+        "keyword": "df",
+        "cmd": "https://dotfyle.com/neovim/plugins/trending?page=1&amp;q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489720.514623
+    },
+    "054bda5c-be4b-4da4-a108-37da63a28964": {
+        "id": "054bda5c-be4b-4da4-a108-37da63a28964",
+        "name": "Beatport",
+        "keyword": "bp",
+        "cmd": "https://www.beatport.com/search?q=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732489744.4717638
+    },
+    "113e2a98-2ebb-40bb-95c7-b4d587ce4b4c": {
+        "id": "113e2a98-2ebb-40bb-95c7-b4d587ce4b4c",
+        "name": "TrackId.net",
+        "keyword": "ti",
+        "cmd": "https://trackid.net/audiostreams?keywords=%s",
+        "icon": null,
+        "is_default_search": false,
+        "run_without_argument": false,
+        "added": 1732491301.6956453
+    }
+}

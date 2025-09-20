@@ -1,0 +1,554 @@
+{
+  // ==============================================================================
+  // VSCode Vim Configuration - Replicating Neovim Setup
+  // ==============================================================================
+
+  // Core Vim Settings
+  "vim.leader": "<space>",
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.incsearch": true,
+  "vim.ignorecase": true,
+  "vim.smartcase": true,
+  "vim.autoindent": true,
+  "vim.showmodename": true,
+  "vim.showcmd": true,
+  "vim.startInInsertMode": false,
+  "vim.timeout": 1000,
+  "vim.foldfix": true,
+
+  // Performance optimization
+  "extensions.experimental.affinity": {
+    "vscodevim.vim": 1
+  },
+
+  // Vim Plugin Emulations
+  "vim.easymotion": true,
+  "vim.surround": true,
+  "vim.sneak": false,
+  "vim.camelCaseMotion.enable": true,
+  "vim.replaceWithRegister": true,
+
+  // Status bar color changes based on mode (vim-airline equivalent)
+  "vim.statusBarColorControl": true,
+  "vim.statusBarColors.normal": ["#268bd2", "#002b36"],
+  "vim.statusBarColors.insert": "#dc322f",
+  "vim.statusBarColors.visual": "#b58900",
+  "vim.statusBarColors.visualline": "#cb4b16",
+  "vim.statusBarColors.visualblock": "#d33682",
+  "vim.statusBarColors.replace": "#859900",
+
+  // Yank highlighting
+  "vim.highlightedyank.enable": true,
+  "vim.highlightedyank.color": "rgba(250, 240, 170, 0.5)",
+  "vim.highlightedyank.duration": 200,
+
+  // ==============================================================================
+  // Key Mappings - Replicating your Neovim leader key mappings
+  // ==============================================================================
+
+  // Insert Mode Mappings
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
+    }
+  ],
+
+  // Normal Mode Mappings
+  "vim.normalModeKeyBindingsNonRecursive": [
+    // Leader key mappings
+    {
+      "before": ["<leader>", "w"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["<leader>", "q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+    {
+      "before": ["<leader>", "e"],
+      "commands": ["workbench.view.explorer"]
+    },
+    {
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
+    },
+    {
+      "before": ["<leader>", "f", "g"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+    {
+      "before": ["<leader>", "f", "b"],
+      "commands": ["workbench.action.showAllEditors"]
+    },
+    {
+      "before": ["<leader>", "f", "h"],
+      "commands": ["workbench.action.openRecent"]
+    },
+    {
+      "before": ["<leader>", "f", "r"],
+      "commands": ["workbench.action.reloadWindow"]
+    },
+
+    // Git mappings (replicating your git setup)
+    {
+      "before": ["<leader>", "g", "s"],
+      "commands": ["workbench.view.scm"]
+    },
+    {
+      "before": ["<leader>", "g", "b"],
+      "commands": ["gitlens.toggleFileBlame"]
+    },
+    {
+      "before": ["<leader>", "g", "h"],
+      "commands": ["git.viewHistory"]
+    },
+    {
+      "before": ["<leader>", "g", "d"],
+      "commands": ["git.openChange"]
+    },
+    {
+      "before": ["<leader>", "g", "p"],
+      "commands": ["git.push"]
+    },
+    {
+      "before": ["<leader>", "g", "l"],
+      "commands": ["git.pullRebase"]
+    },
+
+    // LSP mappings (replicating your LSP setup)
+    {
+      "before": ["g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["g", "r"],
+      "commands": ["editor.action.goToReferences"]
+    },
+    {
+      "before": ["g", "i"],
+      "commands": ["editor.action.goToImplementation"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.showHover"]
+    },
+    {
+      "before": ["<leader>", "r", "n"],
+      "commands": ["editor.action.rename"]
+    },
+    {
+      "before": ["<leader>", "c", "a"],
+      "commands": ["editor.action.quickFix"]
+    },
+    {
+      "before": ["<leader>", "f", "m"],
+      "commands": ["editor.action.formatDocument"]
+    },
+
+    // Diagnostics
+    {
+      "before": ["[", "d"],
+      "commands": ["editor.action.marker.prevInFiles"]
+    },
+    {
+      "before": ["]", "d"],
+      "commands": ["editor.action.marker.nextInFiles"]
+    },
+    {
+      "before": ["<leader>", "d", "l"],
+      "commands": ["workbench.panel.markers.view.focus"]
+    },
+
+    // Debugging mappings (replicating your DAP setup)
+    {
+      "before": ["<leader>", "d", "b"],
+      "commands": ["editor.debug.action.toggleBreakpoint"]
+    },
+    {
+      "before": ["<leader>", "d", "c"],
+      "commands": ["workbench.action.debug.continue"]
+    },
+    {
+      "before": ["<leader>", "d", "j"],
+      "commands": ["workbench.action.debug.stepOver"]
+    },
+    {
+      "before": ["<leader>", "d", "k"],
+      "commands": ["workbench.action.debug.stepInto"]
+    },
+    {
+      "before": ["<leader>", "d", "o"],
+      "commands": ["workbench.action.debug.stepOut"]
+    },
+    {
+      "before": ["<leader>", "d", "r"],
+      "commands": ["workbench.action.debug.restart"]
+    },
+    {
+      "before": ["<leader>", "d", "t"],
+      "commands": ["workbench.action.debug.stop"]
+    },
+    {
+      "before": ["<leader>", "d", "R"],
+      "commands": ["editor.debug.action.removeAllBreakpoints"]
+    },
+
+    // Harpoon-like file bookmarks (using VS Code bookmarks extension)
+    {
+      "before": ["<leader>", "h", "a"],
+      "commands": ["bookmarks.toggle"]
+    },
+    {
+      "before": ["<leader>", "h", "h"],
+      "commands": ["bookmarks.list"]
+    },
+    {
+      "before": ["<leader>", "h", "1"],
+      "commands": ["numberedBookmarks.jumpToBookmark1"]
+    },
+    {
+      "before": ["<leader>", "h", "2"],
+      "commands": ["numberedBookmarks.jumpToBookmark2"]
+    },
+    {
+      "before": ["<leader>", "h", "3"],
+      "commands": ["numberedBookmarks.jumpToBookmark3"]
+    },
+    {
+      "before": ["<leader>", "h", "4"],
+      "commands": ["numberedBookmarks.jumpToBookmark4"]
+    },
+    {
+      "before": ["<leader>", "h", "5"],
+      "commands": ["numberedBookmarks.jumpToBookmark5"]
+    },
+
+    // System commands (replicating your <leader>z mappings)
+    {
+      "before": ["<leader>", "z", "c"],
+      "commands": ["workbench.action.openSettingsJson"]
+    },
+    {
+      "before": ["<leader>", "z", "l"],
+      "commands": ["workbench.extensions.action.showInstalledExtensions"]
+    },
+    {
+      "before": ["<leader>", "z", "n"],
+      "commands": ["notifications.showList"]
+    },
+    {
+      "before": ["<leader>", "z", "h"],
+      "commands": ["workbench.action.showRuntimeExtensions"]
+    },
+
+    // UI toggles
+    {
+      "before": ["<leader>", "u", "i"],
+      "commands": ["workbench.action.toggleLightDarkThemes"]
+    },
+    {
+      "before": ["<leader>", "u", "c"],
+      "commands": ["workbench.action.selectTheme"]
+    },
+
+    // Buffer management (replicating your buffer commands)
+    {
+      "before": ["<leader>", "b", "b"],
+      "commands": ["workbench.action.showAllEditors"]
+    },
+    {
+      "before": ["W"],
+      "commands": ["workbench.action.files.save"]
+    },
+    {
+      "before": ["Q"],
+      "commands": ["workbench.action.closeActiveEditor"]
+    },
+
+    // Tab management (replicating your localleader commands)
+    {
+      "before": [",", "t", "o"],
+      "commands": ["workbench.action.newWindow"]
+    },
+    {
+      "before": [",", "t", "x"],
+      "commands": ["workbench.action.closeWindow"]
+    },
+    {
+      "before": [",", "t", "n"],
+      "commands": ["workbench.action.nextEditor"]
+    },
+    {
+      "before": [",", "t", "p"],
+      "commands": ["workbench.action.previousEditor"]
+    },
+
+    // Quickfix list equivalent
+    {
+      "before": [",", "q", "o"],
+      "commands": ["workbench.actions.view.problems"]
+    },
+    {
+      "before": [",", "q", "n"],
+      "commands": ["editor.action.marker.next"]
+    },
+    {
+      "before": [",", "q", "p"],
+      "commands": ["editor.action.marker.prev"]
+    },
+    {
+      "before": [",", "q", "c"],
+      "commands": ["workbench.action.closePanel"]
+    },
+
+    // Translation (pantran replacement)
+    {
+      "before": ["<leader>", "t", "r"],
+      "commands": ["workbench.action.findInFiles"]
+    },
+
+    // Treesj equivalent (join/split lines)
+    {
+      "before": ["<leader>", "j"],
+      "commands": ["editor.action.joinLines"]
+    },
+
+    // Move lines (replicating your Alt+j/k mappings)
+    {
+      "before": ["<Alt-j>"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["<Alt-k>"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    }
+  ],
+
+  // Visual Mode Mappings
+  "vim.visualModeKeyBindingsNonRecursive": [
+    {
+      "before": [">"],
+      "commands": ["editor.action.indentLines"]
+    },
+    {
+      "before": ["<"],
+      "commands": ["editor.action.outdentLines"]
+    },
+    {
+      "before": ["g", "c"],
+      "commands": ["editor.action.commentLine"]
+    },
+    // Move selected lines up/down
+    {
+      "before": ["J"],
+      "commands": ["editor.action.moveLinesDownAction"]
+    },
+    {
+      "before": ["K"],
+      "commands": ["editor.action.moveLinesUpAction"]
+    }
+  ],
+
+  // ==============================================================================
+  // Editor Settings - Replicating your Neovim editor config
+  // ==============================================================================
+
+  "editor.lineNumbers": "relative",
+  "editor.cursorStyle": "block",
+  "editor.insertSpaces": true,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": true,
+  "editor.rulers": [80, 120],
+  "editor.wordWrap": "off",
+  "editor.scrolloff": 8,
+  "editor.cursorSurroundingLines": 8,
+  "editor.minimap.enabled": false,
+  "editor.fontFamily": "'JetBrains Mono', 'Fira Code', 'Courier New', monospace",
+  "editor.fontSize": 14,
+  "editor.fontLigatures": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.renderControlCharacters": true,
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": true,
+  "editor.guides.indentation": true,
+  "editor.smoothScrolling": true,
+  "editor.scrollBeyondLastLine": false,
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": "explicit",
+    "source.fixAll": "explicit"
+  },
+
+  // ==============================================================================
+  // Workbench Settings - UI Configuration
+  // ==============================================================================
+
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.activityBar.location": "default",
+  "workbench.sideBar.location": "left",
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.editor.enablePreview": false,
+  "workbench.editor.enablePreviewFromQuickOpen": false,
+  "workbench.editor.showTabs": "multiple",
+  "workbench.editor.tabCloseButton": "right",
+  "workbench.startupEditor": "none",
+  "workbench.tree.indent": 20,
+
+  // ==============================================================================
+  // File Explorer Settings - Replicating nvim-tree
+  // ==============================================================================
+
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.openEditors.visible": 0,
+  "explorer.autoReveal": true,
+  "explorer.compactFolders": false,
+
+  // ==============================================================================
+  // Git Settings - Replicating your Git configuration
+  // ==============================================================================
+
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "git.showPushSuccessNotification": true,
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.defaultDateFormat": "MMMM Do, YYYY h:mma",
+  "gitlens.blame.format": "${author}, ${agoOrDate}",
+
+  // ==============================================================================
+  // Search Settings - Replicating Telescope functionality
+  // ==============================================================================
+
+  "search.useGlobalIgnoreFiles": true,
+  "search.useIgnoreFiles": true,
+  "search.exclude": {
+    "**/node_modules": true,
+    "**/bower_components": true,
+    "**/.git": true,
+    "**/.DS_Store": true,
+    "**/tmp": true,
+    "**/coverage": true,
+    "**/dist": true,
+    "**/build": true
+  },
+
+  // ==============================================================================
+  // Terminal Settings
+  // ==============================================================================
+
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.fontFamily": "'JetBrains Mono', 'Fira Code', monospace",
+  "terminal.integrated.cursorStyle": "block",
+  "terminal.integrated.cursorBlinking": true,
+  "terminal.integrated.scrollback": 10000,
+
+  // ==============================================================================
+  // Language-specific Settings - Replicating your LSP setup
+  // ==============================================================================
+
+  // TypeScript/JavaScript
+  "typescript.preferences.quoteStyle": "single",
+  "javascript.preferences.quoteStyle": "single",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.suggest.autoImports": true,
+  "javascript.suggest.autoImports": true,
+
+  // Python
+  "python.defaultInterpreterPath": "/usr/bin/python3",
+  "python.formatting.provider": "black",
+  "python.linting.enabled": true,
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+
+  // Rust
+  "rust-analyzer.check.command": "cargo",
+  "rust-analyzer.cargo.buildScripts.enable": true,
+
+  // Go
+  "go.useLanguageServer": true,
+  "go.formatTool": "goimports",
+
+  // JSON
+  "json.format.enable": true,
+
+  // ==============================================================================
+  // Debug Settings - Replicating your DAP configuration
+  // ==============================================================================
+
+  "debug.console.fontSize": 14,
+  "debug.inlineValues": "auto",
+  "debug.openExplorerOnEnd": false,
+  "debug.showBreakpointsInOverviewRuler": true,
+
+  // ==============================================================================
+  // Miscellaneous Settings
+  // ==============================================================================
+
+  "files.autoSave": "onFocusChange",
+  "files.trimTrailingWhitespace": true,
+  "files.insertFinalNewline": true,
+  "files.trimFinalNewlines": true,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/node_modules": true,
+    "**/.next": true,
+    "**/dist": true,
+    "**/build": true
+  },
+
+  // Breadcrumbs
+  "breadcrumbs.enabled": true,
+  "breadcrumbs.showKeys": false,
+  "breadcrumbs.showFiles": false,
+
+  // Problems panel
+  "problems.autoReveal": false,
+
+  // Notifications
+  "zenMode.hideActivityBar": true,
+  "zenMode.hideStatusBar": true,
+  "zenMode.hideLineNumbers": false,
+
+  // IntelliSense
+  "editor.quickSuggestions": {
+    "other": true,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggestOnTriggerCharacters": true,
+  "editor.acceptSuggestionOnCommitCharacter": true,
+  "editor.acceptSuggestionOnEnter": "on",
+  "editor.snippetSuggestions": "top",
+
+  // Emmet
+  "emmet.triggerExpansionOnTab": true,
+  "emmet.includeLanguages": {
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "workbench.editor.tabActionLocation": "right",
+  "zenMode.showTabs": "single",
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#268bd2",
+    "statusBar.noFolderBackground": "#268bd2",
+    "statusBar.debuggingBackground": "#268bd2",
+    "statusBar.foreground": "#002b36",
+    "statusBar.debuggingForeground": "#002b36"
+  },
+  "python.analysis.extraPaths": [
+    "",
+    "/home/th3g3ntl3man/.vscode-oss/extensions/wmerkens.vscode-circuitpython-v2-0.3.3/stubs",
+    "/home/th3g3ntl3man/.config/VSCodium/User/globalStorage/wmerkens.vscode-circuitpython-v2/bundle/20250916/adafruit-circuitpython-bundle-py-20250916/lib"
+  ]
+}

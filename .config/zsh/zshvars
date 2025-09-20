@@ -3,7 +3,7 @@ export VISUAL="${EDITOR}"
 # export TERM='terminator' # Not specifying TERM fixes nvim cursors under root. Tested in \
 # terminator and ghostty
 # export TERMINAL='terminator'
-export BROWSER='brave'
+export BROWSER='firefox'
 
 export HISTORY_IGNORE="(ls|lsd|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 
@@ -12,7 +12,7 @@ export XDG_CONFIG_HOME="${HOME}/.config"
 export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_STATE_HOME="$HOME/.local/state"
 export XDG_CACHE_HOME="$HOME/.cache"
-export XDG_SCREENSHOTS_DIR="/run/media/$USER/Data/My/Screenshots"
+export XDG_SCREENSHOTS_DIR="$HOME/Pictures"
 
 # cleaning up the home folder
 export LESSHISTFILE="-"

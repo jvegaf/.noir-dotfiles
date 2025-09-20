@@ -1,0 +1,12 @@
+{
+    "from": "User",
+    "inherits": "PLA 0.20mm Speed @ Aquila Pro Klipper",
+    "ironing_type": "topmost",
+    "is_custom_defined": "0",
+    "name": "PLA 0.30mm Speed @ Aquila Pro Klipper",
+    "precise_outer_wall": "1",
+    "print_settings_id": "PLA 0.30mm Speed @ Aquila Pro Klipper",
+    "sparse_infill_pattern": "honeycomb",
+    "version": "2.3.0.3",
+    "wall_loops": "4"
+}

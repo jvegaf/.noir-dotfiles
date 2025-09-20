@@ -1,0 +1,19 @@
+{
+    "filament_settings_id": [
+        "PLA Bioplaxtic @ Aquila Pro Klipper"
+    ],
+    "filament_start_gcode": [
+        "; Filament gcode"
+    ],
+    "from": "User",
+    "hot_plate_temp": [
+        "60"
+    ],
+    "hot_plate_temp_initial_layer": [
+        "60"
+    ],
+    "inherits": "Generic PLA @System",
+    "is_custom_defined": "0",
+    "name": "PLA Bioplaxtic @ Aquila Pro Klipper",
+    "version": "2.3.0.3"
+}

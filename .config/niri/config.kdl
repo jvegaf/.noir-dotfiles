@@ -9,8 +9,8 @@
 input {
   keyboard {
     xkb {
-      layout "us,ru"
-      options "grp:alt_shift_toggle"
+      layout "us"
+      // options "grp:alt_shift_toggle"
     }
   }
 
@@ -92,17 +92,18 @@ input {
 }
 
 output "eDP-1" {
-  mode "1920x1080@144"
-  position x=0 y=180
+  mode "1920x1080@60.03"
+  // position x=0 y=180
+  position x=0 y=0
   scale 1
 }
 
-output "HDMI-A-1" {
-  mode "2560x1440@60"
-  position x=1920 y=0
-  scale 1
-}
-
+// output "HDMI-A-1" {
+//   mode "2560x1440@60"
+//   position x=1920 y=0
+//   scale 1
+// }
+//
 // Settings that influence how windows are positioned and sized.
 // Find more information on the wiki:
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Layout
@@ -252,11 +253,11 @@ environment {
   DISPLAY ":0"
 
   XCURSOR_THEME "catppuccin-macchiato-lavender-cursors"
-  XCURSOR_SIZE "48"
+  XCURSOR_SIZE "24"
   HYPRCURSOR_THEME "catppuccin-macchiato-lavender-cursors"
-  HYPRCURSOR_SIZE "48"
+  HYPRCURSOR_SIZE "24"
   QT_CURSOR_THEME "catppuccin-macchiato-lavender-cursors"
-  QT_CURSOR_SIZE "48"
+  QT_CURSOR_SIZE "24"
 
   XDG_SESSION_TYPE "wayland"
   GDK_BACKEND "wayland,x11,*"
@@ -271,7 +272,7 @@ environment {
 
 cursor {
   xcursor-theme "catppuccin-macchiato-lavender-cursors"
-  xcursor-size 48
+  xcursor-size 24
 }
 
 // Uncomment this line to ask the clients to omit their client-side decorations if possible.
@@ -391,17 +392,19 @@ binds {
   // Mod+R { spawn "wofi" "i" "--show" "drun"; }
   Mod+R { spawn "rofi" "-show" "drun"; }
   Mod+Return { spawn "ghostty"; }
-  Mod+Shift+Return { spawn "thunar"; }
+  Mod+Shift+Return { spawn "kitty"; }
+  Mod+E { spawn "dolphin"; }
+  Mod+Shift+E { spawn "ghostty" "-e" "yazi"; }
   Mod+B { spawn "firefox"; }
   Mod+T { spawn "ghostty" "-e" "rmpc"; }
-  Mod+Shift+T { spawn "shortwave"; }
-  Mod+Shift+P { spawn "librewolf"; }
-  Mod+Shift+L { spawn "lutris"; }
+  // Mod+Shift+T { spawn "shortwave"; }
+  // Mod+Shift+P { spawn "librewolf"; }
+  // Mod+Shift+L { spawn "lutris"; }
   Mod+W { spawn "~/.config/waybar/waybar-niri.sh"; }
   Mod+Shift+C { spawn "qalculate-gtk"; }
   Mod+G { spawn "hyprpicker" "-ra"; }
-  Mod+O { spawn "obsidian"; }
-  Mod+V { spawn "vesktop"; }
+  // Mod+O { spawn "obsidian"; }
+  Mod+V { spawn "superfile"; }
   Mod+N { spawn "pavucontrol"; }
   Mod+Shift+N { spawn "blueman-manager"; }
   Mod+L { spawn "swaylock-fancy" "-eK" "-p" "-f" "Maple-Mono-Medium"; }

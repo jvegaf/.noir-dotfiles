@@ -1,0 +1,10 @@
+{
+    "from": "User",
+    "inherits": "0.20mm Standard @Creality Ender3V2",
+    "is_custom_defined": "0",
+    "name": "0.20mm Standard @Creality Ender3V2 - Copy",
+    "print_settings_id": "0.20mm Standard @Creality Ender3V2 - Copy",
+    "skirt_loops": "1",
+    "travel_acceleration": "500",
+    "version": "2.2.0.4"
+}

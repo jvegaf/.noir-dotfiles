@@ -1,0 +1,166 @@
+[
+  {
+    "context": "Workspace",
+    "bindings": {
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-alt-a": "workspace::AddFolderToProject",
+      // Explorador/proyecto (antes: <leader>e con NvimTree).
+      // En Zed normalmente se usa un chord para el panel del proyecto; aquí emulo ctrl-k ctrl-b.
+      "space e": ["workspace::SendKeystrokes", "ctrl-k ctrl-b"],
+
+      // "Telescope find_files" -> File Finder de Zed
+      "space f f": "file_finder::Toggle",
+
+      // "Telescope live_grep" -> Buscador global de Zed
+      "space f g": "pane::DeploySearch",
+
+      // "Telescope keymaps" -> Abrir Keymap de Zed
+      "space f k": "zed::OpenKeymap",
+
+      // "Search in buffer" -> Buscar en editor
+      "space f s": ["workspace::SendKeystrokes", "ctrl-f"]
+    }
+  },
+  {
+    "context": "Editor",
+    "bindings": {
+      // Mover líneas (antes: Alt-j/k -> :m)
+      "alt-j": ["workspace::SendKeystrokes", "alt-down"],
+      "alt-k": ["workspace::SendKeystrokes", "alt-up"],
+      "ctrl-]": "pane::ActivateNextItem",
+      "ctrl-[": "pane::ActivatePreviousItem",
+      "ctrl-h": "workspace::ActivatePaneLeft",
+      "ctrl-j": "workspace::ActivatePaneDown",
+      "ctrl-k": "workspace::ActivatePaneUp",
+      "ctrl-l": "workspace::ActivatePaneRight",
+      "ctrl-g s": "git::StageAndNext",
+      "ctrl-g r": "git::Restore",
+      "ctrl-g u": "git::UnstageAndNext",
+      "ctrl-g a": "git::StageAll",
+      "ctrl-g u a": "git::UnstageAll",
+      "ctrl-g c": "git::Commit",
+      "ctrl-g p": "git::Push",
+      "ctrl-g m": "git::GenerateCommitMessage",
+      "ctrl-g l": "git::Pull",
+      "ctrl-g d d": "git::Diff",
+      "ctrl-g d a": "git::Amend",
+      "ctrl-g d b": "git::Blame",
+      "ctrl-s": "workspace::Save"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
+    "bindings": {
+      "W": "workspace::Save",
+      "Q": "pane::CloseActiveItem",
+      "v v": ["workspace::SendKeystrokes", "shift-v"],
+
+      // Navegar buffers (antes usabas H/L con BufferLine)
+      // Aquí cicla pestañas/editores con ctrl-tab / ctrl-shift-tab
+      "shift-h": ["workspace::SendKeystrokes", "ctrl-shift-tab"],
+      "shift-l": ["workspace::SendKeystrokes", "ctrl-tab"],
+
+      // Jumplist: <C-m> -> <C-i>
+      "ctrl-m": ["workspace::SendKeystrokes", "ctrl-i"],
+      "space d b": "editor::ToggleBreakpoint",
+      "space d s": "debugger::Start",
+      "space d e": "debugger::Stop",
+      "space d n": "debugger::Continue",
+      "space d c": "debugger::FocusConsole",
+      "space d v": "debugger::FocusVariables",
+      "space d t": "debugger::FocusTerminal",
+      "space d b a": "debugger::ClearAllBreakpoints",
+      "space d s o": "debugger::StepOver",
+      "space d s i": "debugger::StepInto",
+      "space e": "project_panel::ToggleFocus",
+      "space g": "git_panel::ToggleFocus",
+      "space l": "outline_panel::ToggleFocus",
+      "space d d": "diagnostics::Deploy",
+      "space space": "file_finder::Toggle",
+      "space a i": "assistant::InlineAssist",
+      "space a p": "agent::Chat",
+      "space a d": "agent::OpenAgentDiff",
+      "space a t": "agent::ToggleFocus",
+      "space t": "terminal_panel::ToggleFocus",
+      "space u n": "workspace::ClearAllNotifications",
+      "space u b": "git::Blame",
+      "space b q": "pane::CloseInactiveItems",
+      "space g g": [
+        "task::Spawn",
+        { "task_name": "Lazygit", "reveal_target": "center" }
+      ],
+      "space f f": [
+        "task::Spawn",
+        { "task_name": "File Finder", "reveal_target": "center" }
+      ],
+      "space f d": [
+        "task::Spawn",
+        { "task_name": "Find Directories", "reveal_target": "center" }
+      ],
+      "space s g": [
+        "task::Spawn",
+        { "task_name": "Find in Files", "reveal_target": "center" }
+      ],
+      "space o b": [
+        "task::Spawn",
+        { "task_name": "Obsidian", "reveal_target": "center" }
+      ],
+      "space y": [
+        "task::Spawn",
+        { "task_name": "Yazi", "reveal_target": "center" }
+      ],
+      "-": ["task::Spawn", { "task_name": "Oil", "reveal_target": "center" }],
+      "space o f": [
+        "task::Spawn",
+        {
+          "task_name": "Oil Float",
+          "reveal_target": "center"
+        }
+      ],
+      "space o s": [
+        "task::Spawn",
+        {
+          "task_name": "Oil Simple",
+          "reveal_target": "center"
+        }
+      ],
+      "space tab a": "tab_switcher::ToggleAll",
+      "space o z": [
+        "task::Spawn",
+        {
+          "task_name": "Oil",
+          "reveal_target": "center"
+        }
+      ]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == insert",
+    "bindings": {
+      "j k": ["workspace::SendKeystrokes", "escape"]
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && !VimWaiting",
+    "bindings": {
+      "space a i": "assistant::InlineAssist"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "ctrl_k": "workspace::ToggleBottomDock",
+      "cmd-f": "workspace::ToggleZoom",
+      "alt-1": "workspace::NewTerminal"
+    }
+  },
+  {
+    "context": "ProjectPanel",
+    "bindings": {
+      "ctrl-r": "project_panel::RemoveFromProject"
+    }
+  }
+]

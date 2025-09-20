@@ -1,0 +1,11 @@
+{
+    "from": "User",
+    "inherits": "0.20mm Speed @Josito Pipper Bear 0.4 nozzle",
+    "is_custom_defined": "0",
+    "name": "0.20mm Strong Speed @Josito Pipper Bear 0.4 nozzle",
+    "print_settings_id": "0.20mm Strong Speed @Josito Pipper Bear 0.4 nozzle",
+    "sparse_infill_density": "40%",
+    "sparse_infill_pattern": "honeycomb",
+    "version": "2.3.0.3",
+    "wall_loops": "4"
+}

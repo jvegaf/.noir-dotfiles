@@ -1,0 +1,239 @@
+[
+  // ==============================================================================
+  // VSCode Keybindings - Advanced Vim Key Combinations
+  // ==============================================================================
+  
+  // Leader key combinations that need complex key handling
+  {
+    "key": "space space",
+    "command": "workbench.action.showCommands",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // File operations with leader key
+  {
+    "key": "space f f",
+    "command": "workbench.action.quickOpen",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f g",
+    "command": "workbench.action.findInFiles",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f b",
+    "command": "workbench.action.showAllEditors",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f r",
+    "command": "workbench.action.openRecent",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // Git operations
+  {
+    "key": "space g s",
+    "command": "workbench.view.scm",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space g b",
+    "command": "gitlens.toggleFileBlame",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space g h",
+    "command": "git.viewHistory",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space g d",
+    "command": "git.openChange",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // LSP operations
+  {
+    "key": "space r n",
+    "command": "editor.action.rename",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space c a",
+    "command": "editor.action.quickFix",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f m",
+    "command": "editor.action.formatDocument",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // Debugging
+  {
+    "key": "space d b",
+    "command": "editor.debug.action.toggleBreakpoint",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space d s",
+    "command": "workbench.action.debug.start",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space d c",
+    "command": "workbench.action.debug.continue",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // Window/Split navigation (keep Ctrl combinations for better compatibility)
+  {
+    "key": "ctrl+h",
+    "command": "workbench.action.focusLeftGroup",
+    "when": "editorTextFocus && vim.active"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "workbench.action.focusRightGroup", 
+    "when": "editorTextFocus && vim.active"
+  },
+  {
+    "key": "ctrl+j",
+    "command": "workbench.action.focusBelowGroup",
+    "when": "editorTextFocus && vim.active"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "workbench.action.focusAboveGroup",
+    "when": "editorTextFocus && vim.active"
+  },
+  
+  // Buffer operations
+  {
+    "key": "space b n",
+    "command": "workbench.action.nextEditor",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space b p",
+    "command": "workbench.action.previousEditor",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space b d",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // Terminal
+  {
+    "key": "space t",
+    "command": "workbench.action.terminal.toggleTerminal",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // Disable default keybindings that conflict with Vim
+  {
+    "key": "ctrl+f",
+    "command": "-actions.find"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "ctrl+d",
+    "command": "-editor.action.addSelectionToNextFindMatch"
+  },
+  {
+    "key": "ctrl+k",
+    "command": "-workbench.action.terminal.clear"
+  },
+  
+  // Enhanced search functionality (Telescope-like)
+  {
+    "key": "ctrl+p",
+    "command": "workbench.action.quickOpen",
+    "when": "!inQuickOpen"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.showCommands",
+    "when": "!inQuickOpen"
+  },
+  
+  // Quick file switching (like Telescope buffers)
+  {
+    "key": "space space",
+    "command": "workbench.action.showAllEditors",
+    "when": "!editorTextFocus"
+  },
+  
+  // Enhanced fuzzy finder for files
+  {
+    "key": "space f f",
+    "command": "findItFaster.findFiles",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space f w",
+    "command": "findItFaster.findWithinFiles", 
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // Zen mode toggle (distraction-free editing)
+  {
+    "key": "space z",
+    "command": "workbench.action.toggleZenMode",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // File explorer toggle (nvim-tree equivalent)
+  {
+    "key": "space e",
+    "command": "workbench.view.explorer",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  {
+    "key": "space o",
+    "command": "workbench.action.toggleSidebarVisibility",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // Problems/diagnostics panel
+  {
+    "key": "space x x",
+    "command": "workbench.panel.markers.view.focus",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // Toggle between source and test files
+  {
+    "key": "space t s",
+    "command": "extension.toggleBetweenSourceAndTest",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // Quick save
+  {
+    "key": "space w",
+    "command": "workbench.action.files.save",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // Quick quit
+  {
+    "key": "space q",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  },
+  
+  // Force quit without saving
+  {
+    "key": "space shift+q",
+    "command": "workbench.action.revertAndCloseActiveEditor",
+    "when": "editorTextFocus && vim.mode == 'Normal'"
+  }
+]

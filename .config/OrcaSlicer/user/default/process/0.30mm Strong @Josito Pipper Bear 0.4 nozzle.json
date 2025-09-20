@@ -1,0 +1,13 @@
+{
+    "from": "User",
+    "inherits": "0.30mm Draft @Josito Pipper Bear 0.4 nozzle",
+    "is_custom_defined": "0",
+    "name": "0.30mm Strong @Josito Pipper Bear 0.4 nozzle",
+    "precise_outer_wall": "1",
+    "print_settings_id": "0.30mm Strong @Josito Pipper Bear 0.4 nozzle",
+    "sparse_infill_density": "30%",
+    "sparse_infill_pattern": "triangles",
+    "version": "2.3.0.3",
+    "wall_loops": "4",
+    "wall_sequence": "inner-outer-inner wall"
+}

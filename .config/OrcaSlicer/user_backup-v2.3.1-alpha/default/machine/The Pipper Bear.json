@@ -1,0 +1,20 @@
+{
+    "from": "User",
+    "gcode_flavor": "marlin2",
+    "inherits": "MyMarlin 0.4 nozzle",
+    "is_custom_defined": "0",
+    "name": "The Pipper Bear",
+    "nozzle_type": "brass",
+    "printable_area": [
+        "0x0",
+        "220x0",
+        "220x220",
+        "0x220"
+    ],
+    "printable_height": "200",
+    "printer_settings_id": "The Pipper Bear",
+    "version": "2.3.0.3",
+    "z_hop": [
+        "0.2"
+    ]
+}

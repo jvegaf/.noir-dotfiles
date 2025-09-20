@@ -1,0 +1,8 @@
+{
+    "from": "User",
+    "inherits": "0.20mm Speed @MK3S 0.4",
+    "is_custom_defined": "0",
+    "name": "0.20mm Speed @pipper",
+    "print_settings_id": "0.20mm Speed @pipper",
+    "version": "2.3.0.3"
+}

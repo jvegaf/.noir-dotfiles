@@ -1,0 +1,9 @@
+{
+    "from": "User",
+    "inherits": "0.12mm Fine @Creality Ender3V2",
+    "is_custom_defined": "0",
+    "name": "0.12mm Fine @Aquila PRO",
+    "print_settings_id": "0.12mm Fine @Aquila PRO",
+    "travel_acceleration": "500",
+    "version": "2.2.0.4"
+}

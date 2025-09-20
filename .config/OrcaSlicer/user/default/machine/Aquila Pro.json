@@ -1,0 +1,27 @@
+{
+    "bed_custom_model": "/home/th3g3ntl3man/.dotfiles/os/linux/config/OrcaSlicer/printers/aquila_pro_buildplate-Body.stl",
+    "before_layer_change_gcode": ";BEFORE_LAYER_CHANGE\n;[layer_z]\n;G92 E0\n",
+    "from": "User",
+    "inherits": "Creality Ender-3 V2 0.4 nozzle",
+    "is_custom_defined": "0",
+    "machine_end_gcode": "{if max_layer_z < printable_height}G1 Z{z_offset+min(max_layer_z+2, printable_height)} F600 ; Move print head up{endif}\nG1 X5 Y{print_bed_max[1]*0.8} F{travel_speed*60} ; present print\n{if max_layer_z < printable_height-10}G1 Z{z_offset+min(max_layer_z+70, printable_height-10)} F600 ; Move print head further up{endif}\n{if max_layer_z < max_print_height*0.6}G1 Z{printable_height*0.6} F600 ; Move print head further up{endif}\nM140 S0 T0; turn off heatbed\nM104 S0 T0; turn off temperature\nG162 Z F1800\nG28 X Y\nM132 X Y A B\nM652\nG91\nM18",
+    "machine_start_gcode": "M140 S[bed_temperature_initial_layer_single] T0; wait for bed temp to stabilize\nM104 S[nozzle_temperature_initial_layer] T0 ; set final nozzle temp\nM104 S0 T1\nM107 ; fan off ???\nG90 ; use absolute coordinates\nG28 ; home all axis\nM132 X Y Z A B ;calibrate\nG1 Z50.000 F420\nG161 X Y F3300\nM7 T0\nM6 T0\nM651\n; layer_count: [total_layer_count]\nM108 T0\nG1 X63.48 Y159.80 F4800\n;preExtrude:0.20\n;preExtruder0\nM106 S255\nG1 Z.200 F420\n",
+    "name": "Aquila Pro",
+    "printable_area": [
+        "0x0",
+        "235x0",
+        "235x235",
+        "0x235"
+    ],
+    "printer_settings_id": "Aquila Pro",
+    "retraction_length": [
+        "5.8"
+    ],
+    "thumbnails": "",
+    "thumbnails_format": "JPG",
+    "use_relative_e_distances": "0",
+    "version": "2.2.0.4",
+    "z_hop": [
+        "0.2"
+    ]
+}

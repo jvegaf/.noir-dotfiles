@@ -1,0 +1,14 @@
+{
+    "default_acceleration": "1000",
+    "from": "User",
+    "inherits": "0.20mm Standard @MyKlipper",
+    "initial_layer_acceleration": "250",
+    "inner_wall_acceleration": "1000",
+    "is_custom_defined": "0",
+    "name": "0.20mm Standard @Aquila Pro Klipper",
+    "outer_wall_acceleration": "1000",
+    "print_settings_id": "0.20mm Standard @Aquila Pro Klipper",
+    "top_surface_acceleration": "1000",
+    "travel_acceleration": "2000",
+    "version": "2.3.0.3"
+}

@@ -13,3 +13,5 @@
 .config/calibre/gui.json
 .config/calibre/viewer-webengine.json
 .config/calibre/viewer
+.config/OrcaSlicer/cache
+.config/OrcaSlicer/log

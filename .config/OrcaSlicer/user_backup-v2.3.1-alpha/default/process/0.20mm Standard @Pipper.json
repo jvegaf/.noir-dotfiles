@@ -1,0 +1,10 @@
+{
+    "from": "User",
+    "inherits": "0.20mm Standard @MyMarlin",
+    "is_custom_defined": "0",
+    "min_skirt_length": "20",
+    "name": "0.20mm Standard @Pipper",
+    "print_settings_id": "0.20mm Standard @Pipper",
+    "skirt_loops": "1",
+    "version": "2.3.0.3"
+}

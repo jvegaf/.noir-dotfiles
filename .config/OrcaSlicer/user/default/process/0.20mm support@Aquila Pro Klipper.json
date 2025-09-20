@@ -1,0 +1,9 @@
+{
+    "enable_support": "1",
+    "from": "User",
+    "inherits": "0.20mm Standard @MyKlipper",
+    "is_custom_defined": "0",
+    "name": "0.20mm support@Aquila Pro Klipper",
+    "print_settings_id": "0.20mm support@Aquila Pro Klipper",
+    "version": "2.3.0.3"
+}
