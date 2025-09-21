@@ -235,6 +235,7 @@ spawn-at-startup "copyq" "--start-server"
 // spawn-at-startup "systemctl" "--user" "start" "hyprpolkitagent"
 // XDG portals setup
 spawn-at-startup "dbus-update-activation-environment" "--systemd" "WAYLAND_DISPLAY" "XDG_CURRENT_DESKTOP"
+spawn-at-startup "dbus-update-activation-environment" "--systemd" "WEBKIT_DISABLE_COMPOSITING_MODE" "1"
 spawn-at-startup "/usr/lib/xdg-desktop-portal-gnome"
 // XWayland support
 spawn-at-startup "xwayland-satellite"

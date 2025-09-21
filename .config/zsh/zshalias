@@ -139,4 +139,8 @@ alias pvc='uv venv' # Create local environment (pass '--python 3.12' for specifi
 alias pva='source ./.venv/bin/activate'
 alias pvd='deactivate' # Deactivate python environment
 
+alias dku='docker compose up -d'
+alias dkd='docker compose down'
+alias lzd='lazydocker'
+
 # vim: ft=sh
