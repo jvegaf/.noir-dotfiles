@@ -1,3 +1,0 @@
-[*.{js,ts,py,rs,lua,sh,jsonc,json}]
-indent_style = space
-indent_size = 2

@@ -1,0 +1,42 @@
+#!/bin/sh
+
+coded_by='
+
+░▀█▀░█▄█░█░█░█░█░░░█▀▀░▀█▀░█▀█░▀█▀░█░█░█▀▀
+░░█░░█░█░█░█░▄▀▄░░░▀▀█░░█░░█▀█░░█░░█░█░▀▀█
+░░▀░░▀░▀░▀▀▀░▀░▀░░░▀▀▀░░▀░░▀░▀░░▀░░▀▀▀░▀▀▀
+'
+
+battery() {
+    is_charger_connected=$(apm -a)
+    battery_percentage=$(apm -l)
+    if [ $is_charger_connected = 0 ]; then
+        echo "Discharging: $battery_percentage% "
+    elif [ $is_charger_connected = 1 ]; then
+        echo -n "Charging: $battery_percentage% "
+    fi
+
+    unknown_status=$(apm -m)
+    [ "$unknown_status" != "unknown" ] && echo " [$unknown_status minutes remaining] "
+}
+
+wifi() {
+    wifi_state=$(ifconfig iwm0 | awk '/status:/ { print $2 }')
+    ssid=$(ifconfig iwm0 | awk '/(nwid|join)/ { print $3 }')
+    #signals=$(ifconfig urtwn0 | awk 'match($0, /[0-9]*%/) { print substr($0, RSTART, RLENGTH) }')
+    echo $ssid #$signals"
+}
+
+date_time()
+{
+  date +'%a %d-%m %H:%M'
+}
+
+cpu() {
+    cpu=$(ps -eo pcpu | awk 'BEGIN {sum=0.0f} {sum+=$1} END {print sum}')
+    temperature=$(sysctl -n hw.sensors.cpu0.temp0 | cut -d ' ' -f 1 )
+    echo "$cpu $temperature"
+}
+
+
+echo `cpu` - `wifi` - `battery` - `date_time`

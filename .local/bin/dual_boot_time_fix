@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTFILES_PATH/scripts/core/_main.sh"
+
+##? Fix time in dual boot systems
+#?? 1.0.0
+##?
+##? Usage:
+##?   dual_boot_fix
+##?
+
+sudo timedatectl set-local-rtc 1 --adjust-system-clock
+echo "Time Fixed 👌"

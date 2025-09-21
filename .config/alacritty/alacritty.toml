@@ -1,0 +1,32 @@
+general.import = ["~/.config/omarchy/current/theme/alacritty.toml"]
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+normal = { family = "JetBrainsMono NF", style = "Regular" }
+bold = { family = "JetBrainsMono NF", style = "Bold" }
+italic = { family = "JetBrainsMono NF", style = "Italic" }
+size = 12
+
+[window]
+padding.x = 14
+padding.y = 14
+decorations = "full"
+dynamic_title = true
+opacity = 0.85
+startup_mode = "Maximized"
+
+[keyboard]
+bindings = [{ key = "F11", action = "ToggleFullscreen" }]
+
+[cursor.style]
+blinking = "On"
+shape = "Block"
+
+[selection]
+save_to_clipboard = true
+
+[terminal.shell]
+program = "/bin/zsh"
+# args = ["--login", "-c", "tmux new-session -A -s main-alacritty"]

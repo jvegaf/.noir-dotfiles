@@ -16,14 +16,14 @@ alias doc="cd ~/Documents"
 alias dw="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias du="du -hd 1"
-alias dots="cd $MY_DOTS"
+alias dots='cd $DOTFILES_DIR'
 alias logout="gnome-session-quit --logout"
 alias nvcfg="cd ~/.config/nvim"
 alias vimcfg="vim ~/.vimrc"
 alias r="yazi"
 alias paru="paru --bottomup"
-alias edalias="nvim $HOME/.aliases"
-alias dfscripts="cd $HOME/.config/scripts"
+alias edalias='nvim $HOME/.config/zsh/zshalias'
+alias dfscripts='cd $HOME/.local/bin'
 # alias ubscripts="cd $DOTFILES_PATH/os/linux/packages/xBuntu"
 # alias alscripts="cd $DOTFILES_PATH/os/linux/packages/arch"
 alias run="./run"
@@ -115,14 +115,15 @@ alias schedmode='dot system cpumode schedutil'
 alias currmode='dot system cpumode current'
 
 alias winreb='sudo grub-reboot 4 && sudo reboot'
+alias sysd='sudo systemd-manager-tui'
 
 # WSL
 alias expl='/mnt/c/Windows/explorer.exe'
 alias winyank='/mnt/c/Users/josev/scoop/shims/win32yank.exe'
 
 #VPN
-alias vpnup='sudo systemctl start wg-quick@wg0'
-alias vpndown='sudo systemctl stop wg-quick@wg0'
+alias vpnup='sudo wg-quick up wg0'
+alias vpndown='sudo wg-quick stop wg0'
 alias vpnstatus='sudo systemctl status wg-quick@wg0'
 # status vpn tunnel sudo wg
 

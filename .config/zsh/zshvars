@@ -4,6 +4,7 @@ export VISUAL="${EDITOR}"
 # terminator and ghostty
 # export TERMINAL='terminator'
 export BROWSER='firefox'
+export DOTFILES_DIR="$HOME/.noir-dotfiles"
 
 export HISTORY_IGNORE="(ls|lsd|cd|pwd|exit|sudo reboot|history|cd -|cd ..)"
 
