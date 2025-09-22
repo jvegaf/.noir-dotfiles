@@ -29,8 +29,9 @@ exec_always --no-startup-id ~/.config/polybar/polybar.sh
 
 # Wallpapers
 # exec --no-startup-id variety # Change wallpapers on a regular interval
-exec_always feh --bg-fill /home/$USER/.local/share/backgrounds/arcane/jinx_2.png --output HDMI-0 -z
-exec_always feh --bg-fill /home/$USER/.local/share/backgrounds/arcane/jinx_2.png --output DP-2 -z
+exec_always feh --bg-fill /home/$USER/.local/share/backgrounds/arcane/jinx_2.png
+# exec_always feh --bg-fill /home/$USER/.local/share/backgrounds/arcane/jinx_2.png --output HDMI-0 -z
+# exec_always feh --bg-fill /home/$USER/.local/share/backgrounds/arcane/jinx_2.png --output DP-2 -z
 
 # Disable screen blanking
 exec --no-startup-id xset s off

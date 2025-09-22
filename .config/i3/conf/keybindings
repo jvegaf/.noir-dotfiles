@@ -1,18 +1,19 @@
 # set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
 set $menu rofi -show drun
-set $terminal ghostty
+set $terminal kitty
 
 bindsym $mod+r exec $menu
 bindsym $mod+Return exec $terminal
-bindsym $mod+Shift+Return exec thunar
+# bindsym $mod+Shift+Return exec dolphin
+bindsym $mod+e exec dolphin
 bindsym $mod+b exec firefox
 bindsym $mod+t exec $terminal -e rmpc
-bindsym $mod+Shift+t exec shortwave
-bindsym $mod+Shift+p exec librewolf
-bindsym $mod+Shift+l exec lutris
+# bindsym $mod+Shift+t exec shortwave
+# bindsym $mod+Shift+p exec librewolf
+# bindsym $mod+Shift+l exec lutris
 bindsym $mod+w exec ~/.config/polybar/polybar.sh
-bindsym $mod+Shift+c exec qalculate-gtk
+bindsym $mod+Shift+c exec galculator
 bindsym $mod+l exec "~/.config/i3/scripts/lockscreen.sh"
 
 # toggle tiling / floating
