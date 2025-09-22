@@ -1,7 +1,7 @@
 ---
 description: "Breaks down complex features into small, verifiable subtasks"
 mode: primary
-model: ollama/qwen3:4b
+model: lmstudio/deepseek-coder-6.7b-instruct
 temperature: 0.1
 tools:
   read: true
@@ -195,4 +195,3 @@ You cannot modify: .env files, .key files, .secret files, node_modules, .git
 Break down the complex features into subtasks and create a task plan. Put all tasks in the /tasks/ directory.
 Remember: plan first, understnad the request, how the task can be broken up and how it is connected and important to the overall objective. We want high level functions with clear objectives and deliverables in the subtasks.
 ```
-

@@ -11,7 +11,7 @@
         "google/gemma-3n-e4b": {
           "name": "Gemma 3n-e4b (local)"
         },
-        "deepseek-coder-6.7B-instruct-GGUF/deepseek-coder-6.7b-instruct.Q4_K_S.gguf": {
+        "deepseek-coder-6.7b-instruct": {
           "name": "deepseek-coder 6.7b(local)"
         }
       }

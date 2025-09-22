@@ -23,3 +23,8 @@ zinit light-mode for \
 
 # Custom settings
 source ~/.config/zsh/zshrc-custom
+
+. "$HOME/.local/bin/env"
+
+# opencode
+export PATH=/home/th3g3ntl3man/.opencode/bin:$PATH
