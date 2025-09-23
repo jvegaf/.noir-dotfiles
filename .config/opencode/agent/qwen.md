@@ -1,7 +1,7 @@
 ---
 description: General coding and planning agent
 mode: subagent
-model: ollama/qwen3-1.7b
+model: qwen/qwen3-4b-2507
 tools:
   write: true
   edit: true

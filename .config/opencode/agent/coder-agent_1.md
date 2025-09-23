@@ -1,7 +1,6 @@
 ---
 description: "Executes coding subtasks in sequence, ensuring completion as specified"
-mode: subagent
-model: ollama/qwen3:4b
+model: qwen/qwen3-4b-2507
 temperature: 0
 tools:
   read: true

@@ -1,7 +1,8 @@
 ---
 description: General coding and planning agent
 name: deepseek-coder-6
-model: lmstudio/deepseek-coder-6.7b-instruct
+model: deepseek-coder-6.7b-instruct
+mode: subagent
 tools:
   write: true
   edit: true

@@ -1,7 +1,13 @@
 ---
-allowed-tools: 'Bash(git add:*), Bash(git status:*), Bash(git commit:*)'
 description: Create a git commit
+model: qwen/qwen3-4b-2507
+tools:
+  read: true
+  write: true
+  edit: true
+  bash: true
 ---
+
 ## Context
 
 - Current git status: !`git status`
@@ -12,4 +18,3 @@ description: Create a git commit
 ## Your task
 
 Based on the above changes, create a single git commit.
-

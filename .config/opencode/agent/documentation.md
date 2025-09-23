@@ -1,7 +1,7 @@
 ---
 description: "Documentation authoring agent"
 mode: subagent
-model: lmstudio/qwen3-4b-2507
+model: qwen/qwen3-4b-2507
 temperature: 0.2
 tools:
   read: true

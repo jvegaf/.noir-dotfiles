@@ -1,5 +1,6 @@
 ---
 name: context-manager
+model: qwen/qwen3-4b-2507
 description: Manages context across multiple agents and long-running tasks. Use when coordinating complex multi-agent workflows or when context needs to be preserved across multiple sessions. MUST BE USED for projects exceeding 10k tokens.
 ---
 

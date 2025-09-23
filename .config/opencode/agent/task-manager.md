@@ -1,7 +1,7 @@
 ---
 description: "Breaks down complex features into small, verifiable subtasks"
 mode: primary
-model: lmstudio/deepseek-coder-6.7b-instruct
+model: qwen/qwen3-4b-2507
 temperature: 0.1
 tools:
   read: true

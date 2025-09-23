@@ -136,7 +136,7 @@ fi
 # Shell integrations
 eval "$(mise activate zsh)"
 eval "$(starship init zsh)"
-eval "$(fzf --zsh)"
+# eval "$(fzf --zsh)"
 eval "$(zoxide init --cmd cd zsh)"
 eval "$(uv generate-shell-completion zsh)"
 eval "$(uvx --generate-shell-completion zsh)"

@@ -2,52 +2,56 @@
     "device_error": {
         "en": [
             {
-                "ecode": "0584409C",
-                "intro": "The firmware of AMS-HT E does not match the printer; the device cannot continue working. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0583409C",
-                "intro": "The firmware of AMS-HT D does not match the printer; the device cannot continue working. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0501409D",
-                "intro": "The firmware of AMS B does not match the printer; the device cannot continue working. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "05004031",
-                "intro": "The accessory firmware does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "07FF8007",
-                "intro": "Please observe the nozzle. If the filament has been extruded, select \"Done\"; if it is not, please push the filament forward slightly, and then select \"Retry\"."
-            },
-            {
-                "ecode": "05004033",
-                "intro": "The AMS firmware does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
                 "ecode": "0582409C",
-                "intro": "The firmware of AMS-HT C does not match the printer; the device cannot continue working. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS-HT C does not match the printer; the device cannot continue working. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0584409C",
+                "intro": "The firmware of AMS-HT E does not match the printer; the device cannot continue working. Please update it on the \"Firmware\" page."
             },
             {
                 "ecode": "0581409C",
-                "intro": "The firmware of AMS-HT B does not match the printer; the device cannot continue working. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS-HT B does not match the printer; the device cannot continue working. Please update it on the \"Firmware\" page."
             },
             {
                 "ecode": "0586409C",
-                "intro": "The firmware of AMS-HT G does not match the printer; the device cannot continue working. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS-HT G does not match the printer; the device cannot continue working. Please update it on the \"Firmware\" page."
             },
             {
                 "ecode": "0585409C",
-                "intro": "The firmware of AMS-HT F does not match the printer; the device cannot continue working. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS-HT F does not match the printer; the device cannot continue working. Please update it on the \"Firmware\" page."
             },
             {
                 "ecode": "0503409D",
-                "intro": "The firmware of AMS D does not match the printer; the device cannot continue working. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS D does not match the printer; the device cannot continue working. Please update it on the \"Firmware\" page."
             },
             {
                 "ecode": "0580409C",
-                "intro": "The firmware of AMS-HT A does not match the printer; the device cannot continue working. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS-HT A does not match the printer; the device cannot continue working. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0583409C",
+                "intro": "The firmware of AMS-HT D does not match the printer; the device cannot continue working. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0501409D",
+                "intro": "The firmware of AMS B does not match the printer; the device cannot continue working. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "05004031",
+                "intro": "The accessory firmware does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "07FF8007",
+                "intro": "Please observe the nozzle. If the filament has been extruded, select \"Done\"; if it has not, please push the filament forward slightly, and then select \"Retry\"."
+            },
+            {
+                "ecode": "05004033",
+                "intro": "The AMS firmware does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0300400D",
+                "intro": "Resume failed after power loss"
             },
             {
                 "ecode": "0500400E",
@@ -1238,10 +1242,6 @@
                 "intro": "An error occurred during AMS A drying. Please go to Assistant for more details."
             },
             {
-                "ecode": "0300400D",
-                "intro": "Resume failed after power loss."
-            },
-            {
                 "ecode": "03008009",
                 "intro": "Heatbed temperature malfunction"
             },
@@ -1938,389 +1938,393 @@
                 "intro": "The cutter is stuck. Please make sure the cutter handle is out and check the filament sensor cable connection."
             }
         ],
-        "ver": 202509221542
+        "ver": 202509230000
     },
     "device_hms": {
         "en": [
             {
                 "ecode": "1803220000010082",
-                "intro": "Failed to read the filament information from AMS-HT D slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "1800220000010082",
-                "intro": "Failed to read the filament information from AMS-HT A slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "1803230000010082",
-                "intro": "Failed to read the filament information from AMS-HT D slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0504050000010010",
-                "intro": "The firmware of AMS E does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "1805210000010082",
-                "intro": "Failed to read the filament information from AMS-HT F slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0707200000010082",
-                "intro": "Failed to read the filament information from AMS H slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0705210000010082",
-                "intro": "Failed to read the filament information from AMS F slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0703210000010082",
-                "intro": "Failed to read the filament information from AMS D slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0702220000010082",
-                "intro": "Failed to read the filament information from AMS C slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "1801230000010082",
-                "intro": "Failed to read the filament information from AMS-HT B slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "1807200000010082",
-                "intro": "Failed to read the filament information from AMS-HT H slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0701200000010082",
-                "intro": "Failed to read the filament information from AMS B slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0707210000010082",
-                "intro": "Failed to read the filament information from AMS H slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "1806210000010082",
-                "intro": "Failed to read the filament information from AMS-HT G slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "1807220000010082",
-                "intro": "Failed to read the filament information from AMS-HT H slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0702200000010082",
-                "intro": "Failed to read the filament information from AMS C slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0701220000010082",
-                "intro": "Failed to read the filament information from AMS B slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0700220000010082",
-                "intro": "Failed to read the filament information from AMS A slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0585050000010010",
-                "intro": "The firmware of AMS-HT F does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0585040000010045",
-                "intro": "The firmware of AMS-HT F does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0502040000010044",
-                "intro": "The firmware of AMS C does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0586040000010045",
-                "intro": "The firmware of AMS-HT G does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0580040000010045",
-                "intro": "The firmware of AMS-HT A does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0500040000010044",
-                "intro": "The firmware of AMS A does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0581050000010010",
-                "intro": "The firmware of AMS-HT B does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "Failed to read the filament information from AMS-HT D slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "0700230000010082",
-                "intro": "Failed to read the filament information from AMS A slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS A slot 4. A third party RFID tag was detected."
+            },
+            {
+                "ecode": "1800220000010082",
+                "intro": "Failed to read the filament information from AMS-HT A slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "0707230000010082",
-                "intro": "Failed to read the filament information from AMS H slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS H slot 4. A third party RFID tag was detected."
             },
             {
                 "ecode": "1805220000010082",
-                "intro": "Failed to read the filament information from AMS-HT F slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT F slot 3. A third party RFID tag was detected."
+            },
+            {
+                "ecode": "1803230000010082",
+                "intro": "Failed to read the filament information from AMS-HT D slot 4. A third party RFID tag was detected."
             },
             {
                 "ecode": "1800210000010082",
-                "intro": "Failed to read the filament information from AMS-HT A slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT A slot 2. A third party RFID tag was detected."
             },
             {
                 "ecode": "1803200000010082",
-                "intro": "Failed to read the filament information from AMS-HT D slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT D slot 1. A third party RFID tag was detected."
+            },
+            {
+                "ecode": "1805210000010082",
+                "intro": "Failed to read the filament information from AMS-HT F slot 2. A third party RFID tag was detected."
+            },
+            {
+                "ecode": "0707200000010082",
+                "intro": "Failed to read the filament information from AMS H slot 1. A third party RFID tag was detected."
             },
             {
                 "ecode": "1806230000010082",
-                "intro": "Failed to read the filament information from AMS-HT G slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT G slot 4. A third party RFID tag was detected."
             },
             {
-                "ecode": "0580050000010010",
-                "intro": "The firmware of AMS-HT A does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0500010000020002",
-                "intro": "Live View camera is not connected. Please check the hardware and cable connections."
-            },
-            {
-                "ecode": "0502050000010010",
-                "intro": "The firmware of AMS C does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "ecode": "0705210000010082",
+                "intro": "Failed to read the filament information from AMS F slot 2. A third party RFID tag was detected."
             },
             {
                 "ecode": "0704200000010082",
-                "intro": "Failed to read the filament information from AMS E slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS E slot 1. A third party RFID tag was detected."
             },
             {
                 "ecode": "1804220000010082",
-                "intro": "Failed to read the filament information from AMS-HT E slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT E slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "1804200000010082",
-                "intro": "Failed to read the filament information from AMS-HT E slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT E slot 1. A third party RFID tag was detected."
             },
             {
                 "ecode": "0704230000010082",
-                "intro": "Failed to read the filament information from AMS E slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS E slot 4. A third party RFID tag was detected."
             },
             {
                 "ecode": "1803210000010082",
-                "intro": "Failed to read the filament information from AMS-HT D slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT D slot 2. A third party RFID tag was detected."
+            },
+            {
+                "ecode": "0702220000010082",
+                "intro": "Failed to read the filament information from AMS C slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "1802220000010082",
-                "intro": "Failed to read the filament information from AMS-HT C slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT C slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "0701210000010082",
-                "intro": "Failed to read the filament information from AMS B slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS B slot 2. A third party RFID tag was detected."
             },
             {
                 "ecode": "1804230000010082",
-                "intro": "Failed to read the filament information from AMS-HT E slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT E slot 4. A third party RFID tag was detected."
             },
             {
                 "ecode": "1805200000010082",
-                "intro": "Failed to read the filament information from AMS-HT F slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT F slot 1. A third party RFID tag was detected."
             },
             {
                 "ecode": "0704220000010082",
-                "intro": "Failed to read the filament information from AMS E slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS E slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "0707220000010082",
-                "intro": "Failed to read the filament information from AMS H slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0501050000010010",
-                "intro": "The firmware of AMS B does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "Failed to read the filament information from AMS H slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "0700210000010082",
-                "intro": "Failed to read the filament information from AMS A slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS A slot 2. A third party RFID tag was detected."
             },
             {
                 "ecode": "0703220000010082",
-                "intro": "Failed to read the filament information from AMS D slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS D slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "0702230000010082",
-                "intro": "Failed to read the filament information from AMS C slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS C slot 4. A third party RFID tag was detected."
             },
             {
                 "ecode": "0702210000010082",
-                "intro": "Failed to read the filament information from AMS C slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "050005000001000F",
-                "intro": "The accessory firmware does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0586050000010010",
-                "intro": "The firmware of AMS-HT G does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "Failed to read the filament information from AMS C slot 2. A third party RFID tag was detected."
             },
             {
                 "ecode": "1802230000010082",
-                "intro": "Failed to read the filament information from AMS-HT C slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT C slot 4. A third party RFID tag was detected."
             },
             {
                 "ecode": "1804210000010082",
-                "intro": "Failed to read the filament information from AMS-HT E slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT E slot 2. A third party RFID tag was detected."
             },
             {
-                "ecode": "0505050000010010",
-                "intro": "The firmware of AMS F does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "ecode": "1801230000010082",
+                "intro": "Failed to read the filament information from AMS-HT B slot 4. A third party RFID tag was detected."
             },
             {
                 "ecode": "1802200000010082",
-                "intro": "Failed to read the filament information from AMS-HT C slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT C slot 1. A third party RFID tag was detected."
+            },
+            {
+                "ecode": "1807200000010082",
+                "intro": "Failed to read the filament information from AMS-HT H slot 1. A third party RFID tag was detected."
             },
             {
                 "ecode": "1806220000010082",
-                "intro": "Failed to read the filament information from AMS-HT G slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT G slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "0706230000010082",
-                "intro": "Failed to read the filament information from AMS G slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS G slot 4. A third party RFID tag was detected."
             },
             {
                 "ecode": "1801200000010082",
-                "intro": "Failed to read the filament information from AMS-HT B slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT B slot 1. A third party RFID tag was detected."
             },
             {
-                "ecode": "0500050000010010",
-                "intro": "The firmware of AMS A does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "ecode": "0701200000010082",
+                "intro": "Failed to read the filament information from AMS B slot 1. A third party RFID tag was detected."
             },
             {
                 "ecode": "0706220000010082",
-                "intro": "Failed to read the filament information from AMS G slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS G slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "1806200000010082",
-                "intro": "Failed to read the filament information from AMS-HT G slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT G slot 1. A third party RFID tag was detected."
             },
             {
                 "ecode": "0705230000010082",
-                "intro": "Failed to read the filament information from AMS F slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS F slot 4. A third party RFID tag was detected."
             },
             {
                 "ecode": "1807230000010082",
-                "intro": "Failed to read the filament information from AMS-HT H slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT H slot 4. A third party RFID tag was detected."
             },
             {
                 "ecode": "0700200000010082",
-                "intro": "Failed to read the filament information from AMS A slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS A slot 1. A third party RFID tag was detected."
             },
             {
-                "ecode": "0503050000010010",
-                "intro": "The firmware of AMS D does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0506050000010010",
-                "intro": "The firmware of AMS G does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "ecode": "0707210000010082",
+                "intro": "Failed to read the filament information from AMS H slot 2. A third party RFID tag was detected."
             },
             {
                 "ecode": "1800230000010082",
-                "intro": "Failed to read the filament information from AMS-HT A slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT A slot 4. A third party RFID tag was detected."
+            },
+            {
+                "ecode": "1806210000010082",
+                "intro": "Failed to read the filament information from AMS-HT G slot 2. A third party RFID tag was detected."
+            },
+            {
+                "ecode": "1807220000010082",
+                "intro": "Failed to read the filament information from AMS-HT H slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "0705200000010082",
-                "intro": "Failed to read the filament information from AMS F slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS F slot 1. A third party RFID tag was detected."
             },
             {
                 "ecode": "1807210000010082",
-                "intro": "Failed to read the filament information from AMS-HT H slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT H slot 2. A third party RFID tag was detected."
             },
             {
                 "ecode": "0705220000010082",
-                "intro": "Failed to read the filament information from AMS F slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS F slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "1802210000010082",
-                "intro": "Failed to read the filament information from AMS-HT C slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT C slot 2. A third party RFID tag was detected."
             },
             {
                 "ecode": "0701230000010082",
-                "intro": "Failed to read the filament information from AMS B slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0582050000010010",
-                "intro": "The firmware of AMS-HT C does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "Failed to read the filament information from AMS B slot 4. A third party RFID tag was detected."
             },
             {
                 "ecode": "0703200000010082",
-                "intro": "Failed to read the filament information from AMS D slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS D slot 1. A third party RFID tag was detected."
             },
             {
-                "ecode": "0583050000010010",
-                "intro": "The firmware of AMS-HT D does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "ecode": "0702200000010082",
+                "intro": "Failed to read the filament information from AMS C slot 1. A third party RFID tag was detected."
             },
             {
                 "ecode": "1805230000010082",
-                "intro": "Failed to read the filament information from AMS-HT F slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "1800200000010082",
-                "intro": "Failed to read the filament information from AMS-HT A slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "12FF200000030007",
-                "intro": "Checking the filament location of all AMS slots, please wait."
+                "intro": "Failed to read the filament information from AMS-HT F. A third party RFID tag was detected."
             },
             {
                 "ecode": "0706210000010082",
-                "intro": "Failed to read the filament information from AMS G slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS G slot 2. A third party RFID tag was detected."
             },
             {
                 "ecode": "0706200000010082",
-                "intro": "Failed to read the filament information from AMS G slot 1. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
-            },
-            {
-                "ecode": "0507050000010010",
-                "intro": "The firmware of AMS H does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "Failed to read the filament information from AMS G slot 1. A third party RFID tag was detected."
             },
             {
                 "ecode": "1801220000010082",
-                "intro": "Failed to read the filament information from AMS-HT B slot 3. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT B slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "0703230000010082",
-                "intro": "Failed to read the filament information from AMS D slot 4. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS D slot 4. A third party RFID tag was detected."
             },
             {
-                "ecode": "0584050000010010",
-                "intro": "The firmware of AMS-HT E does not match the printer. Please upgrade it on the \"Firmware\" page."
-            },
-            {
-                "ecode": "0587050000010010",
-                "intro": "The firmware of AMS-HT H does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "ecode": "0700220000010082",
+                "intro": "Failed to read the filament information from AMS A slot 3. A third party RFID tag was detected."
             },
             {
                 "ecode": "1801210000010082",
-                "intro": "Failed to read the filament information from AMS-HT B slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS-HT B slot 2. A third party RFID tag was detected."
             },
             {
                 "ecode": "0704210000010082",
-                "intro": "Failed to read the filament information from AMS E slot 2. A non-official RFID tag was detected. You can try to use Bambu Lab filament."
+                "intro": "Failed to read the filament information from AMS E slot 2. A third party RFID tag was detected."
             },
             {
                 "ecode": "0584040000010045",
-                "intro": "The firmware of AMS-HT E does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS-HT E does not match the printer. Please update it on the \"Firmware\" page."
             },
             {
                 "ecode": "0501040000010044",
-                "intro": "The firmware of AMS B does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS B does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0585040000010045",
+                "intro": "The firmware of AMS-HT F does not match the printer. Please update it on the \"Firmware\" page."
             },
             {
                 "ecode": "0503040000010044",
-                "intro": "The firmware of AMS D does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS D does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0502040000010044",
+                "intro": "The firmware of AMS C does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0586040000010045",
+                "intro": "The firmware of AMS-HT G does not match the printer. Please update it on the \"Firmware\" page."
             },
             {
                 "ecode": "0583040000010045",
-                "intro": "The firmware of AMS-HT D does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS-HT D does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0580040000010045",
+                "intro": "The firmware of AMS-HT A does not match the printer. Please update it on the \"Firmware\" page."
             },
             {
                 "ecode": "0587040000010045",
-                "intro": "The firmware of AMS-HT H does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS-HT H does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0500040000010044",
+                "intro": "The firmware of AMS A does not match the printer. Please update it on the \"Firmware\" page."
             },
             {
                 "ecode": "0582040000010045",
-                "intro": "The firmware of AMS-HT C does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS-HT C does not match the printer. Please update it on the \"Firmware\" page."
             },
             {
                 "ecode": "0581040000010045",
-                "intro": "The firmware of AMS-HT B does not match the printer. Please upgrade it on the \"Firmware\" page."
+                "intro": "The firmware of AMS-HT B does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0581050000010010",
+                "intro": "The firmware of AMS-HT B does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0504050000010010",
+                "intro": "The firmware of AMS E does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0580050000010010",
+                "intro": "The firmware of AMS-HT A does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0500010000020002",
+                "intro": "Liveview camera is not connected. Please check the hardware and cable connections."
+            },
+            {
+                "ecode": "0502050000010010",
+                "intro": "The firmware of AMS C does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0703210000010082",
+                "intro": "Failed to read the filament information from AMS D slot 2. A third party RFID tag was detected."
+            },
+            {
+                "ecode": "0501050000010010",
+                "intro": "The firmware of AMS B does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "050005000001000F",
+                "intro": "The accessory firmware does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0586050000010010",
+                "intro": "The firmware of AMS-HT G does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0505050000010010",
+                "intro": "The firmware of AMS F does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0500050000010010",
+                "intro": "The firmware of AMS A does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0503050000010010",
+                "intro": "The firmware of AMS D does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0506050000010010",
+                "intro": "The firmware of AMS G does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0582050000010010",
+                "intro": "The firmware of AMS-HT C does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0583050000010010",
+                "intro": "The firmware of AMS-HT D does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0701220000010082",
+                "intro": "Failed to read the filament information from AMS B slot 3. A third party RFID tag was detected."
+            },
+            {
+                "ecode": "1800200000010082",
+                "intro": "Failed to read the filament information from AMS-HT A slot 1. A third party RFID tag was detected."
+            },
+            {
+                "ecode": "12FF200000030007",
+                "intro": "Checking the filament location of all AMS slots; please wait."
+            },
+            {
+                "ecode": "0507050000010010",
+                "intro": "The firmware of AMS H does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0584050000010010",
+                "intro": "The firmware of AMS-HT E does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0587050000010010",
+                "intro": "The firmware of AMS-HT H does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0585050000010010",
+                "intro": "The firmware of AMS-HT F does not match the printer. Please update it on the \"Firmware\" page."
+            },
+            {
+                "ecode": "0C00020000010005",
+                "intro": "A new Micro Lidar was detected. Please calibrate it on the Calibration page before use"
             },
             {
                 "ecode": "0500020000020008",
@@ -17559,10 +17563,6 @@
                 "intro": "AMS-HT D Slot 4 filament has run out and automatically switched to the slot with the same filament."
             },
             {
-                "ecode": "0C00020000010005",
-                "intro": "A new Micro Lidar was detected. Please calibrate it on the Calibration page before use."
-            },
-            {
                 "ecode": "0704310000020002",
                 "intro": "The RFID-tag on AMS E Slot2 is damaged, or its content cannot be identified."
             },
@@ -18543,7 +18543,7 @@
                 "intro": "External disturbance was detected on the heatbed acceleeration sensor. The sensor signal wire may not be affixed."
             }
         ],
-        "ver": 202509221542
+        "ver": 202509230000
     },
-    "version": "202509221542"
+    "version": "202509230000"
 }

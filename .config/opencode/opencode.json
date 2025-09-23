@@ -8,13 +8,11 @@
         "baseURL": "http://127.0.0.1:1234/v1"
       },
       "models": {
-        "google/gemma-3n-e4b": {},
-        "deepseek-coder-6.7b-instruct": {},
-        "openai/gpt-oss-20b": {
-          "name": "GPT OSS 20B"
+        "qwen/qwen3-4b-2507": {
+          "name": "Qwen3 4b (local)"
         },
-        "https://lmstudio.ai/models/openai/gpt-oss-20b": {
-          "name": "OpenAI GPT-OSS 20B"
+        "deepseek-coder-6.7b-instruct": {
+          "name": "DeepSeek Coder 6.7b (local)"
         }
       }
     }

@@ -2,7 +2,7 @@
 name: prompt-engineer
 description: Optimizes prompts for LLMs and AI systems. Use when building AI features, improving agent performance, or crafting system prompts. Expert in prompt patterns and techniques.
 mode: primary
-model: lmstudio/deepseek-coder-6.7b-instruct
+model: qwen/qwen3-4b-2507
 temperature: 0.1
 tools:
   read: true
