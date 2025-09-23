@@ -1,0 +1,16 @@
+[/]
+calculator=['<Super>c']
+control-center=['<Super>comma']
+custom-keybindings=['/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/', '/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/']
+home=['<Super>e']
+www=['<Super>b']
+
+[custom-keybindings/custom0]
+binding='<Super>Return'
+command='kitty'
+name='kitty'
+
+[custom-keybindings/custom1]
+binding='<Super>space'
+command='ulauncher-toggle'
+name='ulauncher'

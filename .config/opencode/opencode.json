@@ -13,6 +13,9 @@
         },
         "deepseek-coder-6.7b-instruct": {
           "name": "DeepSeek Coder 6.7b (local)"
+        },
+        "qwen2.5-coder-7b-instruct": {
+          "name": "Qwen 2.5 7B (local)"
         }
       }
     }

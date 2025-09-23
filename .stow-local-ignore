@@ -6,3 +6,4 @@ README.md
 .git
 .ignore
 50-udisks.rules
+gnome-shortcuts.dconf
